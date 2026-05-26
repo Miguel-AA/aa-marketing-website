@@ -5,7 +5,7 @@
       <!-- BRAND -->
       <div class="aa-footer__brand">
         <img
-          src="logo/aa_headerlogo.png"
+          src="../logo/aa_headerlogo.png"
           alt="A&A Marketing"
           class="aa-footer__logo"
         />
