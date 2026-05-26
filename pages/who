@@ -1,0 +1,584 @@
+<section class="aa-about-breakout" id="about">
+  <div class="aa-about aa-about--hasVideo">
+
+    <!-- Background video layer -->
+    <video
+      class="aa-about__video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="metadata"
+      poster="https://primesportsmarketing.net/wp-content/uploads/2026/01/524480.jpg"
+      aria-hidden="true"
+    >
+      <source src="https://primesportsmarketing.net/wp-content/uploads/2026/01/who-are-section2.mp4" type="video/mp4">
+    </video>
+
+    <!-- Darker scrim (stronger readability) -->
+    <div class="aa-about__scrim" aria-hidden="true"></div>
+
+    <!-- Luxury line texture -->
+    <div class="aa-about__luxLines" aria-hidden="true"></div>
+
+    <div class="aa-about__inner">
+      <!-- Left -->
+      <div class="aa-about__left">
+        <div class="aa-about__kicker">Who We Are</div>
+
+        <h2 class="aa-about__title">
+          WHO<br>
+          WE ARE
+        </h2>
+
+        <div class="aa-about__accent" aria-hidden="true"></div>
+
+        <div class="aa-about__proof">
+          <div class="aa-proofCard">
+            <div class="aa-proofCard__num">01</div>
+            <div class="aa-proofCard__label">Strategy-first</div>
+          </div>
+          <div class="aa-proofCard">
+            <div class="aa-proofCard__num">02</div>
+            <div class="aa-proofCard__label">Talent-ready</div>
+          </div>
+          <div class="aa-proofCard">
+            <div class="aa-proofCard__num">03</div>
+            <div class="aa-proofCard__label">Performance-driven</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right -->
+      <div class="aa-about__right">
+        <p class="aa-about__p">
+          A&A Marketing is a full-service marketing agency representing players, celebrities, and executive
+          leaders in endorsement deals.
+        </p>
+
+        <!-- CHANGED: wrap the remaining paragraphs + callout in a mobile-collapsible block -->
+        <div class="aa-about__more" data-aa-more aria-hidden="false">
+          <p class="aa-about__p">
+            Our in-house team elevates your reputation by managing communication channels and executing PR + marketing
+            strategies that increase revenue and build long-term brand value.
+          </p>
+
+          <p class="aa-about__p">
+            We analyze market factors, strengthen positioning, and introduce your success to the world—through media
+            obligations, premium content, and opportunity creation.
+          </p>
+
+          <div class="aa-about__callout">
+            <div class="aa-about__calloutIcon" aria-hidden="true"></div>
+            <div class="aa-about__calloutText">
+              Learning to be informative, intelligent, and entertaining in media moments—while staying brand-safe and
+              strategic.
+            </div>
+          </div>
+        </div>
+
+        <!-- CHANGED: mobile "Learn more" toggle -->
+        <button class="aa-about__learnMore" type="button" data-aa-more-btn aria-expanded="true">
+          <span class="aa-about__learnMoreText">Learn more</span>
+          <span class="aa-about__learnMoreIcon" aria-hidden="true">+</span>
+        </button>
+
+        <div class="aa-about__actions">
+          <a class="aa-aboutBtn aa-aboutBtn--primary" href="#contact">Get in Touch</a>
+          <a class="aa-aboutBtn aa-aboutBtn--ghost" href="#services">Explore Services</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Subtle dust -->
+    <div class="aa-about__dust" aria-hidden="true"></div>
+  </div>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap');
+
+    .aa-about-breakout{
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      width: 100vw;
+    }
+
+    /* ===== Shorter section (reduced height + padding) ===== */
+    #about.aa-about-breakout .aa-about{
+      position: relative;
+      padding: 250px 0 72px;                 /* was 96/92 */
+      background: transparent !important;
+      overflow: hidden;
+      isolation: isolate;
+      min-height: clamp(920px, 66vh, 760px); /* was 680/84vh/980 */
+    }
+
+    /* ===== Background video ===== */
+    #about .aa-about__video{
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transform: scale(1.02);
+      filter: saturate(1.06) contrast(1.06) brightness(1.02);
+      z-index: 0;
+      pointer-events: none;
+      background: transparent !important;
+    }
+
+    /* ===== Darker scrim (more premium contrast) ===== */
+    #about .aa-about__scrim{
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      background:
+        radial-gradient(900px 620px at 18% 40%, rgba(6,26,58,.62) 0%, rgba(6,26,58,.72) 55%, rgba(6,26,58,.80) 100%),
+        linear-gradient(90deg, rgba(6,26,58,.76) 0%, rgba(11,36,77,.52) 46%, rgba(6,26,58,.70) 100%);
+    }
+    #about .aa-about__scrim::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(1100px 800px at 50% 55%, rgba(0,0,0,0) 0%, rgba(6,26,58,.26) 78%, rgba(6,26,58,.38) 100%);
+      opacity: .95;
+      pointer-events:none;
+    }
+
+    /* ===== Luxury line texture ===== */
+    #about .aa-about__luxLines{
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      pointer-events: none;
+      opacity: .13;
+      background:
+        repeating-linear-gradient(
+          135deg,
+          rgba(255,196,0,.16) 0px,
+          rgba(255,196,0,.16) 1px,
+          transparent 1px,
+          transparent 22px
+        );
+      mask-image: radial-gradient(900px 650px at 62% 35%, black 0%, black 52%, transparent 78%);
+      -webkit-mask-image: radial-gradient(900px 650px at 62% 35%, black 0%, black 52%, transparent 78%);
+      mix-blend-mode: screen;
+    }
+
+    /* ===== Layout ===== */
+    #about .aa-about__inner{
+      position: relative;
+      z-index: 3;
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 0 22px;
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 30px;
+      align-items: start;
+    }
+
+    /* ===== Left ===== */
+    #about .aa-about__kicker{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-weight: 900;
+      font-size: 12px;
+      letter-spacing: .26em;
+      text-transform: uppercase;
+      color: rgba(245,247,250,.90);
+      text-shadow: 0 10px 28px rgba(0,0,0,.36);
+    }
+    #about .aa-about__kicker::before{
+      content:"";
+      width: 28px;
+      height: 2px;
+      border-radius: 2px;
+      background: rgba(255,196,0,.98);
+      box-shadow: 0 10px 26px rgba(255,196,0,.25);
+    }
+
+    #about .aa-about__title{
+      margin: 14px 0 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      line-height: .95;
+      text-transform: uppercase;
+      color: rgba(245,247,250,.95);
+      font-size: clamp(42px, 4.8vw, 82px);
+      text-shadow: 0 16px 48px rgba(0,0,0,.44);
+    }
+
+    #about .aa-about__accent{
+      margin-top: 14px;
+      width: 54px;
+      height: 6px;
+      border-radius: 3px;
+      background: rgba(255,196,0,1);
+      box-shadow: 0 18px 50px rgba(255,196,0,.22);
+      opacity: .95;
+    }
+
+    #about .aa-about__proof{
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap: 12px;
+      max-width: 560px;
+    }
+
+    #about .aa-proofCard{
+      border-radius: 16px;
+      border: 1px solid rgba(245,247,250,.10);
+      background: rgba(6,26,58,.42);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 18px 45px rgba(0,0,0,.20);
+      padding: 13px 14px 12px;
+      position: relative;
+      overflow: hidden;
+    }
+    #about .aa-proofCard::after{
+      content:"";
+      position:absolute;
+      inset:-50% -35% auto -35%;
+      height: 150px;
+      background: radial-gradient(closest-side, rgba(255,255,255,.10), rgba(255,255,255,0));
+      opacity: .20;
+      pointer-events:none;
+    }
+    #about .aa-proofCard__num{
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-weight: 900;
+      letter-spacing: .12em;
+      font-size: 12px;
+      color: rgba(255,196,0,.95);
+      text-transform: uppercase;
+    }
+    #about .aa-proofCard__label{
+      margin-top: 6px;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: rgba(245,247,250,.92);
+      line-height: 1.25;
+    }
+
+    /* ===== Right ===== */
+    #about .aa-about__right{ padding-top: 26px; }
+
+    #about .aa-about__p{
+      margin: 0 0 12px;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.72;
+      color: rgba(245,247,250,.82);
+      max-width: 66ch;
+      text-shadow: 0 10px 30px rgba(0,0,0,.38);
+    }
+
+    #about .aa-about__callout{
+      margin-top: 14px;
+      border-radius: 18px;
+      border: 1px solid rgba(245,247,250,.10);
+      background: linear-gradient(180deg, rgba(255,196,0,.10), rgba(6,26,58,.42));
+      box-shadow: 0 22px 56px rgba(0,0,0,.26);
+      padding: 14px 16px;
+      display: grid;
+      grid-template-columns: 14px 1fr;
+      gap: 12px;
+      align-items: start;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    #about .aa-about__calloutIcon{
+      width: 14px;
+      height: 14px;
+      border-radius: 6px;
+      margin-top: 4px;
+      background: rgba(255,196,0,.95);
+      box-shadow: 0 14px 34px rgba(255,196,0,.20);
+    }
+    #about .aa-about__calloutText{
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.62;
+      color: rgba(245,247,250,.90);
+      text-shadow: 0 10px 30px rgba(0,0,0,.34);
+    }
+
+    #about .aa-about__actions{
+      margin-top: 14px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    #about .aa-aboutBtn{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      border-radius: 14px;
+      padding: 12px 16px;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      transition: transform .18s ease, background .18s ease, border-color .18s ease, box-shadow .18s ease, opacity .18s ease;
+      white-space: nowrap;
+      user-select: none;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+    #about .aa-aboutBtn--primary{
+      color:#061A3A;
+      background:#FFC400;
+      border:1px solid rgba(255,196,0,.45);
+      box-shadow:0 18px 45px rgba(0,0,0,.26);
+    }
+    #about .aa-aboutBtn--primary:hover{ transform: translateY(-2px); opacity: .98; background:#FFD84D; }
+    #about .aa-aboutBtn--ghost{
+      color:#F5F7FA;
+      background: rgba(245,247,250,.06);
+      border:1px solid rgba(255,196,0,.28);
+    }
+    #about .aa-aboutBtn--ghost:hover{
+      transform: translateY(-2px);
+      background: rgba(255,196,0,.10);
+      border-color: rgba(255,196,0,.42);
+      box-shadow: 0 18px 45px rgba(0,0,0,.18);
+    }
+
+    /* ===== Dust ===== */
+    #about .aa-about__dust{
+      position:absolute;
+      inset:0;
+      z-index: 2;
+      pointer-events:none;
+      opacity: .16;
+      background-image:
+        radial-gradient(circle at 12% 26%, rgba(255,196,0,.22) 0 1px, transparent 2px),
+        radial-gradient(circle at 28% 68%, rgba(245,247,250,.18) 0 1px, transparent 2px),
+        radial-gradient(circle at 44% 22%, rgba(255,196,0,.12) 0 1px, transparent 2px),
+        radial-gradient(circle at 64% 54%, rgba(245,247,250,.16) 0 1px, transparent 2px),
+        radial-gradient(circle at 78% 18%, rgba(255,196,0,.10) 0 1px, transparent 2px),
+        radial-gradient(circle at 86% 72%, rgba(245,247,250,.14) 0 1px, transparent 2px);
+      background-size: 520px 520px;
+      filter: blur(.1px);
+      transform: translateZ(0);
+      mix-blend-mode: screen;
+    }
+
+    /* ===== Kill magenta focus + on-brand focus ring ===== */
+    #about a:focus,
+    #about a:focus-visible,
+    #about button:focus,
+    #about button:focus-visible{
+      outline: none !important;
+      box-shadow: none !important;
+    }
+    #about .aa-aboutBtn:focus-visible{
+      box-shadow: 0 0 0 3px rgba(255,196,0,.52), 0 22px 60px rgba(0,0,0,.25) !important;
+    }
+
+    /* ===== Reveal animation ===== */
+    #about .aa-reveal{
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity .55s ease, transform .55s ease;
+    }
+    #about .aa-reveal.is-in{ opacity: 1; transform: translateY(0); }
+    @media (prefers-reduced-motion: reduce){
+      #about .aa-reveal{ opacity: 1 !important; transform:none !important; transition:none !important; }
+      #about .aa-aboutBtn{ transition:none !important; }
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 980px){
+      #about .aa-about__inner{ grid-template-columns: 1fr; gap: 18px; }
+      #about .aa-about__right{ padding-top: 8px; }
+      #about .aa-about__proof{ grid-template-columns: repeat(3, minmax(0,1fr)); }
+      #about.aa-about-breakout .aa-about{ min-height: auto; }
+    }
+
+    /* CHANGED: mobile collapse behavior */
+    @media (max-width: 640px){
+      #about.aa-about-breakout .aa-about{ padding: 64px 0 62px; }
+      #about .aa-about__proof{ grid-template-columns: 1fr; }
+      #about .aa-about__accent{ width: 46px; height: 6px; }
+
+      /* hide the extra content by default on mobile */
+      #about .aa-about__more{
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .28s ease, margin-top .22s ease;
+        margin-top: 0;
+      }
+      /* show toggle button on mobile only */
+      #about .aa-about__learnMore{
+        margin: 2px 0 0;
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        border: 1px solid rgba(255,196,0,.22);
+        background: rgba(6,26,58,.42);
+        color: rgba(245,247,250,.92);
+        border-radius: 16px;
+        padding: 12px 14px;
+        cursor: pointer;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        user-select: none;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+      }
+      #about .aa-about__learnMoreText{
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        font-weight: 900;
+        letter-spacing: .14em;
+        text-transform: uppercase;
+        font-size: 12px;
+      }
+      #about .aa-about__learnMoreIcon{
+        width: 40px;
+        height: 40px;
+        border-radius: 14px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(255,196,0,.18);
+        background: rgba(255,196,0,.06);
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 1;
+        transition: transform .18s ease, background .18s ease, border-color .18s ease, box-shadow .18s ease;
+      }
+
+      /* open state */
+      #about .aa-about__right.aa-moreOpen .aa-about__more{
+        margin-top: 10px;
+      }
+      #about .aa-about__right.aa-moreOpen .aa-about__learnMoreIcon{
+        transform: rotate(45deg);
+        border-color: rgba(255,196,0,.55);
+        background: rgba(255,196,0,.14);
+        box-shadow: 0 12px 30px rgba(255,196,0,.18);
+      }
+    }
+
+    /* CHANGED: keep button hidden on desktop/tablet */
+    @media (min-width: 641px){
+      #about .aa-about__learnMore{ display: none; }
+      #about .aa-about__more{ max-height: none !important; overflow: visible !important; }
+    }
+  </style>
+
+  <script>
+    (function(){
+      const scope = document.getElementById('about');
+      if(!scope) return;
+
+      const toReveal = [
+        scope.querySelector('.aa-about__kicker'),
+        scope.querySelector('.aa-about__title'),
+        scope.querySelector('.aa-about__accent'),
+        scope.querySelector('.aa-about__proof'),
+        ...Array.from(scope.querySelectorAll('.aa-about__p')),
+        scope.querySelector('.aa-about__callout'),
+        scope.querySelector('.aa-about__actions')
+      ].filter(Boolean);
+
+      toReveal.forEach(el => el.classList.add('aa-reveal'));
+
+      const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if(reduce){
+        toReveal.forEach(el => el.classList.add('is-in'));
+      } else {
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if(!entry.isIntersecting) return;
+            entry.target.classList.add('is-in');
+            io.unobserve(entry.target);
+          });
+        }, { threshold: 0.12 });
+        toReveal.forEach(el => io.observe(el));
+      }
+
+      const vid = scope.querySelector('.aa-about__video');
+      if(vid){
+        vid.muted = true;
+        vid.playsInline = true;
+        const tryPlay = () => {
+          const p = vid.play();
+          if(p && typeof p.catch === 'function') p.catch(()=>{});
+        };
+        tryPlay();
+        document.addEventListener('visibilitychange', () => { if(!document.hidden) tryPlay(); });
+        window.addEventListener('pointerdown', () => { tryPlay(); }, { once:true, passive:true });
+        window.addEventListener('touchstart',  () => { tryPlay(); }, { once:true, passive:true });
+      }
+
+      /* CHANGED: mobile Learn more toggle (only affects <=640px) */
+      const right = scope.querySelector('.aa-about__right');
+      const more = scope.querySelector('[data-aa-more]');
+      const btn  = scope.querySelector('[data-aa-more-btn]');
+      if(right && more && btn){
+        const isMobile = () => window.matchMedia && window.matchMedia('(max-width: 640px)').matches;
+
+        function closeMore(){
+          right.classList.remove('aa-moreOpen');
+          btn.setAttribute('aria-expanded','false');
+          more.setAttribute('aria-hidden','true');
+          more.style.maxHeight = '0px';
+        }
+        function openMore(){
+          right.classList.add('aa-moreOpen');
+          btn.setAttribute('aria-expanded','true');
+          more.setAttribute('aria-hidden','false');
+          more.style.maxHeight = more.scrollHeight + 'px';
+        }
+
+        // init: closed on mobile, open otherwise
+        function sync(){
+          if(isMobile()){
+            closeMore();
+          } else {
+            right.classList.remove('aa-moreOpen');
+            btn.setAttribute('aria-expanded','true');
+            more.setAttribute('aria-hidden','false');
+            more.style.maxHeight = '';
+          }
+        }
+        sync();
+
+        btn.addEventListener('click', () => {
+          if(!isMobile()) return;
+          const open = right.classList.contains('aa-moreOpen');
+          if(open) closeMore(); else openMore();
+        });
+
+        window.addEventListener('resize', () => {
+          if(!isMobile()) { sync(); return; }
+          // keep height accurate if open
+          if(right.classList.contains('aa-moreOpen')){
+            more.style.maxHeight = more.scrollHeight + 'px';
+          }
+        }, { passive:true });
+      }
+    })();
+  </script>
+</section>

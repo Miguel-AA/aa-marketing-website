@@ -1,0 +1,513 @@
+<section class="aa-hero-breakout" id="home">
+  <div class="aa-hero" id="aaHero">
+    <!-- Poster (siempre visible hasta que el video sea estable) -->
+    <img
+      class="aa-hero__posterImg"
+      src="https://primesportsmarketing.net/wp-content/uploads/2026/02/gq1wC8G.jpg"
+      alt=""
+      aria-hidden="true"
+      loading="eager"
+      decoding="async"
+    />
+
+    <!-- Video -->
+    <video
+      class="aa-hero__video"
+      id="aaHeroVideo"
+      autoplay
+      muted
+      loop
+      playsinline
+      webkit-playsinline
+      preload="metadata"
+      poster="https://primesportsmarketing.net/wp-content/uploads/2026/01/524480.jpg"
+    >
+      <source src="https://primesportsmarketing.net/wp-content/uploads/2026/01/hero-basket-prime.mp4" type="video/mp4">
+    </video>
+
+    <!-- Soft blue fade overlay -->
+    <div class="aa-hero__overlay" aria-hidden="true"></div>
+
+    <!-- Subtle luxury linework -->
+    <div class="aa-hero__lines" aria-hidden="true"></div>
+
+    <!-- Content -->
+    <div class="aa-hero__inner">
+      <div class="aa-hero__content">
+        <h1 class="aa-hero__title">
+          <span class="aa-hero__titleYellow">A&A</span><br>
+          <span class="aa-hero__titleYellow">Marketing</span><br>
+          <span class="aa-hero__titleWhite">Agency</span>
+        </h1>
+
+        <p class="aa-hero__tagline">Building your social brand</p>
+
+        <div class="aa-hero__actions">
+          <a class="aa-btn aa-btn--primary" href="#contact">Get in Touch</a>
+          <a class="aa-btn aa-btn--ghost" href="#services">View Services</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap');
+
+    .aa-hero-breakout{
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      width: 100vw;
+    }
+
+    .aa-hero{
+      position: relative;
+      min-height: clamp(640px, 88vh, 960px);
+      overflow: hidden;
+      background: #061A3A;
+      display: block;
+      isolation: isolate;
+    }
+
+    /* Poster */
+    .aa-hero__posterImg{
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+      transform: scale(1.02);
+      filter: saturate(1.05) contrast(1.05);
+      z-index: 0;
+      opacity: 1;
+      transition: opacity .28s ease;
+      display: block;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+    }
+
+    /* Video (oculto hasta estable) */
+    .aa-hero__video{
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+      transform: scale(1.02);
+      filter: saturate(1.05) contrast(1.05);
+      z-index: 1;
+      opacity: 0;
+      transition: opacity .28s ease;
+      background: transparent !important;
+      will-change: opacity, transform;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+    }
+
+    /* Solo cuando JS decide que está estable */
+    .aa-hero.is-video-show .aa-hero__video{ opacity: 1; }
+    .aa-hero.is-video-show .aa-hero__posterImg{ opacity: 0; }
+
+    .aa-hero__overlay{
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      background:
+        radial-gradient(900px 600px at 18% 40%, rgba(6,26,58,.12) 0%, rgba(6,26,58,.36) 55%, rgba(6,26,58,.58) 100%),
+        linear-gradient(90deg, rgba(6,26,58,.42) 0%, rgba(11,36,77,.24) 45%, rgba(6,26,58,.46) 100%);
+      pointer-events: none;
+    }
+
+    .aa-hero__lines{
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      pointer-events: none;
+      opacity: .22;
+      background:
+        repeating-linear-gradient(135deg, rgba(255,196,0,.18) 0px, rgba(255,196,0,.18) 2px, transparent 2px, transparent 22px);
+      mask-image: radial-gradient(800px 520px at 65% 35%, black 0%, black 55%, transparent 78%);
+      -webkit-mask-image: radial-gradient(800px 520px at 65% 35%, black 0%, black 55%, transparent 78%);
+    }
+
+    .aa-hero__inner{
+      position: relative;
+      z-index: 3;
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: clamp(110px, 10vh, 140px) 22px 90px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .aa-hero__content{ max-width: 720px; }
+
+    .aa-hero__title{
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      line-height: .92;
+      text-transform: uppercase;
+      font-size: clamp(44px, 5.2vw, 86px);
+    }
+
+    .aa-hero__titleYellow{ color: #FFC400; }
+    .aa-hero__titleWhite{ color: #F5F7FA; }
+
+    .aa-hero__tagline{
+      margin: 26px 0 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .34em;
+      text-transform: uppercase;
+      color: rgba(245,247,250,.88);
+    }
+
+    .aa-hero__actions{ margin-top: 28px; display: flex; gap: 12px; flex-wrap: wrap; }
+
+    .aa-btn{
+      display: inline-flex; align-items: center; justify-content: center;
+      text-decoration: none; border-radius: 14px; padding: 12px 16px;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 12px; font-weight: 900; letter-spacing: .14em; text-transform: uppercase;
+      transition: transform .18s ease, background .18s ease, border-color .18s ease, box-shadow .18s ease, opacity .18s ease;
+      white-space: nowrap;
+    }
+
+    .aa-btn--primary{ color:#061A3A; background:#FFC400; border:1px solid rgba(255,196,0,.45); box-shadow:0 18px 45px rgba(0,0,0,.26); }
+    .aa-btn--primary:hover{ transform: translateY(-2px); opacity: .98; background:#FFD84D; }
+
+    .aa-btn--ghost{ color:#F5F7FA; background: rgba(245,247,250,.06); border:1px solid rgba(255,196,0,.28); }
+    .aa-btn--ghost:hover{ transform: translateY(-2px); background: rgba(255,196,0,.10); border-color: rgba(255,196,0,.42); box-shadow: 0 18px 45px rgba(0,0,0,.18); }
+
+    /* ==========================
+       MOBILE VIEW ONLY (NO LOGIC CHANGES)
+       - Altura estable con barras Safari
+       - Poster responsive por aspect-ratio (cover + encuadre automático)
+       ========================== */
+    @media (max-width: 820px){
+      .aa-hero{
+        min-height: 100svh;
+        min-height: 100dvh;
+        min-height: 92vh; /* fallback */
+      }
+
+      .aa-hero__inner{
+        padding: 96px 18px 64px;
+      }
+
+      .aa-hero__title{
+        font-size: clamp(38px, 10vw, 56px);
+        line-height: .94;
+      }
+
+      .aa-hero__tagline{
+        margin-top: 20px;
+        letter-spacing: .22em;
+      }
+
+      .aa-hero__actions{
+        margin-top: 22px;
+        gap: 10px;
+      }
+
+      .aa-btn{
+        padding: 11px 14px;
+        border-radius: 14px;
+      }
+
+      /* Evita “saltos”/flicker iOS al hacer scroll */
+      .aa-hero__video,
+      .aa-hero__posterImg{
+        transform: translateZ(0) scale(1.02);
+        -webkit-transform: translateZ(0) scale(1.02);
+      }
+
+      /* -------- Poster/video ENCUADRE ADAPTATIVO por aspect ratio (sin distorsión) -------- */
+
+      /* Teléfonos muy altos (portrait extremo ~ 20:9, 19.5:9) */
+      @media (max-aspect-ratio: 10/19){
+        .aa-hero__posterImg,
+        .aa-hero__video{
+          object-position: 50% 42%;
+          transform: translateZ(0) scale(1.08);
+          -webkit-transform: translateZ(0) scale(1.08);
+        }
+      }
+
+      /* Portrait típico (16:9 a 19:9 aprox) */
+      @media (min-aspect-ratio: 10/19) and (max-aspect-ratio: 9/16){
+        .aa-hero__posterImg,
+        .aa-hero__video{
+          object-position: 50% 45%;
+          transform: translateZ(0) scale(1.06);
+          -webkit-transform: translateZ(0) scale(1.06);
+        }
+      }
+
+      /* Casi cuadrado / tablets pequeñas en vertical */
+      @media (min-aspect-ratio: 9/16) and (max-aspect-ratio: 3/4){
+        .aa-hero__posterImg,
+        .aa-hero__video{
+          object-position: 50% 50%;
+          transform: translateZ(0) scale(1.03);
+          -webkit-transform: translateZ(0) scale(1.03);
+        }
+      }
+
+      /* Landscape móvil (barra Safari + ancho grande) */
+      @media (min-aspect-ratio: 1/1){
+        .aa-hero__posterImg,
+        .aa-hero__video{
+          object-position: 55% 50%;
+          transform: translateZ(0) scale(1.04);
+          -webkit-transform: translateZ(0) scale(1.04);
+        }
+      }
+    }
+
+    @media (max-width: 380px){
+      .aa-hero__inner{ padding: 92px 16px 58px; }
+      .aa-hero__title{ font-size: clamp(34px, 10.8vw, 52px); }
+      .aa-btn{ width: 100%; justify-content: center; }
+      .aa-hero__actions{ width: 100%; }
+    }
+
+    /* =========================================================
+       FIX DEFINITIVO: Poster “full-bleed” + zoom real en mobile
+       (gana a Elementor/tema con especificidad + !important)
+       PONER AL FINAL DEL <style>
+       ========================================================= */
+
+    /* Variables de encuadre (default desktop) */
+    #home #aaHero{
+      --aa-poster-scale: 1.03;
+      --aa-poster-x: 50%;
+      --aa-poster-y: 50%;
+    }
+
+    /* Forzar que el poster SIEMPRE ocupe el hero (aunque WP ponga height:auto) */
+    #home #aaHero > img.aa-hero__posterImg{
+      position: absolute !important;
+      inset: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+
+      max-width: none !important;
+      max-height: none !important;
+
+      object-fit: cover !important;
+      object-position: var(--aa-poster-x) var(--aa-poster-y) !important;
+
+      transform: translateZ(0) scale(var(--aa-poster-scale)) !important;
+      -webkit-transform: translateZ(0) scale(var(--aa-poster-scale)) !important;
+
+      display: block !important;
+      opacity: 1;
+    }
+
+    /* (Opcional) mantener video con el mismo encuadre cuando aparezca */
+    #home #aaHero > video#aaHeroVideo.aa-hero__video{
+      object-position: var(--aa-poster-x) var(--aa-poster-y) !important;
+      transform: translateZ(0) scale(var(--aa-poster-scale)) !important;
+      -webkit-transform: translateZ(0) scale(var(--aa-poster-scale)) !important;
+    }
+
+    /* MOBILE: altura estable + zoom fuerte */
+    @media (max-width: 820px){
+      #home #aaHero{
+        min-height: 100svh;
+        min-height: 100dvh;
+        min-height: 92vh;
+
+        --aa-poster-scale: 1.28;
+        --aa-poster-x: 50%;
+        --aa-poster-y: 38%;
+      }
+    }
+
+    /* Teléfonos muy altos (20:9 / 19.5:9): más zoom */
+    @media (max-width: 820px) and (max-aspect-ratio: 10/19){
+      #home #aaHero{
+        --aa-poster-scale: 1.38;
+        --aa-poster-y: 34%;
+      }
+    }
+
+    /* Landscape móvil: menos zoom para no “comerse” todo */
+    @media (max-width: 820px) and (min-aspect-ratio: 1/1){
+      #home #aaHero{
+        --aa-poster-scale: 1.12;
+        --aa-poster-x: 55%;
+        --aa-poster-y: 50%;
+      }
+    }
+  </style>
+
+  <script>
+    (function(){
+      const hero = document.getElementById('aaHero');
+      const v = document.getElementById('aaHeroVideo');
+      if(!hero || !v) return;
+
+      /* iOS/Safari autoplay compat (no cambia tu lógica; solo refuerza flags antes de play) */
+      v.muted = true;
+      v.defaultMuted = true;
+      v.playsInline = true;
+      v.autoplay = true;
+      v.setAttribute('muted', '');
+      v.setAttribute('playsinline', '');
+      v.setAttribute('webkit-playsinline', '');
+      v.setAttribute('autoplay', '');
+
+      // Ajusta esto si quieres: el poster NO se quitará antes de este tiempo
+      const MIN_POSTER_MS = 6000;
+
+      // Condiciones de “estabilidad”
+      const MIN_TIME_PLAYED = 0.1;        // segundos reproducidos
+      const WAITING_COOLDOWN_MS = 5400;   // si hubo waiting reciente, no ocultar poster
+
+      let pageStart = performance.now();
+      let lastWaitingAt = 0;
+      let rafId = null;
+
+      const showVideo = () => hero.classList.add('is-video-show');
+      const hideVideo = () => hero.classList.remove('is-video-show');
+
+      // Estado inicial: poster ON, video OFF
+      hideVideo();
+
+      const tryPlay = () => {
+        /* línea mínima extra para iOS: load() ayuda en algunos casos antes de play() */
+        try { if (v.readyState === 0) v.load(); } catch(e) {}
+
+        const p = v.play();
+        if(p && typeof p.catch === 'function') p.catch(()=>{});
+      };
+
+      const isStableNow = () => {
+        const now = performance.now();
+
+        // 1) mínimo tiempo de poster
+        if (now - pageStart < MIN_POSTER_MS) return false;
+
+        // 2) si hubo buffering reciente, no
+        if (lastWaitingAt && (now - lastWaitingAt < WAITING_COOLDOWN_MS)) return false;
+
+        // 3) debe tener buffer suficiente y estar reproduciendo
+        if (v.readyState < 4) return false; // HAVE_ENOUGH_DATA
+        if (v.paused || v.ended) return false;
+
+        // 4) debe haber avanzado tiempo real
+        if (v.currentTime < MIN_TIME_PLAYED) return false;
+
+        // 5) dimensiones válidas (frame decodificado)
+        if (!v.videoWidth || !v.videoHeight) return false;
+
+        return true;
+      };
+
+      const loopCheck = () => {
+        if (isStableNow()) {
+          showVideo();
+          rafId = null;
+          return;
+        } else {
+          hideVideo();
+        }
+        rafId = requestAnimationFrame(loopCheck);
+      };
+
+      // Eventos que indican buffering / inestabilidad
+      const markWaiting = () => {
+        lastWaitingAt = performance.now();
+        hideVideo(); // inmediatamente volvemos al poster
+        if(!rafId) rafId = requestAnimationFrame(loopCheck);
+      };
+
+      v.addEventListener('waiting', markWaiting);
+      v.addEventListener('stalled', markWaiting);
+      v.addEventListener('pause', markWaiting);
+
+      // Cuando el video “parece” estar listo, empezamos a evaluar (sin quitar poster todavía)
+      v.addEventListener('playing', () => {
+        if(!rafId) rafId = requestAnimationFrame(loopCheck);
+      });
+
+      v.addEventListener('canplay', () => {
+        tryPlay();
+        if(!rafId) rafId = requestAnimationFrame(loopCheck);
+      });
+
+      // Arranque
+      tryPlay();
+      if(!rafId) rafId = requestAnimationFrame(loopCheck);
+
+      // BFCache / volver a la página en iOS
+      window.addEventListener('pageshow', (e) => {
+        if (e && e.persisted) {
+          pageStart = performance.now();
+          tryPlay();
+          if(!rafId) rafId = requestAnimationFrame(loopCheck);
+        }
+      });
+
+      // Si vuelve el tab visible
+      document.addEventListener('visibilitychange', () => {
+        if(!document.hidden){
+          tryPlay();
+          if(!rafId) rafId = requestAnimationFrame(loopCheck);
+        }
+      });
+
+      /* ===== CHANGED: iOS user-gesture autoplay once you touch/click anywhere ===== */
+      const armUserGesturePlay = () => {
+        let fired = false;
+
+        const fire = () => {
+          if (fired) return;
+          fired = true;
+
+          // Reintentos cortos (iOS a veces necesita más de 1 intento aun con gesture)
+          tryPlay();
+          requestAnimationFrame(tryPlay);
+          setTimeout(tryPlay, 120);
+
+          // Re-evaluar estabilidad (por si quedó en poster)
+          if(!rafId) rafId = requestAnimationFrame(loopCheck);
+
+          cleanup();
+        };
+
+        const opts = { capture: true, passive: true };
+        const cleanup = () => {
+          document.removeEventListener('touchstart', fire, opts);
+          document.removeEventListener('pointerdown', fire, opts);
+          document.removeEventListener('click', fire, { capture:true });
+          hero.removeEventListener('touchstart', fire, opts);
+          hero.removeEventListener('pointerdown', fire, opts);
+          hero.removeEventListener('click', fire, { capture:true });
+        };
+
+        // Document-level capture: funciona aunque toquen botones/links encima
+        document.addEventListener('touchstart', fire, opts);
+        document.addEventListener('pointerdown', fire, opts);
+        document.addEventListener('click', fire, { capture:true });
+
+        // Hero-level también (por si el tema intercepta eventos globales)
+        hero.addEventListener('touchstart', fire, opts);
+        hero.addEventListener('pointerdown', fire, opts);
+        hero.addEventListener('click', fire, { capture:true });
+      };
+
+      armUserGesturePlay();
+    })();
+  </script>
+</section>

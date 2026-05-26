@@ -1,0 +1,641 @@
+<section class="aa-services2-breakout" id="services">
+  <div class="aa-services2">
+    <div class="aa-services2__inner">
+
+      <!-- Header -->
+      <div class="aa-services2__head">
+        <div class="aa-kicker2">Our Services</div>
+
+        <h2 class="aa-services2__title">
+          High-performance marketing<br>
+          built for sports brands.
+        </h2>
+
+        <p class="aa-services2__sub">
+          Strategy-first execution that turns attention into growth. Content, social, and campaigns engineered to win.
+        </p>
+      </div>
+
+      <!-- Grid (accordion cards) -->
+      <div class="aa-services2__grid" data-aa-accordion="single">
+
+        <!-- 1 -->
+        <article class="aa-acc" data-aa-acc>
+          <button class="aa-acc__btn" type="button" aria-expanded="false">
+            <span class="aa-acc__left">
+              <span class="aa-acc__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M4 19V5m0 14h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                  <path d="M7 14l3-3 3 2 5-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="aa-acc__title">Social Strategy</span>
+            </span>
+            <span class="aa-acc__chev" aria-hidden="true">+</span>
+          </button>
+
+          <div class="aa-acc__panel" role="region" aria-hidden="true">
+            <p class="aa-acc__text">
+              Positioning, channel strategy, calendars, and growth systems designed for measurable reach and engagement.
+            </p>
+            <ul class="aa-acc__list">
+              <li>Brand voice & content pillars</li>
+              <li>Content calendar & cadence</li>
+              <li>Analytics + optimization loop</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article class="aa-acc" data-aa-acc>
+          <button class="aa-acc__btn" type="button" aria-expanded="false">
+            <span class="aa-acc__left">
+              <span class="aa-acc__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M7 7h10M7 12h10M7 17h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                  <path d="M5 4h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H9l-4 2v-2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"
+                    stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="aa-acc__title">Content Production</span>
+            </span>
+            <span class="aa-acc__chev" aria-hidden="true">+</span>
+          </button>
+
+          <div class="aa-acc__panel" role="region" aria-hidden="true">
+            <p class="aa-acc__text">
+              Premium creative built for speed: short-form, campaign assets, and social-first storytelling that converts.
+            </p>
+            <ul class="aa-acc__list">
+              <li>Short-form & reels</li>
+              <li>Design systems & templates</li>
+              <li>Copywriting for conversion</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="aa-acc" data-aa-acc>
+          <button class="aa-acc__btn" type="button" aria-expanded="false">
+            <span class="aa-acc__left">
+              <span class="aa-acc__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M12 3l8 4v6c0 5-3.5 9-8 8-4.5 1-8-3-8-8V7l8-4Z"
+                    stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M9 12l2 2 4-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="aa-acc__title">Influencer & Talent</span>
+            </span>
+            <span class="aa-acc__chev" aria-hidden="true">+</span>
+          </button>
+
+          <div class="aa-acc__panel" role="region" aria-hidden="true">
+            <p class="aa-acc__text">
+              Partnerships and talent activations that feel authentic, aligned, and performance-driven.
+            </p>
+            <ul class="aa-acc__list">
+              <li>Talent sourcing & outreach</li>
+              <li>Deal structure & deliverables</li>
+              <li>Campaign reporting</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="aa-acc" data-aa-acc>
+          <button class="aa-acc__btn" type="button" aria-expanded="false">
+            <span class="aa-acc__left">
+              <span class="aa-acc__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M4 8h16M6 8V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                  <path d="M6 8v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M9 12h6M9 16h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </span>
+              <span class="aa-acc__title">Brand & Campaigns</span>
+            </span>
+            <span class="aa-acc__chev" aria-hidden="true">+</span>
+          </button>
+
+          <div class="aa-acc__panel" role="region" aria-hidden="true">
+            <p class="aa-acc__text">
+              Launches and campaigns with premium creative direction, structured messaging, and clear KPIs.
+            </p>
+            <ul class="aa-acc__list">
+              <li>Creative direction</li>
+              <li>Messaging framework</li>
+              <li>Launch planning</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- 5 featured -->
+        <article class="aa-acc aa-acc--featured" data-aa-acc>
+          <button class="aa-acc__btn" type="button" aria-expanded="false">
+            <span class="aa-acc__left">
+              <span class="aa-acc__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M12 2v4M12 18v4M4 12H2M22 12h-2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                  <path d="M7 7l-1.5-1.5M18.5 18.5L17 17M17 7l1.5-1.5M5.5 18.5L7 17"
+                    stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                  <path d="M12 8a4 4 0 1 1 0 8a4 4 0 0 1 0-8Z" stroke="currentColor" stroke-width="1.8"/>
+                </svg>
+              </span>
+              <span class="aa-acc__title">Performance Growth</span>
+            </span>
+            <span class="aa-acc__chev" aria-hidden="true">+</span>
+          </button>
+
+          <div class="aa-acc__panel" role="region" aria-hidden="true">
+            <p class="aa-acc__text">
+              Paid + organic systems that scale. We build repeatable pipelines and optimize weekly for outcomes.
+            </p>
+            <ul class="aa-acc__list">
+              <li>Paid social & retargeting</li>
+              <li>Landing pages & funnels</li>
+              <li>KPI dashboard + testing</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- 6 -->
+        <article class="aa-acc" data-aa-acc>
+          <button class="aa-acc__btn" type="button" aria-expanded="false">
+            <span class="aa-acc__left">
+              <span class="aa-acc__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M4 20V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M8 10h8M8 14h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                  <path d="M6 20h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </span>
+              <span class="aa-acc__title">Website & Funnels</span>
+            </span>
+            <span class="aa-acc__chev" aria-hidden="true">+</span>
+          </button>
+
+          <div class="aa-acc__panel" role="region" aria-hidden="true">
+            <p class="aa-acc__text">
+              Premium landing pages and funnel experiences aligned to your brand and built to convert.
+            </p>
+            <ul class="aa-acc__list">
+              <li>Hero + section systems</li>
+              <li>Conversion-first layout</li>
+              <li>Speed + SEO basics</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Bottom CTA row -->
+      <div class="aa-services2__foot">
+        <div class="aa-services2__note">
+          Want a custom package? We’ll map the fastest path from content to revenue.
+        </div>
+        <a class="aa-services2__cta" href="#contact">Request a consultation</a>
+      </div>
+
+    </div>
+
+    <div class="aa-services2__lines" aria-hidden="true"></div>
+  </div>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap');
+
+    /* ===== Full-width breakout ===== */
+    .aa-services2-breakout{
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      width: 100vw;
+    }
+
+    /* ===== Transparent section ===== */
+    #services.aa-services2-breakout .aa-services2{
+      position: relative;
+      /* CHANGED: make section taller (more vertical space) */
+      padding: 140px 0 132px;
+      background: transparent !important;
+      overflow: hidden;
+    }
+
+    /* subtle linework only */
+    #services.aa-services2-breakout .aa-services2__lines{
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      opacity:.12;
+      background: repeating-linear-gradient(135deg, rgba(255,196,0,.16) 0px, rgba(255,196,0,.16) 1px, transparent 1px, transparent 26px);
+      mask-image: radial-gradient(900px 650px at 65% 35%, black 0%, black 50%, transparent 78%);
+      -webkit-mask-image: radial-gradient(900px 650px at 65% 35%, black 0%, black 50%, transparent 78%);
+    }
+
+    #services .aa-services2__inner{
+      position: relative;
+      z-index: 2;
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 0 22px;
+      /* CHANGED: keep content centered vertically within the taller section */
+      min-height: 720px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    /* CHANGED: keep header text centered */
+    #services .aa-services2__head{
+      max-width: 820px;
+      margin: 0 auto 28px;
+      text-align: center;
+    }
+    #services .aa-kicker2{ justify-content: center; }
+
+    /* CHANGED: center sub text block */
+    #services .aa-services2__sub{
+      margin: 14px auto 0;
+      max-width: 62ch;
+    }
+
+    #services .aa-kicker2{
+      display:inline-flex; align-items:center; gap:10px;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-weight: 900; font-size: 12px; letter-spacing: .26em;
+      text-transform: uppercase; color: rgba(245,247,250,.86);
+    }
+    #services .aa-kicker2::before{
+      content:""; width:26px; height:2px; border-radius:2px;
+      background: rgba(255,196,0,.95);
+      box-shadow: 0 10px 26px rgba(255,196,0,.25);
+    }
+
+    #services .aa-services2__title{
+      margin: 14px 0 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      line-height: 1.03;
+      font-size: clamp(28px, 3.2vw, 46px);
+      color: #F5F7FA;
+      text-transform: uppercase;
+    }
+
+    #services .aa-services2__sub{
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      color: rgba(245,247,250,.78);
+    }
+
+    /* ===== Grid ===== */
+    #services .aa-services2__grid{
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 16px;
+      margin-top: 22px;
+    }
+
+    /* ===== Accordion cards (glass) ===== */
+    #services .aa-acc{
+      grid-column: span 4;
+      border-radius: 18px;
+      border: 1px solid rgba(245,247,250,.10);
+      background: rgba(6,26,58,.54);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 18px 45px rgba(0,0,0,.22);
+      overflow: hidden;
+      position: relative;
+      transform: translateZ(0);
+      transition: border-color .18s ease, box-shadow .18s ease, background .18s ease;
+    }
+
+    /* No “lift” as main interaction — keep it subtle */
+    #services .aa-acc:hover{
+      border-color: rgba(255,196,0,.26);
+      box-shadow: 0 22px 56px rgba(0,0,0,.28);
+    }
+
+    #services .aa-acc--featured{
+      border-color: rgba(255,196,0,.34);
+      background: linear-gradient(180deg, rgba(255,196,0,.08), rgba(6,26,58,.54));
+    }
+
+    /* Soft sheen always (luxury) */
+    #services .aa-acc::after{
+      content:"";
+      position:absolute;
+      inset: -40% -30% auto -30%;
+      height: 150px;
+      background: radial-gradient(closest-side, rgba(255,255,255,.10), rgba(255,255,255,0));
+      opacity: .28;
+      pointer-events:none;
+    }
+
+    /* ===== Card header button ===== */
+    #services .aa-acc__btn{
+      width: 100%;
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 18px 18px;
+      background: transparent !important;
+      border: 0 !important;
+      color: #F5F7FA;
+      cursor: pointer;
+      text-align: left;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+      appearance: none;
+      -webkit-appearance: none;
+      user-select: none;
+    }
+
+    #services .aa-acc__left{
+      display:flex;
+      align-items:center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    #services .aa-acc__icon{
+      width: 44px; height: 44px;
+      border-radius: 14px;
+      display:flex; align-items:center; justify-content:center;
+      border: 1px solid rgba(255,196,0,.18);
+      background: rgba(255,196,0,.06);
+      color: rgba(245,247,250,.92);
+      flex: 0 0 auto;
+    }
+    #services .aa-acc__icon svg{ width: 22px; height: 22px; display:block; }
+
+    #services .aa-acc__title{
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 1.2;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    #services .aa-acc__chev{
+      width: 40px; height: 40px;
+      border-radius: 14px;
+      display:flex; align-items:center; justify-content:center;
+      border: 1px solid rgba(255,196,0,.18);
+      background: rgba(255,196,0,.06);
+      color: #F5F7FA;
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 1;
+      transition: transform .18s ease, background .18s ease, border-color .18s ease, box-shadow .18s ease;
+      flex: 0 0 auto;
+    }
+
+    /* ===== Panels ===== */
+    #services .aa-acc__panel{
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 18px;
+      transition: max-height .28s ease, padding .22s ease;
+      border-top: 1px solid rgba(245,247,250,.08);
+    }
+
+    #services .aa-acc__text{
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+      color: rgba(245,247,250,.78);
+      max-width: 62ch;
+    }
+
+    #services .aa-acc__list{
+      margin: 12px 0 0;
+      padding: 0;
+      list-style: none;
+      display:grid;
+      gap: 8px;
+    }
+
+    #services .aa-acc__list li{
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 13px;
+      line-height: 1.45;
+      color: rgba(245,247,250,.84);
+      position: relative;
+      padding-left: 16px;
+    }
+
+    #services .aa-acc__list li::before{
+      content:"";
+      position:absolute;
+      left:0;
+      top: .55em;
+      width: 6px; height: 6px;
+      border-radius: 10px;
+      background: rgba(255,196,0,.95);
+      box-shadow: 0 10px 24px rgba(255,196,0,.22);
+      transform: translateY(-50%);
+    }
+
+    /* ===== OPEN STATE (yellow + glass glow) ===== */
+    #services .aa-acc.aa-open{
+      border-color: rgba(255,196,0,.58) !important;
+      box-shadow:
+        0 26px 70px rgba(0,0,0,.40),
+        0 0 0 1px rgba(255,196,0,.18),
+        0 0 90px rgba(255,196,0,.22) !important;
+      background: linear-gradient(180deg, rgba(255,196,0,.10), rgba(6,26,58,.54)) !important;
+    }
+
+    /* yellow glass “bloom” */
+    #services .aa-acc.aa-open::before{
+      content:"";
+      position:absolute;
+      inset:-30% -30% auto -30%;
+      height: 220px;
+      background: radial-gradient(closest-side, rgba(255,196,0,.28), rgba(255,196,0,0));
+      opacity: .95;
+      pointer-events:none;
+    }
+
+    #services .aa-acc.aa-open .aa-acc__chev{
+      transform: rotate(45deg);
+      border-color: rgba(255,196,0,.55) !important;
+      background: rgba(255,196,0,.14) !important;
+      box-shadow: 0 12px 30px rgba(255,196,0,.18);
+    }
+
+    #services .aa-acc.aa-open .aa-acc__panel{
+      padding: 14px 18px 18px;
+    }
+
+    /* ===== KILL MAGENTA / THEME FOCUS (HARD OVERRIDE) ===== */
+    /* Remove any default outlines/rings from theme */
+    #services .aa-acc,
+    #services .aa-acc *,
+    #services .aa-acc__btn,
+    #services .aa-acc__btn *,
+    #services .aa-acc__btn:focus,
+    #services .aa-acc__btn:focus-visible,
+    #services .aa-acc__btn:active,
+    #services .aa-acc__btn:focus-within,
+    #services .aa-acc:focus,
+    #services .aa-acc:focus-visible,
+    #services .aa-acc:focus-within{
+      outline: none !important;
+      box-shadow: none !important;
+    }
+
+    /* Add our brand focus ring back (accessible + on-brand) */
+    #services .aa-acc__btn:focus-visible{
+      box-shadow: 0 0 0 3px rgba(255,196,0,.50), 0 22px 60px rgba(0,0,0,.25) !important;
+      border-radius: 16px;
+    }
+
+    /* Prevent link/button focus styles leaking in */
+    #services a:focus,
+    #services a:focus-visible,
+    #services button:focus,
+    #services button:focus-visible{
+      outline: none !important;
+      box-shadow: none !important;
+    }
+
+    /* But allow our internal button focus ring */
+    #services .aa-acc__btn:focus-visible{
+      box-shadow: 0 0 0 3px rgba(255,196,0,.50), 0 22px 60px rgba(0,0,0,.25) !important;
+    }
+
+    /* ===== Footer CTA ===== */
+    #services .aa-services2__foot{
+      margin-top: 26px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(245,247,250,.10);
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    #services .aa-services2__note{
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: rgba(245,247,250,.75);
+      font-size: 14px;
+      line-height: 1.6;
+      max-width: 70ch;
+    }
+
+    #services .aa-services2__cta{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      text-decoration:none;
+      border-radius: 14px;
+      padding: 12px 16px;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: #061A3A;
+      background: #FFC400;
+      border: 1px solid rgba(255,196,0,.45);
+      box-shadow: 0 18px 45px rgba(0,0,0,.26);
+      transition: transform .18s ease, opacity .18s ease;
+      white-space: nowrap;
+    }
+    #services .aa-services2__cta:hover{ transform: translateY(-2px); opacity:.98; }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 1100px){ #services .aa-acc{ grid-column: span 6; } }
+
+    @media (max-width: 720px){
+      /* CHANGED: taller on mobile too */
+      #services.aa-services2-breakout .aa-services2{ padding: 110px 0 104px; }
+      #services .aa-services2__inner{ min-height: 0; }
+
+      #services .aa-acc{ grid-column: span 12; }
+      #services .aa-acc__title{ white-space: normal; }
+    }
+  </style>
+
+  <script>
+    (function(){
+      const scope = document.getElementById('services');
+      if(!scope) return;
+
+      const root = scope.querySelector('.aa-services2__grid');
+      if(!root) return;
+
+      const mode = root.getAttribute('data-aa-accordion') || 'single';
+      const items = Array.from(root.querySelectorAll('[data-aa-acc]'));
+
+      function closeItem(item){
+        const btn = item.querySelector('.aa-acc__btn');
+        const panel = item.querySelector('.aa-acc__panel');
+        item.classList.remove('aa-open');
+        if(btn) btn.setAttribute('aria-expanded', 'false');
+        if(panel){
+          panel.setAttribute('aria-hidden', 'true');
+          panel.style.maxHeight = '0px';
+        }
+      }
+
+      function openItem(item){
+        const btn = item.querySelector('.aa-acc__btn');
+        const panel = item.querySelector('.aa-acc__panel');
+        item.classList.add('aa-open');
+        if(btn) btn.setAttribute('aria-expanded', 'true');
+        if(panel){
+          panel.setAttribute('aria-hidden', 'false');
+          panel.style.maxHeight = panel.scrollHeight + 'px';
+        }
+      }
+
+      // init closed
+      items.forEach(closeItem);
+
+      root.addEventListener('click', function(e){
+        const btn = e.target.closest('.aa-acc__btn');
+        if(!btn) return;
+        const item = btn.closest('[data-aa-acc]');
+        if(!item) return;
+
+        const isOpen = item.classList.contains('aa-open');
+
+        if(mode === 'single'){
+          items.forEach(i => { if(i !== item) closeItem(i); });
+        }
+
+        if(isOpen) closeItem(item);
+        else openItem(item);
+      });
+
+      // recompute open heights on resize
+      window.addEventListener('resize', function(){
+        items.forEach(item => {
+          if(!item.classList.contains('aa-open')) return;
+          const panel = item.querySelector('.aa-acc__panel');
+          if(panel) panel.style.maxHeight = panel.scrollHeight + 'px';
+        });
+      }, { passive: true });
+
+      // Extra: prevent theme adding focus classes on mousedown (common)
+      root.addEventListener('mousedown', function(e){
+        const btn = e.target.closest('.aa-acc__btn');
+        if(btn) btn.blur();
+      });
+    })();
+  </script>
+</section>

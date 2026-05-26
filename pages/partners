@@ -1,0 +1,693 @@
+<section class="aa-partners2-breakout" id="partners">
+  <div class="aa-partners2">
+
+    <!-- ✅ Transparent section (no background fill). Only subtle texture overlays. -->
+    <div class="aa-partners2__lines" aria-hidden="true"></div>
+    <div class="aa-partners2__dust" aria-hidden="true"></div>
+
+    <div class="aa-partners2__inner">
+      <!-- Top header (full width) -->
+      <div class="aa-partners2__head">
+        <div class="aa-partners2__kicker">Our Partners</div>
+
+        <h2 class="aa-partners2__title">
+          Past &amp; Present
+        </h2>
+
+        <p class="aa-partners2__sub">
+          We match premier brands with clients to drive exposure and outcomes. A few of our valued global partners are featured below.
+        </p>
+      </div>
+
+      <!-- BIG CENTER SLIDER -->
+      <div class="aa-partners2__stage" data-aa-partners2>
+        <div class="aa-partners2__frame">
+          <div class="aa-partners2__track" data-aa-track></div>
+        </div>
+
+        <!-- Minimal controls (clean, different from other sections) -->
+        <div class="aa-partners2__hud">
+          <button class="aa-partners2__arrow aa-partners2__arrow--prev" type="button" data-aa-prev aria-label="Previous partner">
+            <span aria-hidden="true">Prev</span>
+          </button>
+
+          <div class="aa-partners2__meter" aria-label="Partner progress">
+            <div class="aa-partners2__bar" data-aa-bar></div>
+          </div>
+
+          <button class="aa-partners2__arrow aa-partners2__arrow--next" type="button" data-aa-next aria-label="Next partner">
+            <span aria-hidden="true">Next</span>
+          </button>
+        </div>
+
+        <div class="aa-partners2__miniRow" data-aa-minirow aria-label="Partner quick select"></div>
+      </div>
+
+      <!-- Bottom note -->
+      <div class="aa-partners2__foot">
+        <div class="aa-partners2__note">
+          Interested in partnership opportunities? We build clean, brand-safe campaigns with premium execution.
+        </div>
+        <a class="aa-partners2__cta" href="#contact">Request a consultation</a>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap');
+
+    /* ===== Full-width breakout ===== */
+    .aa-partners2-breakout{
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      width: 100vw;
+    }
+
+    /* ✅ TRANSPARENT SECTION */
+    #partners.aa-partners2-breakout .aa-partners2{
+      position: relative;
+      padding: 86px 0 84px;
+      background: transparent !important;
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    #partners .aa-partners2__inner{
+      position: relative;
+      z-index: 3;
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 0 22px;
+    }
+
+    /* ===== Subtle texture only (no fill) ===== */
+    #partners .aa-partners2__lines{
+      position:absolute;
+      inset:0;
+      z-index:1;
+      pointer-events:none;
+      opacity:.10;
+      background:
+        repeating-linear-gradient(135deg, rgba(255,196,0,.14) 0px, rgba(255,196,0,.14) 1px, transparent 1px, transparent 26px);
+      mask-image: radial-gradient(900px 650px at 60% 32%, black 0%, black 52%, transparent 78%);
+      -webkit-mask-image: radial-gradient(900px 650px at 60% 32%, black 0%, black 52%, transparent 78%);
+      mix-blend-mode: screen;
+    }
+
+    #partners .aa-partners2__dust{
+      position:absolute;
+      inset:0;
+      z-index:1;
+      pointer-events:none;
+      opacity:.10;
+      background-image:
+        radial-gradient(circle at 16% 26%, rgba(255,196,0,.22) 0 1px, transparent 2px),
+        radial-gradient(circle at 32% 72%, rgba(245,247,250,.16) 0 1px, transparent 2px),
+        radial-gradient(circle at 56% 20%, rgba(255,196,0,.12) 0 1px, transparent 2px),
+        radial-gradient(circle at 72% 54%, rgba(245,247,250,.14) 0 1px, transparent 2px),
+        radial-gradient(circle at 86% 68%, rgba(255,196,0,.10) 0 1px, transparent 2px);
+      background-size: 560px 560px;
+      mix-blend-mode: screen;
+    }
+
+    /* ===== Head ===== */
+    #partners .aa-partners2__head{
+      max-width: 860px;
+      margin-bottom: 22px;
+    }
+
+    #partners .aa-partners2__kicker{
+      display:inline-flex; align-items:center; gap:10px;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-weight: 900; font-size: 12px; letter-spacing: .26em;
+      text-transform: uppercase; color: rgba(245,247,250,.90);
+      text-shadow: 0 12px 34px rgba(0,0,0,.38);
+    }
+    #partners .aa-partners2__kicker::before{
+      content:""; width: 28px; height: 2px; border-radius: 2px;
+      background: rgba(255,196,0,.98);
+      box-shadow: 0 10px 26px rgba(255,196,0,.25);
+    }
+
+    #partners .aa-partners2__title{
+      margin: 14px 0 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      line-height: 1.02;
+      font-size: clamp(28px, 3.4vw, 54px);
+      color: rgba(245,247,250,.94);
+      text-transform: uppercase;
+      text-shadow: 0 18px 54px rgba(0,0,0,.45);
+    }
+
+    #partners .aa-partners2__sub{
+      margin: 12px 0 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.72;
+      color: rgba(245,247,250,.80);
+      max-width: 74ch;
+      text-shadow: 0 14px 40px rgba(0,0,0,.30);
+    }
+
+    /* ===== BIG CENTER SLIDER ===== */
+    #partners .aa-partners2__stage{
+      margin-top: 16px;
+      position: relative;
+    }
+
+    /* frame is big + centered; not a “card list” style */
+    #partners .aa-partners2__frame{
+      position: relative;
+      border-radius: 26px;
+      overflow: hidden;
+      border: 1px solid rgba(255,196,0,.16);
+      /* different visual language: darker + more cinematic */
+      background: rgba(6,26,58,.38);
+      box-shadow:
+        0 34px 90px rgba(0,0,0,.44),
+        inset 0 0 0 1px rgba(255,255,255,.04);
+    }
+
+    #partners .aa-partners2__track{
+      display:flex;
+      width:100%;
+      transform: translate3d(0,0,0);
+      transition: transform .65s cubic-bezier(.2,.85,.2,1);
+      will-change: transform;
+      touch-action: pan-y;
+    }
+
+    #partners .aa-partners2__slide{
+      min-width: 100%;
+      padding: clamp(22px, 2.6vw, 34px);
+      display:grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 22px;
+      align-items: center;
+    }
+
+    /* LEFT: Logo “plate” (centered focus) */
+    #partners .aa-partners2__logoPlate{
+      position: relative;
+      border-radius: 24px;
+      border: 1px solid rgba(255,196,0,.18);
+      background: rgba(245,247,250,.92);
+      min-height: clamp(260px, 30vh, 360px);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+    }
+
+    /* subtle premium gradients (NOT stadium spotlight) */
+    #partners .aa-partners2__logoPlate::before{
+      content:"";
+      position:absolute;
+      inset:-30%;
+      background:
+        radial-gradient(closest-side, rgba(255,255,255,.12), rgba(255,255,255,0) 70%),
+        radial-gradient(closest-side, rgba(255,196,0,.18), rgba(255,196,0,0) 68%);
+      opacity: .95;
+      pointer-events:none;
+      transform: translateZ(0);
+    }
+
+    #partners .aa-partners2__logoPlate::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(900px 260px at 50% 12%, rgba(6,26,58,.18) 0%, rgba(6,26,58,0) 65%),
+        radial-gradient(900px 320px at 50% 92%, rgba(6,26,58,.34) 0%, rgba(6,26,58,0) 66%);
+      opacity: .95;
+      pointer-events:none;
+    }
+
+    #partners .aa-partners2__logo{
+      width: min(360px, 74%);
+      height: auto;
+      max-height: 110px;
+      object-fit: contain;
+      filter: drop-shadow(0 26px 70px rgba(0,0,0,.48));
+      position: relative;
+      z-index: 2;
+    }
+
+    /* RIGHT: Copy block (big + focused) */
+    #partners .aa-partners2__copyBox{
+      border-radius: 24px;
+      border: 1px solid rgba(255,196,0,.14);
+      background: rgba(6,26,58,.34);
+      padding: 18px 18px 18px;
+      box-shadow: 0 24px 60px rgba(0,0,0,.22);
+      position: relative;
+      overflow: hidden;
+    }
+
+    #partners .aa-partners2__copyBox::after{
+      content:"";
+      position:absolute;
+      inset:-40% -30% auto -30%;
+      height: 170px;
+      background: radial-gradient(closest-side, rgba(255,255,255,.10), rgba(255,255,255,0));
+      opacity: .18;
+      pointer-events:none;
+    }
+
+    #partners .aa-partners2__tagRow{
+      display:flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items:center;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* DIFFERENT tag style (pill but flatter) */
+    #partners .aa-partners2__tag{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 8px 10px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,196,0,.18);
+      background: rgba(255,196,0,.06);
+      color: rgba(245,247,250,.86);
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      user-select: none;
+    }
+
+    #partners .aa-partners2__tag::before{
+      content:"";
+      width: 8px; height: 8px;
+      border-radius: 999px;
+      background: rgba(255,196,0,.95);
+      box-shadow: 0 12px 28px rgba(255,196,0,.20);
+    }
+
+    #partners .aa-partners2__name{
+      margin: 12px 0 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      color: rgba(245,247,250,.95);
+      font-size: clamp(22px, 2.8vw, 40px);
+      line-height: 1.05;
+      text-shadow: 0 18px 54px rgba(0,0,0,.45);
+      position: relative;
+      z-index: 2;
+    }
+
+    #partners .aa-partners2__desc{
+      margin: 12px 0 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.72;
+      color: rgba(245,247,250,.80);
+      max-width: 62ch;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* HUD: minimal text arrows + progress bar (distinct from dots) */
+    #partners .aa-partners2__hud{
+      margin-top: 14px;
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      gap: 14px;
+      user-select:none;
+    }
+
+    #partners .aa-partners2__arrow{
+      border: 1px solid rgba(255,196,0,.18);
+      background: rgba(6,26,58,.28);
+      color: rgba(245,247,250,.90);
+      border-radius: 14px;
+      padding: 12px 14px;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: transform .18s ease, background .18s ease, border-color .18s ease, box-shadow .18s ease, opacity .18s ease;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+    #partners .aa-partners2__arrow:hover{
+      transform: translateY(-2px);
+      background: rgba(255,196,0,.10);
+      border-color: rgba(255,196,0,.34);
+      box-shadow: 0 18px 45px rgba(0,0,0,.22);
+    }
+
+    #partners .aa-partners2__meter{
+      flex: 1;
+      height: 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,196,0,.18);
+      background: rgba(245,247,250,.04);
+      overflow: hidden;
+      position: relative;
+    }
+
+    #partners .aa-partners2__bar{
+      height: 100%;
+      width: 0%;
+      background: #FFC400;
+
+      border-radius: 999px;
+      transition: width .65s cubic-bezier(.2,.85,.2,1);
+    }
+
+    /* Mini row = brand “tabs” (also different from dots) */
+    #partners .aa-partners2__miniRow{
+      margin-top: 12px;
+      display:flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items:center;
+      justify-content: center;
+    }
+
+    #partners .aa-miniBtn{
+      border: 1px solid rgba(255,196,0,.16);
+      background: rgba(6,26,58,.28);
+      color: rgba(245,247,250,.80);
+      border-radius: 14px;
+      padding: 10px 12px;
+      cursor: pointer;
+      transition: transform .18s ease, background .18s ease, border-color .18s ease, box-shadow .18s ease, opacity .18s ease;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+      user-select: none;
+      display:flex;
+      align-items:center;
+      gap: 10px;
+    }
+
+    #partners .aa-miniBtn:hover{
+      transform: translateY(-2px);
+      background: rgba(255,196,0,.10);
+      border-color: rgba(255,196,0,.30);
+      box-shadow: 0 18px 45px rgba(0,0,0,.18);
+    }
+
+    #partners .aa-miniDot{
+      width: 8px; height: 8px;
+      border-radius: 999px;
+      background: rgba(245,247,250,.18);
+      border: 1px solid rgba(245,247,250,.22);
+      transition: background .18s ease, border-color .18s ease, box-shadow .18s ease;
+    }
+
+    #partners .aa-miniText{
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    #partners .aa-miniBtn.is-active{
+      border-color: rgba(255,196,0,.40);
+      background: rgba(255,196,0,.10);
+      box-shadow: 0 22px 56px rgba(0,0,0,.22);
+      color: rgba(245,247,250,.92);
+    }
+    #partners .aa-miniBtn.is-active .aa-miniDot{
+      background: rgba(255,196,0,.92);
+      border-color: rgba(255,196,0,.62);
+      box-shadow: 0 14px 34px rgba(255,196,0,.20);
+    }
+
+    /* ===== Footer ===== */
+    #partners .aa-partners2__foot{
+      margin-top: 22px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(245,247,250,.10);
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    #partners .aa-partners2__note{
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: rgba(245,247,250,.75);
+      font-size: 14px;
+      line-height: 1.6;
+      max-width: 70ch;
+    }
+
+    #partners .aa-partners2__cta{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      text-decoration:none;
+      border-radius: 14px;
+      padding: 12px 16px;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: #061A3A;
+      background: #FFC400;
+      border: 1px solid rgba(255,196,0,.45);
+      box-shadow: 0 18px 45px rgba(0,0,0,.26);
+      transition: transform .18s ease, opacity .18s ease;
+      white-space: nowrap;
+    }
+    #partners .aa-partners2__cta:hover{ transform: translateY(-2px); opacity:.98; }
+
+    /* ===== Kill magenta ===== */
+    #partners, #partners *{ outline: none !important; }
+    #partners a:focus, #partners a:focus-visible,
+    #partners button:focus, #partners button:focus-visible{
+      outline: none !important;
+      box-shadow: none !important;
+    }
+    #partners .aa-partners2__arrow:focus-visible,
+    #partners .aa-miniBtn:focus-visible{
+      box-shadow: 0 0 0 3px rgba(255,196,0,.52), 0 22px 60px rgba(0,0,0,.25) !important;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 980px){
+      #partners .aa-partners2__slide{ grid-template-columns: 1fr; }
+      #partners .aa-partners2__logoPlate{ min-height: 240px; }
+    }
+    @media (max-width: 640px){
+      #partners.aa-partners2-breakout .aa-partners2{ padding: 72px 0 70px; }
+      #partners .aa-partners2__logoPlate{ min-height: 220px; }
+      #partners .aa-partners2__hud{ gap: 10px; }
+      #partners .aa-partners2__arrow{ padding: 11px 12px; }
+    }
+  </style>
+
+  <script>
+    (function(){
+      const scope = document.getElementById('partners');
+      if(!scope) return;
+
+      const root = scope.querySelector('[data-aa-partners2]');
+      const track = scope.querySelector('[data-aa-track]');
+      const prevBtn = scope.querySelector('[data-aa-prev]');
+      const nextBtn = scope.querySelector('[data-aa-next]');
+      const bar = scope.querySelector('[data-aa-bar]');
+      const miniRow = scope.querySelector('[data-aa-minirow]');
+      if(!root || !track || !bar || !miniRow) return;
+
+      /* =========================
+         PARTNERS (EDIT ONLY URLS)
+         ========================= */
+const PARTNERS = [
+  {
+    name:"Hublot",
+    tag:"Luxury",
+    logo:"https://commons.wikimedia.org/wiki/Special:FilePath/Hublot%20logo.svg",
+    desc:"Premium positioning and brand storytelling for elite talent."
+  },
+  {
+    name:"Puma",
+    tag:"Sportswear",
+    logo:"https://commons.wikimedia.org/wiki/Special:FilePath/Puma-logo-%28text%29.svg",
+    desc:"Performance-driven lifestyle activations and global campaigns."
+  },
+  {
+    name:"Nissan",
+    tag:"Automotive",
+    logo:"https://commons.wikimedia.org/wiki/Special:FilePath/Nissan_2020_logo.svg",
+    desc:"Automotive collaborations and large-scale brand activations."
+  },
+  {
+    name:"Pepsi",
+    tag:"Beverage",
+    logo:"https://commons.wikimedia.org/wiki/Special:FilePath/Pepsi_logo_%282014%29.svg",
+    desc:"Global consumer campaigns and high-reach sponsorship exposure."
+  },
+  {
+    name:"Gatorade",
+    tag:"Sports Drink",
+    logo:"https://commons.wikimedia.org/wiki/Special:FilePath/Gatorade_logo.svg",
+    desc:"Global performance partnership & athlete activations."
+  },
+  {
+    name:"Gibson",
+    tag:"Music",
+    logo:"https://commons.wikimedia.org/wiki/Special:FilePath/Gibson_logo.svg",
+    desc:"Iconic culture partnerships and premium storytelling moments."
+  },
+  {
+    name:"Zoom",
+    tag:"Technology",
+    logo:"https://commons.wikimedia.org/wiki/Special:FilePath/Zoom_Logo_2022.svg",
+    desc:"Communications partner for campaigns and live collaborations."
+  },
+  {
+    name:"Digicel",
+    tag:"Telecom",
+    logo:"https://commons.wikimedia.org/wiki/Special:FilePath/Digicel_logo.svg",
+    desc:"Regional brand activations + high-reach media exposure."
+  },
+
+  /* Celldration: no encontré un SVG “oficial” limpio y estable como los demás.
+     Te dejo un placeholder SIN fondo (data URI). Si me pasas el logo oficial (PNG/SVG),
+     te lo pongo aquí y ya. */
+  {
+    name:"Celldration",
+    tag:"Hydration",
+    logo:"data:image/svg+xml;utf8," + encodeURIComponent(`
+      <svg xmlns="http://www.w3.org/2000/svg" width="900" height="240" viewBox="0 0 900 240">
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#FFC400"/>
+            <stop offset="1" stop-color="#061A3A"/>
+          </linearGradient>
+        </defs>
+        <g fill="none">
+          <text x="12" y="132" font-family="Inter,Arial" font-weight="900" font-size="86" letter-spacing="1">
+            <tspan fill="#F5F7FA">CELL</tspan><tspan fill="#FFC400">DRATION</tspan>
+          </text>
+          <path d="M770 16 C822 86 860 130 860 170 C860 215 825 240 770 240 C715 240 680 215 680 170 C680 130 718 86 770 16 Z"
+                fill="url(#g)" opacity="0.95"/>
+        </g>
+      </svg>
+    `),
+    desc:"Consumer campaigns and endorsement alignment."
+  }
+];
+
+
+      // Build slides (full-width, one at a time)
+      track.innerHTML = PARTNERS.map((p, idx) => `
+        <article class="aa-partners2__slide" role="group" aria-roledescription="slide" aria-label="${idx+1} of ${PARTNERS.length}">
+          <div class="aa-partners2__logoPlate">
+            <img class="aa-partners2__logo" src="${p.logo}" alt="${p.name} logo" loading="${idx===0 ? 'eager' : 'lazy'}" decoding="async">
+          </div>
+
+          <div class="aa-partners2__copyBox">
+            <div class="aa-partners2__tagRow">
+              <div class="aa-partners2__tag">${p.tag}</div>
+            </div>
+
+            <h3 class="aa-partners2__name">${p.name}</h3>
+            <p class="aa-partners2__desc">${p.desc}</p>
+          </div>
+        </article>
+      `).join("");
+
+      // Mini row (quick select tabs)
+      miniRow.innerHTML = PARTNERS.map((p, i) => `
+        <button class="aa-miniBtn" type="button" data-aa-mini="${i}" aria-label="Go to ${p.name}">
+          <span class="aa-miniDot" aria-hidden="true"></span>
+          <span class="aa-miniText">${p.name}</span>
+        </button>
+      `).join("");
+
+      const miniBtns = Array.from(miniRow.querySelectorAll('[data-aa-mini]'));
+
+      let index = 0;
+      const clampIndex = (i) => (i + PARTNERS.length) % PARTNERS.length;
+
+      function setActive(){
+        miniBtns.forEach((b, i) => b.classList.toggle('is-active', i === index));
+        bar.style.width = ((index + 1) / PARTNERS.length * 100) + '%';
+      }
+
+      function goTo(i, animate=true){
+        index = clampIndex(i);
+        track.style.transitionDuration = animate ? '.65s' : '0s';
+        track.style.transform = `translate3d(${-index * 100}%, 0, 0)`;
+        setActive();
+      }
+
+      // Autoplay
+      const AUTOPLAY_MS = 5200;
+      let timer = null;
+      const start = () => { stop(); timer = setInterval(() => goTo(index + 1, true), AUTOPLAY_MS); };
+      const stop = () => { if(timer){ clearInterval(timer); timer = null; } };
+
+      if(prevBtn) prevBtn.addEventListener('click', () => { goTo(index - 1, true); start(); });
+      if(nextBtn) nextBtn.addEventListener('click', () => { goTo(index + 1, true); start(); });
+
+      miniRow.addEventListener('click', (e) => {
+        const b = e.target.closest('[data-aa-mini]');
+        if(!b) return;
+        goTo(parseInt(b.getAttribute('data-aa-mini'), 10), true);
+        start();
+      });
+
+      // Pause on hover
+      root.addEventListener('mouseenter', stop);
+      root.addEventListener('mouseleave', start);
+
+      // Swipe
+      let startX = 0, dx = 0, isDown = false;
+      const onDown = (x) => { isDown = true; startX = x; dx = 0; stop(); track.style.transitionDuration = '0s'; };
+      const onMove = (x) => {
+        if(!isDown) return;
+        dx = x - startX;
+        const pct = (dx / root.clientWidth) * 100;
+        track.style.transform = `translate3d(${(-index * 100) + pct}%, 0, 0)`;
+      };
+      const onUp = () => {
+        if(!isDown) return;
+        isDown = false;
+        const threshold = Math.min(90, root.clientWidth * 0.18);
+        if(dx > threshold) index = clampIndex(index - 1);
+        else if(dx < -threshold) index = clampIndex(index + 1);
+        goTo(index, true);
+        start();
+      };
+
+      root.addEventListener('pointerdown', (e) => onDown(e.clientX));
+      window.addEventListener('pointermove', (e) => onMove(e.clientX), { passive: true });
+      window.addEventListener('pointerup', onUp, { passive: true });
+      window.addEventListener('pointercancel', onUp, { passive: true });
+
+      // Init
+      goTo(0, false);
+      start();
+      window.addEventListener('resize', () => goTo(index, false), { passive: true });
+
+      // Try to prevent theme focus color leaking on mousedown
+      miniRow.addEventListener('mousedown', (e) => {
+        const b = e.target.closest('button');
+        if(b) b.blur();
+      });
+    })();
+  </script>
+</section>

@@ -1,0 +1,686 @@
+<section class="aa-clients-breakout" id="clients">
+  <div class="aa-clients">
+    <div class="aa-clients__inner">
+
+      <!-- Header -->
+      <div class="aa-clients__head">
+        <div class="aa-clients__kicker">Our Clients</div>
+
+        <h2 class="aa-clients__title">
+          Past &amp; Present<br>
+          spotlight roster.
+        </h2>
+
+        <p class="aa-clients__sub">
+          Select partnerships across athletes, celebrities, and brands. Built to protect reputation and grow outcomes.
+        </p>
+      </div>
+
+      <!-- Slider -->
+      <div class="aa-clients__shell" data-aa-clients>
+        <div class="aa-clients__track" data-aa-track aria-live="polite"></div>
+
+        <!-- Controls -->
+        <div class="aa-clients__controls">
+          <button class="aa-clients__nav aa-clients__nav--prev" type="button" data-aa-prev aria-label="Previous client">
+            <span aria-hidden="true">←</span>
+          </button>
+
+          <div class="aa-clients__dots" data-aa-dots aria-label="Client selector"></div>
+
+          <button class="aa-clients__nav aa-clients__nav--next" type="button" data-aa-next aria-label="Next client">
+            <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Bottom note -->
+      <div class="aa-clients__foot">
+        <div class="aa-clients__note">
+          Want to be featured? We’ll build a media-ready brand system around your goals.
+        </div>
+        <a class="aa-clients__cta" href="#contact">Request a consultation</a>
+      </div>
+
+    </div>
+
+    <!-- Texture (kept, but now PURELY OPTIONAL + transparent-friendly) -->
+    <div class="aa-clients__lines" aria-hidden="true"></div>
+    <div class="aa-clients__dust" aria-hidden="true"></div>
+  </div>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap');
+
+    /* ===== Full-width breakout ===== */
+    .aa-clients-breakout{
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      width: 100vw;
+    }
+
+    /* ✅ TRANSPARENT SECTION BACKGROUND */
+    #clients.aa-clients-breakout .aa-clients{
+      position: relative;
+      padding: 86px 0 84px;
+      background: transparent !important;
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    #clients .aa-clients__inner{
+      position: relative;
+      z-index: 3;
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 0 22px;
+    }
+
+    /* ===== Header ===== */
+    #clients .aa-clients__head{ max-width: 860px; }
+
+    #clients .aa-clients__kicker{
+      display:inline-flex; align-items:center; gap:10px;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-weight: 900; font-size: 12px; letter-spacing: .26em;
+      text-transform: uppercase; color: rgba(245,247,250,.88);
+      text-shadow: 0 12px 34px rgba(0,0,0,.38);
+    }
+    #clients .aa-clients__kicker::before{
+      content:""; width: 28px; height: 2px; border-radius: 2px;
+      background: rgba(255,196,0,.98);
+      box-shadow: 0 10px 26px rgba(255,196,0,.25);
+    }
+
+    #clients .aa-clients__title{
+      margin: 14px 0 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      line-height: 1.02;
+      font-size: clamp(28px, 3.4vw, 48px);
+      color: rgba(245,247,250,.94);
+      text-transform: uppercase;
+      text-shadow: 0 18px 54px rgba(0,0,0,.45);
+    }
+
+    #clients .aa-clients__sub{
+      margin: 14px 0 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      color: rgba(245,247,250,.78);
+      max-width: 68ch;
+      text-shadow: 0 14px 40px rgba(0,0,0,.34);
+    }
+
+    /* ===== Slider shell ===== */
+    #clients .aa-clients__shell{
+      margin-top: 22px;
+      border-radius: 22px;
+      border: 1px solid rgba(255,196,0,.16);
+      background: rgba(6,26,58,.46);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 26px 70px rgba(0,0,0,.34);
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Soft sheen */
+    #clients .aa-clients__shell::after{
+      content:"";
+      position:absolute;
+      inset:-40% -30% auto -30%;
+      height: 170px;
+      background: radial-gradient(closest-side, rgba(255,255,255,.10), rgba(255,255,255,0));
+      opacity: .24;
+      pointer-events:none;
+      z-index: 1;
+    }
+
+    #clients .aa-clients__track{
+      position: relative;
+      z-index: 2;
+      display: flex;
+      width: 100%;
+      will-change: transform;
+      transform: translate3d(0,0,0);
+      transition: transform .55s cubic-bezier(.2,.85,.2,1);
+      touch-action: pan-y;
+    }
+
+    #clients .aa-clientSlide{
+      min-width: 100%;
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 0;
+      align-items: stretch;
+    }
+
+    /* ===== Image ===== */
+    #clients .aa-clientSlide__media{
+      position: relative;
+      min-height: 360px;
+      background: rgba(6,26,58,.35);
+      overflow: hidden;
+    }
+
+    #clients .aa-clientSlide__img{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit: cover;
+      object-position: center;
+      transform: scale(1.03);
+      filter: saturate(1.05) contrast(1.06);
+    }
+
+    /* Image readability overlay */
+    #clients .aa-clientSlide__media::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(900px 520px at 15% 55%, rgba(6,26,58,.18) 0%, rgba(6,26,58,.44) 55%, rgba(6,26,58,.62) 100%),
+        linear-gradient(90deg, rgba(6,26,58,.12) 0%, rgba(6,26,58,.34) 55%, rgba(6,26,58,.56) 100%);
+      pointer-events:none;
+    }
+
+    /* subtle yellow glow corner */
+    #clients .aa-clientSlide__media::before{
+      content:"";
+      position:absolute;
+      inset:auto -20% -30% -20%;
+      height: 240px;
+      background: radial-gradient(closest-side, rgba(255,196,0,.22), rgba(255,196,0,0));
+      opacity: .9;
+      pointer-events:none;
+      z-index: 1;
+    }
+
+    /* ===== Copy ===== */
+    #clients .aa-clientSlide__copy{
+      padding: 22px 22px 20px;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      border-left: 1px solid rgba(245,247,250,.08);
+      background: linear-gradient(180deg, rgba(6,26,58,.18), rgba(6,26,58,.42));
+      position: relative;
+    }
+
+    #clients .aa-clientMeta{
+      display:flex;
+      align-items:center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    #clients .aa-clientTag{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 8px 10px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,196,0,.18);
+      background: rgba(255,196,0,.06);
+      color: rgba(245,247,250,.86);
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      user-select: none;
+    }
+
+    #clients .aa-clientTag::before{
+      content:"";
+      width: 8px; height: 8px;
+      border-radius: 999px;
+      background: rgba(255,196,0,.95);
+      box-shadow: 0 12px 28px rgba(255,196,0,.20);
+    }
+
+    #clients .aa-clientName{
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      color: rgba(245,247,250,.95);
+      font-size: clamp(18px, 2.1vw, 26px);
+      line-height: 1.1;
+      text-shadow: 0 16px 44px rgba(0,0,0,.45);
+    }
+
+    #clients .aa-clientRole{
+      margin: 10px 0 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.65;
+      color: rgba(245,247,250,.80);
+      max-width: 56ch;
+    }
+
+    #clients .aa-clientStats{
+      margin-top: 14px;
+      display:flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    #clients .aa-stat{
+      border-radius: 16px;
+      border: 1px solid rgba(255,196,0,.14);
+      background: rgba(6,26,58,.34);
+      padding: 10px 12px;
+      min-width: 140px;
+    }
+
+    #clients .aa-stat__k{
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: rgba(245,247,250,.68);
+    }
+
+    #clients .aa-stat__v{
+      margin-top: 6px;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+      color: rgba(245,247,250,.92);
+    }
+
+    /* ===== Controls ===== */
+    #clients .aa-clients__controls{
+      position: relative;
+      z-index: 3;
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 14px 16px;
+      border-top: 1px solid rgba(245,247,250,.08);
+      background: rgba(6,26,58,.30);
+    }
+
+    #clients .aa-clients__nav{
+      width: 42px; height: 42px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,196,0,.18);
+      background: rgba(255,196,0,.06);
+      color: rgba(245,247,250,.92);
+      cursor: pointer;
+      display:flex; align-items:center; justify-content:center;
+      font-weight: 900;
+      transition: transform .18s ease, background .18s ease, border-color .18s ease, box-shadow .18s ease;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+      user-select:none;
+    }
+    #clients .aa-clients__nav:hover{
+      transform: translateY(-2px);
+      background: rgba(255,196,0,.10);
+      border-color: rgba(255,196,0,.34);
+      box-shadow: 0 18px 45px rgba(0,0,0,.22);
+    }
+
+    #clients .aa-clients__dots{
+      display:flex;
+      gap: 8px;
+      align-items:center;
+      justify-content:center;
+      flex: 1;
+    }
+
+    #clients .aa-dot{
+      width: 8px; height: 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(245,247,250,.22);
+      background: rgba(245,247,250,.10);
+      cursor: pointer;
+      transition: transform .18s ease, background .18s ease, border-color .18s ease, box-shadow .18s ease, width .18s ease;
+    }
+    #clients .aa-dot.is-active{
+      width: 22px;
+      background: rgba(255,196,0,.92);
+      border-color: rgba(255,196,0,.62);
+      box-shadow: 0 14px 34px rgba(255,196,0,.20);
+    }
+
+    /* ===== Footer CTA ===== */
+    #clients .aa-clients__foot{
+      margin-top: 22px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(245,247,250,.10);
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    #clients .aa-clients__note{
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: rgba(245,247,250,.75);
+      font-size: 14px;
+      line-height: 1.6;
+      max-width: 70ch;
+    }
+
+    #clients .aa-clients__cta{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      text-decoration:none;
+      border-radius: 14px;
+      padding: 12px 16px;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: #061A3A;
+      background: #FFC400;
+      border: 1px solid rgba(255,196,0,.45);
+      box-shadow: 0 18px 45px rgba(0,0,0,.26);
+      transition: transform .18s ease, opacity .18s ease;
+      white-space: nowrap;
+    }
+    #clients .aa-clients__cta:hover{ transform: translateY(-2px); opacity:.98; }
+
+    /* ===== OPTIONAL texture overlays ===== */
+    #clients .aa-clients__lines{
+      position:absolute;
+      inset:0;
+      z-index:2;
+      pointer-events:none;
+      opacity:.10;
+      background:
+        repeating-linear-gradient(135deg, rgba(255,196,0,.14) 0px, rgba(255,196,0,.14) 1px, transparent 1px, transparent 24px);
+      mask-image: radial-gradient(900px 650px at 62% 35%, black 0%, black 52%, transparent 78%);
+      -webkit-mask-image: radial-gradient(900px 650px at 62% 35%, black 0%, black 52%, transparent 78%);
+      mix-blend-mode: screen;
+    }
+
+    #clients .aa-clients__dust{
+      position:absolute;
+      inset:0;
+      z-index:2;
+      pointer-events:none;
+      opacity:.12;
+      background-image:
+        radial-gradient(circle at 12% 26%, rgba(255,196,0,.22) 0 1px, transparent 2px),
+        radial-gradient(circle at 28% 68%, rgba(245,247,250,.18) 0 1px, transparent 2px),
+        radial-gradient(circle at 44% 22%, rgba(255,196,0,.12) 0 1px, transparent 2px),
+        radial-gradient(circle at 64% 54%, rgba(245,247,250,.16) 0 1px, transparent 2px),
+        radial-gradient(circle at 78% 18%, rgba(255,196,0,.10) 0 1px, transparent 2px),
+        radial-gradient(circle at 86% 72%, rgba(245,247,250,.14) 0 1px, transparent 2px);
+      background-size: 520px 520px;
+      filter: blur(.1px);
+      transform: translateZ(0);
+      mix-blend-mode: screen;
+    }
+
+    /* ===== Kill magenta / focus ===== */
+    #clients, #clients *{ outline: none !important; }
+    #clients a:focus, #clients a:focus-visible,
+    #clients button:focus, #clients button:focus-visible{
+      outline: none !important;
+      box-shadow: none !important;
+    }
+    #clients .aa-clients__nav:focus-visible,
+    #clients .aa-dot:focus-visible{
+      box-shadow: 0 0 0 3px rgba(255,196,0,.52), 0 22px 60px rgba(0,0,0,.25) !important;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 980px){
+      #clients .aa-clientSlide{ grid-template-columns: 1fr; }
+      #clients .aa-clientSlide__copy{ border-left: 0; border-top: 1px solid rgba(245,247,250,.08); }
+      #clients .aa-clientSlide__media{ min-height: 320px; }
+    }
+    @media (max-width: 640px){
+      #clients.aa-clients-breakout .aa-clients{ padding: 72px 0 70px; }
+      #clients .aa-clientSlide__copy{ padding: 18px 16px 16px; }
+      #clients .aa-clients__controls{ padding: 12px 12px; }
+
+      /* CHANGED: on mobile hide pills (stats) */
+      #clients .aa-clientStats{ display:none !important; }
+
+      /* CHANGED: on mobile hide dots/pills selector, keep only prev/next */
+      #clients .aa-clients__dots{ display:none !important; }
+
+      /* CHANGED: make prev/next wider so the control bar doesn't feel empty */
+      #clients .aa-clients__nav{
+        width: 52px;
+        height: 46px;
+        border-radius: 16px;
+      }
+    }
+  </style>
+
+  <script>
+    (function(){
+      const scope = document.getElementById('clients');
+      if(!scope) return;
+
+      const root = scope.querySelector('[data-aa-clients]');
+      const track = scope.querySelector('[data-aa-track]');
+      const dotsWrap = scope.querySelector('[data-aa-dots]');
+      const prevBtn = scope.querySelector('[data-aa-prev]');
+      const nextBtn = scope.querySelector('[data-aa-next]');
+      if(!root || !track || !dotsWrap) return;
+
+      /* =========================
+         CLIENT LIST (EDIT ONLY URLS IF YOU WANT)
+         ========================= */
+      const CLIENTS = [
+        {
+          name:"Usain Bolt",
+          status:"Past",
+          category:"Track & Field",
+          role:"Global Icon / Reputation, Partnerships & High-Impact Campaign Strategy",
+          image:"https://primesportsmarketing.net/wp-content/uploads/2026/01/usain-bolt-6.jpg",
+          focus:"center 18%",
+          highlights:["PR + positioning","Brand partnerships","Campaign strategy"]
+        },
+        {
+          name:"Simon Cowell",
+          status:"Present",
+          category:"TV Judge / Music Executive",
+          role:"Television Powerhouse / Media Strategy, Narrative Control & Brand Authority",
+          image:"https://primesportsmarketing.net/wp-content/uploads/2026/01/3eec71523b66aabd295de17c2ed5c2a04b5fc2c67c2101b9dc39d940ce2a20da-scaled.jpg",
+          focus:"center 20%",
+          highlights:["Media strategy","Public narrative","Brand partnerships"]
+        },
+        {
+          name:"Kyle Kuzma",
+          status:"Present",
+          category:"NBA",
+          role:"NBA Athlete / Personal Brand Expansion & Cultural Positioning",
+          image:"https://primesportsmarketing.net/wp-content/uploads/2026/01/1618897.jpg",
+          focus:"center 18%",
+          highlights:["Content engine","Media readiness","Growth systems"]
+        },
+        {
+          name:"Shai Gilgeous-Alexander",
+          status:"Present",
+          category:"NBA",
+          role:"NBA Athlete / Brand Voice Development & Strategic Visibility",
+          image:"https://primesportsmarketing.net/wp-content/uploads/2026/01/Shai_Gilgeous-Alexander_51815871018_cropped.jpg",
+          focus:"center 18%",
+          highlights:["Content strategy","Brand voice","Optimization loop"]
+        },
+        {
+          name:"Deandre Ayton",
+          status:"Present",
+          category:"NBA",
+          role:"NBA Athlete / Partnership Strategy & Public Market Visibility",
+          image:"https://primesportsmarketing.net/wp-content/uploads/2026/01/AA1Uqwmw-scaled.jpg",
+          focus:"center 18%",
+          highlights:["Partnerships","Press moments","Brand alignment"]
+        },
+        {
+          name:"Tichina Arnold",
+          status:"Past",
+          category:"Celebrity",
+          role:"Entertainment Icon / Reputation Management & Media Readiness",
+          image:"https://primesportsmarketing.net/wp-content/uploads/2026/01/gettyimages-2252060352-612x612-1.jpg",
+          focus:"center 14%",
+          highlights:["Brand safety","Press readiness","Campaign alignment"]
+        },
+        {
+          name:"Tommy Ford",
+          status:"Past",
+          category:"Actor / Comedian",
+          role:"Legacy Talent / Cultural Impact & Entertainment Branding",
+          image:"https://primesportsmarketing.net/wp-content/uploads/2026/01/161012-tommy-mikal-ford-jsw-215p.webp",
+          focus:"center 14%",
+          highlights:["Television legacy","Cultural impact","Entertainment branding"]
+        },
+        {
+          name:"Zion Williamson",
+          status:"Active",
+          category:"NBA",
+          role:"NBA Athlete / Global Brand Management & Media Strategy",
+          image:"https://primesportsmarketing.net/wp-content/uploads/2026/01/zion-scaled.avif",
+          focus:"center 18%",
+          highlights:["Global visibility","Brand protection","Strategic partnerships"]
+        },
+        {
+          name:"Hassan Whiteside",
+          status:"Past",
+          category:"NBA",
+          role:"NBA Athlete / Media Relations & Brand Risk Management",
+          image:"https://primesportsmarketing.net/wp-content/uploads/2026/01/hi-res-a93aeda31c0e40896d9eeac029910380_crop_north-scaled.avif",
+          focus:"center 18%",
+          highlights:["Media readiness","Brand safety","Partnerships"]
+        },
+        {
+          name:"Wanda Pratt",
+          status:"Present",
+          category:"NBA (Mama Durant)",
+          role:"Public Figure / Thought Leadership, Philanthropy & Public Image",
+          image:"https://primesportsmarketing.net/wp-content/uploads/2026/01/R.jpg",
+          focus:"center 18%",
+          highlights:["Public image","Media presence","Community impact"]
+        },
+        {
+          name:"Peter Miller",
+          status:"Present",
+          category:"Sport Fishing",
+          role:"Television Host / Lifestyle Branding & Audience Monetization",
+          image:"https://primesportsmarketing.net/wp-content/uploads/2026/01/peter-miller-for-invincible-boats-3.jpg",
+          focus:"center",
+          highlights:["Television & media presence","Sportfishing championships","Lifestyle brand partnerships"]
+        }
+      ];
+
+      track.innerHTML = CLIENTS.map((c, idx) => {
+        const pills = (c.highlights || []).slice(0,3).map(h => `
+          <div class="aa-stat">
+            <div class="aa-stat__k">Focus</div>
+            <div class="aa-stat__v">${h}</div>
+          </div>
+        `).join("");
+
+        return `
+          <article class="aa-clientSlide" role="group" aria-roledescription="slide" aria-label="${idx+1} of ${CLIENTS.length}">
+            <div class="aa-clientSlide__media">
+              <img class="aa-clientSlide__img" src="${c.image}" alt="${c.name}" loading="${idx===0 ? 'eager' : 'lazy'}" decoding="async"
+                   style="object-position:${c.focus || 'center'};">
+            </div>
+
+            <div class="aa-clientSlide__copy">
+              <div class="aa-clientMeta">
+                <div class="aa-clientTag">${c.status}</div>
+                <div class="aa-clientTag">${c.category}</div>
+              </div>
+
+              <h3 class="aa-clientName">${c.name}</h3>
+              <p class="aa-clientRole">${c.role}</p>
+
+              <div class="aa-clientStats">${pills}</div>
+            </div>
+          </article>
+        `;
+      }).join("");
+
+      dotsWrap.innerHTML = CLIENTS.map((_, i) =>
+        `<button class="aa-dot" type="button" aria-label="Go to client ${i+1}" data-aa-dot="${i}"></button>`
+      ).join("");
+
+      const dots = Array.from(dotsWrap.querySelectorAll('.aa-dot'));
+      let index = 0;
+
+      const clampIndex = (i) => (i + CLIENTS.length) % CLIENTS.length;
+
+      function setActiveDot(){
+        dots.forEach((d, i) => d.classList.toggle('is-active', i === index));
+      }
+
+      function goTo(i, animate=true){
+        index = clampIndex(i);
+        track.style.transitionDuration = animate ? '.55s' : '0s';
+        track.style.transform = `translate3d(${-index * 100}%, 0, 0)`;
+        setActiveDot();
+      }
+
+      const AUTOPLAY_MS = 5200;
+      let timer = null;
+      const start = () => { stop(); timer = setInterval(() => goTo(index + 1, true), AUTOPLAY_MS); };
+      const stop = () => { if(timer){ clearInterval(timer); timer = null; } };
+
+      if(prevBtn) prevBtn.addEventListener('click', () => { goTo(index - 1, true); start(); });
+      if(nextBtn) nextBtn.addEventListener('click', () => { goTo(index + 1, true); start(); });
+
+      dotsWrap.addEventListener('click', (e) => {
+        const b = e.target.closest('[data-aa-dot]');
+        if(!b) return;
+        goTo(parseInt(b.getAttribute('data-aa-dot'), 10), true);
+        start();
+      });
+
+      root.addEventListener('mouseenter', stop);
+      root.addEventListener('mouseleave', start);
+
+      let startX = 0, dx = 0, isDown = false;
+      const onDown = (x) => { isDown = true; startX = x; dx = 0; stop(); track.style.transitionDuration = '0s'; };
+      const onMove = (x) => {
+        if(!isDown) return;
+        dx = x - startX;
+        const pct = (dx / root.clientWidth) * 100;
+        track.style.transform = `translate3d(${(-index * 100) + pct}%, 0, 0)`;
+      };
+      const onUp = () => {
+        if(!isDown) return;
+        isDown = false;
+        const threshold = Math.min(80, root.clientWidth * 0.18);
+        if(dx > threshold) index = clampIndex(index - 1);
+        else if(dx < -threshold) index = clampIndex(index + 1);
+        goTo(index, true);
+        start();
+      };
+
+      root.addEventListener('pointerdown', (e) => onDown(e.clientX));
+      window.addEventListener('pointermove', (e) => onMove(e.clientX), { passive: true });
+      window.addEventListener('pointerup', onUp, { passive: true });
+      window.addEventListener('pointercancel', onUp, { passive: true });
+
+      goTo(0, false);
+      start();
+      window.addEventListener('resize', () => goTo(index, false), { passive: true });
+    })();
+  </script>
+</section>

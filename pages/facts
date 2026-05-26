@@ -1,0 +1,460 @@
+<section class="aa-facts-breakout" id="facts">
+  <div class="aa-facts">
+    <!-- Background media (VIDEO) -->
+    <div class="aa-facts__bg" aria-hidden="true">
+      <video class="aa-facts__bgVid" autoplay muted loop playsinline preload="metadata">
+        <source src="https://primesportsmarketing.net/wp-content/uploads/2026/01/hero-3121.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- Overlays -->
+    <div class="aa-facts__veil" aria-hidden="true"></div>
+    <div class="aa-facts__lines" aria-hidden="true"></div>
+    <div class="aa-facts__dust" aria-hidden="true"></div>
+
+    <div class="aa-facts__inner">
+      <!-- Head -->
+      <header class="aa-facts__head">
+        <div class="aa-facts__kicker">Fun Facts</div>
+        <h2 class="aa-facts__title">Numbers That Back The Work</h2>
+        <p class="aa-facts__sub">
+          High-trust execution, premium partnerships, and measurable outcomes—summarized in a few key metrics.
+        </p>
+      </header>
+
+      <!-- Stats -->
+      <div class="aa-facts__grid" data-aa-facts>
+        <article class="aa-factCard" data-aa-stat data-aa-value="5000000">
+          <div class="aa-factCard__top">
+            <div class="aa-factCard__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M7 7h10M7 11h10M7 15h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M6 3h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="aa-factCard__pill">Reach</div>
+          </div>
+
+          <div class="aa-factCard__value">
+            <span class="aa-factCard__num" data-aa-num>0</span>
+          </div>
+          <div class="aa-factCard__label">30-sec Super Bowl commercials</div>
+        </article>
+
+        <article class="aa-factCard" data-aa-stat data-aa-value="627">
+          <div class="aa-factCard__top">
+            <div class="aa-factCard__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M7 17l3-3 2 2 5-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5 21h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2Z"
+                      stroke="currentColor" stroke-width="2"/>
+                <path d="M8 3v4M16 3v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="aa-factCard__pill">Deals</div>
+          </div>
+
+          <div class="aa-factCard__value">
+            <span class="aa-factCard__num" data-aa-num>0</span>
+          </div>
+          <div class="aa-factCard__label">Negotiated contracts</div>
+        </article>
+
+        <article class="aa-factCard" data-aa-stat data-aa-value="234">
+          <div class="aa-factCard__top">
+            <div class="aa-factCard__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M7 4h10v5a5 5 0 0 1-5 5H7V4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M7 14h6a5 5 0 0 1 5 5v1H7v-6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M4 7h3M4 17h3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="aa-factCard__pill">Fuel</div>
+          </div>
+
+          <div class="aa-factCard__value">
+            <span class="aa-factCard__num" data-aa-num>0</span>
+          </div>
+          <div class="aa-factCard__label">Cups of coffee per day</div>
+        </article>
+
+        <article class="aa-factCard" data-aa-stat data-aa-value="24">
+          <div class="aa-factCard__top">
+            <div class="aa-factCard__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="aa-factCard__pill">Time</div>
+          </div>
+
+          <div class="aa-factCard__value">
+            <span class="aa-factCard__num" data-aa-num>0</span>
+          </div>
+          <div class="aa-factCard__label">Years in business</div>
+        </article>
+      </div>
+
+      <!-- Bottom -->
+      <div class="aa-facts__foot">
+        <div class="aa-facts__note">
+          Want these numbers behind your next partnership? We execute premium, brand-safe campaigns end-to-end.
+        </div>
+        <a class="aa-facts__cta" href="#contact">Request a consultation</a>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap');
+
+    .aa-facts-breakout{
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      width: 100vw;
+    }
+
+    /* ✅ SECTION MÁS GRANDE */
+    #facts.aa-facts-breakout .aa-facts{
+      position: relative;
+      padding: 132px 0 124px; /* was 92/86 */
+      background: transparent !important;
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    /* ✅ MÁS CENTRADO */
+    #facts .aa-facts__inner{
+      position: relative;
+      z-index: 3;
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 0 22px;
+    }
+
+    /* Background media */
+    #facts .aa-facts__bg{
+      position:absolute; inset:0; z-index:0;
+      pointer-events:none;
+      overflow:hidden;
+    }
+
+    /* ✅ VIDEO MENOS OSCURO: más presencia del video */
+    #facts .aa-facts__bgVid{
+      width:100%; height:100%;
+      object-fit: cover;
+      transform: scale(1.03);
+      filter: contrast(1.06) saturate(1.12) brightness(1.08);
+      opacity: .88; /* was .55 */
+    }
+
+    /* Cinematic veil */
+    /* ✅ MENOS OSCURO: baja el “black wash” */
+    #facts .aa-facts__veil{
+      position:absolute; inset:0; z-index:1; pointer-events:none;
+      background:
+        radial-gradient(980px 560px at 18% 38%, rgba(255,196,0,.20) 0%, rgba(255,196,0,0) 62%),
+        radial-gradient(980px 680px at 70% 20%, rgba(255,255,255,.10) 0%, rgba(255,255,255,0) 60%),
+        linear-gradient(180deg, rgba(6,26,58,.56) 0%, rgba(11,36,77,.46) 35%, rgba(6,26,58,.62) 100%);
+    }
+
+    /* Subtle texture (no fill) */
+    #facts .aa-facts__lines{
+      position:absolute; inset:0; z-index:2; pointer-events:none; opacity:.10;
+      background: repeating-linear-gradient(135deg, rgba(255,196,0,.14) 0px, rgba(255,196,0,.14) 1px, transparent 1px, transparent 26px);
+      mask-image: radial-gradient(900px 650px at 55% 30%, black 0%, black 52%, transparent 78%);
+      -webkit-mask-image: radial-gradient(900px 650px at 55% 30%, black 0%, black 52%, transparent 78%);
+      mix-blend-mode: screen;
+    }
+    #facts .aa-facts__dust{
+      position:absolute; inset:0; z-index:2; pointer-events:none; opacity:.10;
+      background-image:
+        radial-gradient(circle at 16% 26%, rgba(255,196,0,.22) 0 1px, transparent 2px),
+        radial-gradient(circle at 32% 72%, rgba(245,247,250,.16) 0 1px, transparent 2px),
+        radial-gradient(circle at 56% 20%, rgba(255,196,0,.12) 0 1px, transparent 2px),
+        radial-gradient(circle at 72% 54%, rgba(245,247,250,.14) 0 1px, transparent 2px),
+        radial-gradient(circle at 86% 68%, rgba(255,196,0,.10) 0 1px, transparent 2px);
+      background-size: 560px 560px;
+      mix-blend-mode: screen;
+    }
+
+    /* Head */
+    /* ✅ CENTRADO */
+    #facts .aa-facts__head{
+      max-width: 920px;
+      margin: 0 auto 18px;
+      text-align: center;
+    }
+
+    #facts .aa-facts__kicker{
+      display:inline-flex; align-items:center; gap:10px;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-weight: 900; font-size: 12px; letter-spacing: .26em;
+      text-transform: uppercase; color: rgba(245,247,250,.92);
+      text-shadow: 0 12px 34px rgba(0,0,0,.38);
+      justify-content: center;
+    }
+    #facts .aa-facts__kicker::before{
+      content:""; width:28px; height:2px; border-radius:2px;
+      background: rgba(255,196,0,.98);
+      box-shadow: 0 10px 26px rgba(255,196,0,.25);
+    }
+    #facts .aa-facts__title{
+      margin: 14px 0 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      line-height: 1.02;
+      font-size: clamp(30px, 3.6vw, 58px);
+      color: rgba(245,247,250,.94);
+      text-transform: uppercase;
+      text-shadow: 0 18px 54px rgba(0,0,0,.45);
+    }
+    #facts .aa-facts__sub{
+      margin: 12px auto 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 15px; line-height: 1.72;
+      color: rgba(245,247,250,.82);
+      max-width: 74ch;
+      text-shadow: 0 14px 40px rgba(0,0,0,.30);
+    }
+
+    /* Grid */
+    /* ✅ MÁS CENTRADO VISUALMENTE */
+    #facts .aa-facts__grid{
+      margin: 26px auto 0;
+      display:grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      max-width: 1200px;
+    }
+
+    /* Card */
+    #facts .aa-factCard{
+      border-radius: 22px;
+      border: 1px solid rgba(255,196,0,.14);
+      background: rgba(6,26,58,.24); /* ligeramente menos oscuro */
+      box-shadow: 0 30px 78px rgba(0,0,0,.32);
+      padding: 16px 16px 14px;
+      position: relative;
+      overflow: hidden;
+      transform: translateZ(0);
+      transition: transform .18s ease, border-color .18s ease, background .18s ease, box-shadow .18s ease;
+    }
+
+    #facts .aa-factCard::before{
+      content:"";
+      position:absolute; inset:-30% -40% auto -40%;
+      height: 190px;
+      background: radial-gradient(closest-side, rgba(255,255,255,.10), rgba(255,255,255,0));
+      opacity: .16;
+      pointer-events:none;
+    }
+
+    #facts .aa-factCard::after{
+      content:"";
+      position:absolute; inset:auto -30% -40% -30%;
+      height: 220px;
+      background: radial-gradient(closest-side, rgba(255,196,0,.20), rgba(255,196,0,0));
+      opacity: .35;
+      pointer-events:none;
+    }
+
+    #facts .aa-factCard:hover{
+      transform: translateY(-2px);
+      background: rgba(6,26,58,.32);
+      border-color: rgba(255,196,0,.24);
+      box-shadow: 0 34px 90px rgba(0,0,0,.40);
+    }
+
+    #facts .aa-factCard__top{
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      gap: 12px;
+      position: relative;
+      z-index: 2;
+    }
+
+    #facts .aa-factCard__icon{
+      width: 36px; height: 36px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,196,0,.18);
+      background: rgba(255,196,0,.06);
+      display:grid;
+      place-items:center;
+      color: rgba(245,247,250,.92);
+      box-shadow: 0 18px 48px rgba(0,0,0,.20);
+    }
+    #facts .aa-factCard__icon svg{ width: 20px; height: 20px; }
+
+    #facts .aa-factCard__pill{
+      display:inline-flex;
+      align-items:center;
+      gap: 8px;
+      padding: 8px 10px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,196,0,.28);
+      background: rgba(255,196,0,.10);
+      color: rgba(245,247,250,.90);
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      user-select:none;
+      white-space: nowrap;
+    }
+
+    #facts .aa-factCard__value{
+      margin-top: 14px;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      color: rgba(245,247,250,.96);
+      font-size: clamp(26px, 3.0vw, 44px);
+      line-height: 1.0;
+      text-shadow: 0 18px 54px rgba(0,0,0,.45);
+      position: relative;
+      z-index: 2;
+    }
+
+    #facts .aa-factCard__label{
+      margin-top: 10px;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .20em;
+      text-transform: uppercase;
+      color: rgba(245,247,250,.74);
+      position: relative;
+      z-index: 2;
+      line-height: 1.35;
+    }
+
+    /* Footer */
+    /* ✅ MÁS CENTRADO */
+    #facts .aa-facts__foot{
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(245,247,250,.10);
+      display:flex;
+      align-items:center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 3;
+      text-align:center;
+    }
+    #facts .aa-facts__note{
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: rgba(245,247,250,.78);
+      font-size: 14px;
+      line-height: 1.6;
+      max-width: 70ch;
+    }
+    #facts .aa-facts__cta{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      text-decoration:none;
+      border-radius: 14px;
+      padding: 12px 16px;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: #061A3A;
+      background: #FFC400;
+      border: 1px solid rgba(255,196,0,.45);
+      box-shadow: 0 18px 45px rgba(0,0,0,.26);
+      transition: transform .18s ease, opacity .18s ease;
+      white-space: nowrap;
+    }
+    #facts .aa-facts__cta:hover{ transform: translateY(-2px); opacity:.98; }
+
+    /* Kill magenta focus */
+    #facts, #facts *{ outline:none !important; }
+    #facts a:focus, #facts a:focus-visible,
+    #facts button:focus, #facts button:focus-visible{ outline:none !important; box-shadow:none !important; }
+    #facts .aa-factCard:focus-within{
+      box-shadow: 0 0 0 3px rgba(255,196,0,.52), 0 34px 90px rgba(0,0,0,.40) !important;
+    }
+
+    /* Responsive */
+    @media (max-width: 980px){
+      #facts.aa-facts-breakout .aa-facts{ padding: 118px 0 108px; }
+      #facts .aa-facts__grid{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 760px;
+      }
+    }
+    @media (max-width: 640px){
+      #facts.aa-facts-breakout .aa-facts{ padding: 104px 0 96px; }
+      #facts .aa-facts__grid{
+        grid-template-columns: 1fr;
+        max-width: 520px;
+      }
+    }
+  </style>
+
+  <script>
+    (function(){
+      const scope = document.getElementById('facts');
+      if(!scope) return;
+
+      const prefersReduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const cards = Array.from(scope.querySelectorAll('[data-aa-stat]'));
+      if(!cards.length) return;
+
+      const fmt = (n) => {
+        try { return new Intl.NumberFormat('en-US').format(n); }
+        catch(e){ return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ","); }
+      };
+
+      function animate(el, to){
+        const numEl = el.querySelector('[data-aa-num]');
+        if(!numEl) return;
+
+        if(prefersReduce){
+          numEl.textContent = fmt(to);
+          return;
+        }
+
+        const dur = 1200;
+        const start = performance.now();
+        const from = 0;
+
+        const tick = (t) => {
+          const p = Math.min(1, (t - start) / dur);
+          const eased = 1 - Math.pow(1 - p, 3);
+          const val = Math.round(from + (to - from) * eased);
+          numEl.textContent = fmt(val);
+          if(p < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      }
+
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if(!e.isIntersecting) return;
+          const el = e.target;
+          if(el.__aaDone) return;
+          el.__aaDone = true;
+          const to = parseInt(el.getAttribute('data-aa-value') || '0', 10);
+          animate(el, to);
+          io.unobserve(el);
+        });
+      }, { threshold: 0.35 });
+
+      cards.forEach(c => io.observe(c));
+    })();
+  </script>
+</section>

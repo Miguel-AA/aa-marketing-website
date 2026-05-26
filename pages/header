@@ -1,0 +1,150 @@
+<section class="aa-header-breakout">
+  <header class="aa-header" role="banner">
+    <div class="aa-header__inner">
+
+      <!-- LOGO -->
+      <a class="aa-brand" href="#home" aria-label="A&A Marketing">
+        <img
+          src="logo/aamarketinginvert.png"
+          alt="A&A Marketing"
+          class="aa-brand__logo"
+        />
+      </a>
+
+      <!-- NAV -->
+      <nav class="aa-nav">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#clients">Clients</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- CTA -->
+      <a class="aa-cta" href="#contact">Get in Touch →</a>
+
+    </div>
+  </header>
+
+  <style>
+    /* ===============================
+       HEADER CONTAINER (FIXED HEIGHT)
+       =============================== */
+
+    .aa-header-breakout{
+      width: 100vw;
+      margin-left: -50vw;
+      left: 50%;
+      position: relative;
+      z-index: 9999;
+    }
+
+    .aa-header{
+      position: sticky;
+      top: 0;
+      height: 88px;                 /* HARD LIMIT */
+      background: transparent;
+      border-bottom: 1px solid rgba(255,196,0,.28);
+      overflow: hidden;             /* CRITICAL */
+    }
+
+    .aa-header__inner{
+      max-width: 1320px;
+      height: 100%;                 /* MATCH HEADER */
+      margin: 0 auto;
+      padding: 0 22px;              /* NO vertical padding */
+      display: flex;
+      align-items: center;          /* VERTICAL CENTER */
+      justify-content: space-between;
+    }
+
+    /* ===============================
+       LOGO (FORCED TO FIT)
+       =============================== */
+
+    .aa-brand{
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+
+    .aa-brand__logo{
+      max-height: 80px;             /* LOGO HEIGHT */
+      width: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    /* ===============================
+       NAV
+       =============================== */
+
+    .aa-nav{
+      display: flex;
+      gap: 28px;
+    }
+
+    .aa-nav a{
+      font-family: Inter, system-ui, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: #fff;
+      text-decoration: none;
+      position: relative;
+    }
+
+    .aa-nav a::after{
+      content:"";
+      position:absolute;
+      left:0;
+      right:0;
+      bottom:-6px;
+      height:1px;
+      width:0;
+      background:#FFC400;
+      margin:auto;
+      transition:.2s;
+    }
+
+    .aa-nav a:hover::after{
+      width:100%;
+    }
+
+    /* ===============================
+       CTA
+       =============================== */
+
+    .aa-cta{
+      font-family: Inter, system-ui, sans-serif;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: #061A3A;
+      text-decoration: none;
+      padding: 12px 16px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,196,0,.45);
+      background: #FFC400;
+      white-space: nowrap;
+      transition: .2s;
+    }
+
+    .aa-cta:hover{
+      transform: translateY(-2px);
+      background: #ffd84d;
+    }
+
+    /* ===============================
+       RESPONSIVE
+       =============================== */
+
+    @media (max-width: 980px){
+      .aa-header{ height: 76px; }
+      .aa-b80nd__logo{ max-height: 72px; }
+      .aa-nav{ display:none; }
+    }
+  </style>
+</section>

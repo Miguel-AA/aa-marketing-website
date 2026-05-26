@@ -1,0 +1,242 @@
+<section class="aa-footer-breakout">
+  <footer class="aa-footer" role="contentinfo">
+    <div class="aa-footer__inner">
+
+      <!-- BRAND -->
+      <div class="aa-footer__brand">
+        <img
+          src="logo/aamarketinginvert.png"
+          alt="A&A Marketing"
+          class="aa-footer__logo"
+        />
+        <p class="aa-footer__tagline">
+          Premium sports marketing, partnerships, and brand strategy.
+        </p>
+      </div>
+
+      <!-- NAV -->
+      <nav class="aa-footer__nav" aria-label="Footer navigation">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#clients">Clients</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- CONTACT -->
+      <div class="aa-footer__contact">
+        <div class="aa-footer__label">Contact</div>
+        <a href="mailto:Andrew@PrimeSportsMarketing.net">Andrew@PrimeSportsMarketing.net</a>
+        <a href="mailto:Gina@PrimeSportsMarketing.net">Gina@PrimeSportsMarketing.net</a>
+      </div>
+
+    </div>
+
+    <!-- BOTTOM BAR -->
+    <div class="aa-footer__bottom">
+      <div class="aa-footer__copy">
+        © <span id="aa-year"></span> A&A Marketing. All rights reserved.
+      </div>
+
+      <div class="aa-footer__legal">
+        <a href="#">Privacy Policy</a>
+        <span>•</span>
+        <a href="#">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    /* ===============================
+       FOOTER BREAKOUT
+       =============================== */
+
+    .aa-footer-breakout{
+      width:100vw;
+      margin-left:-50vw;
+      left:50%;
+      position:relative;
+      background: transparent;
+    }
+
+    .aa-footer{
+      border-top: 1px solid rgba(255,196,0,.18);
+      background: rgba(6,26,58,.45);
+    }
+
+    .aa-footer__inner{
+      max-width:1320px;
+      margin:0 auto;
+      padding:64px 22px 48px;
+      display:grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap:48px;
+      align-items:start;
+    }
+
+    /* ===============================
+       BRAND
+       =============================== */
+
+    .aa-footer__brand{
+      max-width:420px;
+    }
+
+    .aa-footer__logo{
+      max-height:72px;
+      width:auto;
+      object-fit:contain;
+      display:block;
+      margin-bottom:18px;
+    }
+
+    .aa-footer__tagline{
+      font-family: Inter, system-ui, sans-serif;
+      font-size:14px;
+      line-height:1.6;
+      color: rgba(255,255,255,.72);
+    }
+
+    /* ===============================
+       NAV
+       =============================== */
+
+    .aa-footer__nav{
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+
+    .aa-footer__nav a{
+      font-family: Inter, system-ui, sans-serif;
+      font-size:13px;
+      font-weight:700;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:#fff;
+      text-decoration:none;
+      width:fit-content;
+      position:relative;
+    }
+
+    .aa-footer__nav a::after{
+      content:"";
+      position:absolute;
+      left:0;
+      bottom:-4px;
+      height:1px;
+      width:0;
+      background:#FFC400;
+      transition:.2s;
+    }
+
+    .aa-footer__nav a:hover::after{
+      width:100%;
+    }
+
+    /* ===============================
+       CONTACT
+       =============================== */
+
+    .aa-footer__contact{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+
+    .aa-footer__label{
+      font-family: Inter, system-ui, sans-serif;
+      font-size:12px;
+      font-weight:800;
+      letter-spacing:.18em;
+      text-transform:uppercase;
+      color: rgba(255,255,255,.55);
+      margin-bottom:6px;
+    }
+
+    .aa-footer__contact a{
+      font-family: Inter, system-ui, sans-serif;
+      font-size:14px;
+      font-weight:600;
+      color:#fff;
+      text-decoration:none;
+      width:fit-content;
+      position:relative;
+    }
+
+    .aa-footer__contact a::after{
+      content:"";
+      position:absolute;
+      left:0;
+      bottom:-4px;
+      height:1px;
+      width:0;
+      background:#FFC400;
+      transition:.2s;
+    }
+
+    .aa-footer__contact a:hover::after{
+      width:100%;
+    }
+
+    /* ===============================
+       BOTTOM BAR
+       =============================== */
+
+    .aa-footer__bottom{
+      border-top: 1px solid rgba(255,196,0,.12);
+      padding:18px 22px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      max-width:1320px;
+      margin:0 auto;
+      gap:16px;
+      flex-wrap:wrap;
+    }
+
+    .aa-footer__copy{
+      font-family: Inter, system-ui, sans-serif;
+      font-size:12px;
+      color: rgba(255,255,255,.55);
+      letter-spacing:.04em;
+    }
+
+    .aa-footer__legal{
+      display:flex;
+      gap:10px;
+      align-items:center;
+      font-family: Inter, system-ui, sans-serif;
+      font-size:12px;
+    }
+
+    .aa-footer__legal a{
+      color: rgba(255,255,255,.65);
+      text-decoration:none;
+    }
+
+    .aa-footer__legal span{
+      color: rgba(255,196,0,.45);
+    }
+
+    .aa-footer__legal a:hover{
+      color:#FFC400;
+    }
+
+    /* ===============================
+       RESPONSIVE
+       =============================== */
+
+    @media (max-width: 980px){
+      .aa-footer__inner{
+        grid-template-columns:1fr;
+        gap:36px;
+      }
+    }
+  </style>
+
+  <script>
+    // Auto year
+    document.getElementById('aa-year').textContent = new Date().getFullYear();
+  </script>
+</section>
