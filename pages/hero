@@ -22,7 +22,7 @@
       preload="metadata"
       poster="https://primesportsmarketing.net/wp-content/uploads/2026/01/524480.jpg"
     >
-      <source src="https://primesportsmarketing.net/wp-content/uploads/2026/01/hero-basket-prime.mp4" type="video/mp4">
+      <source src="../logo/heroblackandwhite.mp4" type="video/mp4">
     </video>
 
     <!-- Soft blue fade overlay -->
