@@ -29,7 +29,10 @@
                   <path d="M7 14l3-3 3 2 5-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </span>
-              <span class="aa-acc__title">Social Strategy</span>
+              <span class="aa-acc__copy">
+                <span class="aa-acc__title">Social Strategy</span>
+                <span class="aa-acc__meta">Roadmap + cadence</span>
+              </span>
             </span>
             <span class="aa-acc__chev" aria-hidden="true">+</span>
           </button>
@@ -57,7 +60,10 @@
                     stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
                 </svg>
               </span>
-              <span class="aa-acc__title">Content Production</span>
+              <span class="aa-acc__copy">
+                <span class="aa-acc__title">Content Production</span>
+                <span class="aa-acc__meta">Creative built for speed</span>
+              </span>
             </span>
             <span class="aa-acc__chev" aria-hidden="true">+</span>
           </button>
@@ -85,7 +91,10 @@
                   <path d="M9 12l2 2 4-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </span>
-              <span class="aa-acc__title">Influencer & Talent</span>
+              <span class="aa-acc__copy">
+                <span class="aa-acc__title">Influencer & Talent</span>
+                <span class="aa-acc__meta">Creator-led campaigns</span>
+              </span>
             </span>
             <span class="aa-acc__chev" aria-hidden="true">+</span>
           </button>
@@ -113,7 +122,10 @@
                   <path d="M9 12h6M9 16h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
                 </svg>
               </span>
-              <span class="aa-acc__title">Brand & Campaigns</span>
+              <span class="aa-acc__copy">
+                <span class="aa-acc__title">Brand & Campaigns</span>
+                <span class="aa-acc__meta">Launch systems</span>
+              </span>
             </span>
             <span class="aa-acc__chev" aria-hidden="true">+</span>
           </button>
@@ -142,7 +154,10 @@
                   <path d="M12 8a4 4 0 1 1 0 8a4 4 0 0 1 0-8Z" stroke="currentColor" stroke-width="1.8"/>
                 </svg>
               </span>
-              <span class="aa-acc__title">Performance Growth</span>
+              <span class="aa-acc__copy">
+                <span class="aa-acc__title">Performance Growth</span>
+                <span class="aa-acc__meta">Paid + organic scale</span>
+              </span>
             </span>
             <span class="aa-acc__chev" aria-hidden="true">+</span>
           </button>
@@ -170,7 +185,10 @@
                   <path d="M6 20h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
                 </svg>
               </span>
-              <span class="aa-acc__title">Website & Funnels</span>
+              <span class="aa-acc__copy">
+                <span class="aa-acc__title">Website & Funnels</span>
+                <span class="aa-acc__meta">Conversion paths</span>
+              </span>
             </span>
             <span class="aa-acc__chev" aria-hidden="true">+</span>
           </button>
@@ -192,7 +210,7 @@
       <!-- Bottom CTA row -->
       <div class="aa-services2__foot">
         <div class="aa-services2__note">
-          Want a custom package? We’ll map the fastest path from content to revenue.
+          Need a custom package? We'll build a plan around your goals.
         </div>
         <a class="aa-services2__cta" href="#contact">Request a consultation</a>
       </div>
@@ -296,6 +314,7 @@
     #services .aa-services2__grid{
       display:grid;
       grid-template-columns: repeat(12, 1fr);
+      align-items: start;
       gap: 16px;
       margin-top: 22px;
     }
@@ -305,25 +324,44 @@
       grid-column: span 4;
       border-radius: 18px;
       border: 1px solid rgba(245,247,250,.10);
-      background: rgba(6,26,58,.54);
+      background:
+        linear-gradient(145deg, rgba(245,247,250,.075), rgba(245,247,250,.02) 42%),
+        rgba(6,26,58,.56);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
-      box-shadow: 0 18px 45px rgba(0,0,0,.22);
+      box-shadow: 0 18px 45px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,255,255,.05);
       overflow: hidden;
       position: relative;
       transform: translateZ(0);
       transition: border-color .18s ease, box-shadow .18s ease, background .18s ease;
     }
 
+    #services .aa-acc::before{
+      content:"";
+      position:absolute;
+      left:0;
+      top:0;
+      bottom:0;
+      width:3px;
+      background: linear-gradient(180deg, rgba(255,196,0,.95), rgba(255,196,0,0));
+      opacity:.42;
+      pointer-events:none;
+    }
+
     /* No “lift” as main interaction — keep it subtle */
     #services .aa-acc:hover{
       border-color: rgba(255,196,0,.26);
-      box-shadow: 0 22px 56px rgba(0,0,0,.28);
+      box-shadow: 0 22px 56px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.07);
+      background:
+        linear-gradient(145deg, rgba(255,196,0,.09), rgba(245,247,250,.025) 46%),
+        rgba(6,26,58,.58);
     }
 
     #services .aa-acc--featured{
       border-color: rgba(255,196,0,.34);
-      background: linear-gradient(180deg, rgba(255,196,0,.08), rgba(6,26,58,.54));
+      background:
+        linear-gradient(145deg, rgba(255,196,0,.18), rgba(245,247,250,.035) 48%),
+        rgba(6,26,58,.58);
     }
 
     /* Soft sheen always (luxury) */
@@ -368,19 +406,40 @@
       border-radius: 14px;
       display:flex; align-items:center; justify-content:center;
       border: 1px solid rgba(255,196,0,.18);
-      background: rgba(255,196,0,.06);
+      background:
+        linear-gradient(135deg, rgba(255,196,0,.18), rgba(245,247,250,.045));
       color: rgba(245,247,250,.92);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.08);
       flex: 0 0 auto;
     }
     #services .aa-acc__icon svg{ width: 22px; height: 22px; display:block; }
 
+    #services .aa-acc__copy{
+      min-width: 0;
+      display:grid;
+      gap: 5px;
+    }
+
     #services .aa-acc__title{
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       font-weight: 900;
-      letter-spacing: -0.02em;
+      letter-spacing: .01em;
       text-transform: uppercase;
       font-size: 14px;
-      line-height: 1.2;
+      line-height: 1.05;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    #services .aa-acc__meta{
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: .16em;
+      line-height: 1;
+      text-transform: uppercase;
+      color: rgba(255,196,0,.82);
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -391,7 +450,7 @@
       border-radius: 14px;
       display:flex; align-items:center; justify-content:center;
       border: 1px solid rgba(255,196,0,.18);
-      background: rgba(255,196,0,.06);
+      background: rgba(245,247,250,.055);
       color: #F5F7FA;
       font-weight: 900;
       font-size: 18px;
@@ -526,6 +585,17 @@
       justify-content: space-between;
       gap: 16px;
       flex-wrap: wrap;
+      position: relative;
+    }
+
+    #services .aa-services2__foot::before{
+      content:"";
+      position:absolute;
+      left:0;
+      top:-1px;
+      width:180px;
+      height:1px;
+      background: linear-gradient(90deg, rgba(255,196,0,.88), rgba(255,196,0,0));
     }
 
     #services .aa-services2__note{
@@ -599,7 +669,7 @@
         if(btn) btn.setAttribute('aria-expanded', 'true');
         if(panel){
           panel.setAttribute('aria-hidden', 'false');
-          panel.style.maxHeight = panel.scrollHeight + 'px';
+          panel.style.maxHeight = (panel.scrollHeight + 40) + 'px';
         }
       }
 
@@ -627,7 +697,7 @@
         items.forEach(item => {
           if(!item.classList.contains('aa-open')) return;
           const panel = item.querySelector('.aa-acc__panel');
-          if(panel) panel.style.maxHeight = panel.scrollHeight + 'px';
+          if(panel) panel.style.maxHeight = (panel.scrollHeight + 40) + 'px';
         });
       }, { passive: true });
 
