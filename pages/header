@@ -5,7 +5,7 @@
       <!-- LOGO -->
       <a class="aa-brand" href="#home" aria-label="A&A Marketing home">
         <img
-          src="logo/aa_headerlogo.png"
+          src="../logo/aa_headerlogo.png"
           alt="A&A Marketing"
           class="aa-brand__logo"
         />
