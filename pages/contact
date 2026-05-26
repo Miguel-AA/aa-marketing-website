@@ -1,5 +1,7 @@
 <section class="aa-contact-breakout" id="contact">
   <div class="aa-contact">
+    <div class="aa-contact__halo aa-contact__halo--left" aria-hidden="true"></div>
+    <div class="aa-contact__halo aa-contact__halo--right" aria-hidden="true"></div>
     <div class="aa-contact__lines" aria-hidden="true"></div>
     <div class="aa-contact__dust" aria-hidden="true"></div>
 
@@ -7,10 +9,14 @@
       <!-- Head -->
       <header class="aa-contact__head">
         <div class="aa-contact__kicker">Get In Touch</div>
-        <h2 class="aa-contact__title">Get in Touch</h2>
-        <p class="aa-contact__sub">
-          Tell us what you’re trying to achieve. We’ll respond quickly with a clean, brand-safe plan.
-        </p>
+
+        <div class="aa-contact__headGrid">
+          <h2 class="aa-contact__title">Get in Touch</h2>
+
+          <p class="aa-contact__sub">
+            Tell us what you’re trying to achieve. We’ll respond quickly with a clean, brand-safe plan.
+          </p>
+        </div>
       </header>
 
       <!-- Body -->
@@ -18,8 +24,15 @@
         <!-- Form Card -->
         <div class="aa-contact__card" role="region" aria-label="Contact form">
           <div class="aa-contact__cardTop">
-            <div class="aa-contact__cardTitle">Send a message</div>
-            <div class="aa-contact__cardHint">We typically reply within 1 business day.</div>
+            <div>
+              <div class="aa-contact__cardTitle">Send a message</div>
+              <div class="aa-contact__cardHint">We typically reply within 1 business day.</div>
+            </div>
+
+            <div class="aa-contact__badge">
+              <span aria-hidden="true"></span>
+              Fast reply
+            </div>
           </div>
 
           <form class="aa-form" id="aa-contact-form">
@@ -54,7 +67,8 @@
 
             <div class="aa-form__bottom">
               <button class="aa-form__submit" type="submit">
-                Submit
+                <span>Submit</span>
+                <span class="aa-form__submitIcon" aria-hidden="true">→</span>
               </button>
 
               <div class="aa-form__fineprint">
@@ -69,7 +83,14 @@
         <!-- Info Column -->
         <aside class="aa-contact__info" aria-label="Contact details">
           <div class="aa-infoCard">
-            <div class="aa-infoCard__title">We can’t wait to hear from you</div>
+            <div class="aa-infoCard__top">
+              <div class="aa-infoCard__mark" aria-hidden="true">A&amp;A</div>
+
+              <div>
+                <div class="aa-infoCard__title">We can’t wait to hear from you</div>
+                <div class="aa-infoCard__subtitle">Premium partnerships, strategy, and brand-safe execution.</div>
+              </div>
+            </div>
 
             <div class="aa-infoCard__block">
               <div class="aa-infoCard__label">Office</div>
@@ -98,10 +119,12 @@
               <span class="aa-trustStrip__dot" aria-hidden="true"></span>
               <span class="aa-trustStrip__text">Brand-safe execution</span>
             </div>
+
             <div class="aa-trustStrip__item">
               <span class="aa-trustStrip__dot" aria-hidden="true"></span>
               <span class="aa-trustStrip__text">Premium partners</span>
             </div>
+
             <div class="aa-trustStrip__item">
               <span class="aa-trustStrip__dot" aria-hidden="true"></span>
               <span class="aa-trustStrip__text">Fast response time</span>
@@ -115,7 +138,11 @@
         <div class="aa-contact__note">
           Prefer a quick intro call? Send a message and we’ll propose times.
         </div>
-        <a class="aa-contact__cta" href="#partners">View partners</a>
+
+        <a class="aa-contact__cta" href="#partners">
+          View partners
+          <span aria-hidden="true">→</span>
+        </a>
       </div>
     </div>
   </div>
@@ -135,29 +162,73 @@
     #contact.aa-contact-breakout .aa-contact{
       position: relative;
       padding: 92px 0 86px;
-      background: transparent !important;
+      background:
+        radial-gradient(900px 520px at 18% 12%, rgba(255,196,0,.12), transparent 62%),
+        radial-gradient(900px 560px at 82% 54%, rgba(245,247,250,.07), transparent 64%),
+        linear-gradient(180deg, rgba(6,26,58,.96), rgba(3,13,31,.92));
       overflow: hidden;
       isolation: isolate;
     }
 
     #contact .aa-contact__inner{
       position: relative;
-      z-index: 3;
+      z-index: 4;
       max-width: 1320px;
       margin: 0 auto;
       padding: 0 22px;
     }
 
-    /* Subtle texture only */
+    #contact .aa-contact__halo{
+      position:absolute;
+      z-index:0;
+      pointer-events:none;
+      border-radius:999px;
+      filter: blur(8px);
+    }
+
+    #contact .aa-contact__halo--left{
+      width: 560px;
+      height: 560px;
+      left: -220px;
+      top: 40px;
+      background: radial-gradient(closest-side, rgba(255,196,0,.16), transparent 72%);
+      opacity:.68;
+    }
+
+    #contact .aa-contact__halo--right{
+      width: 620px;
+      height: 620px;
+      right: -260px;
+      bottom: -180px;
+      background: radial-gradient(closest-side, rgba(245,247,250,.08), transparent 72%);
+      opacity:.64;
+    }
+
     #contact .aa-contact__lines{
-      position:absolute; inset:0; z-index:1; pointer-events:none; opacity:.10;
-      background: repeating-linear-gradient(135deg, rgba(255,196,0,.14) 0px, rgba(255,196,0,.14) 1px, transparent 1px, transparent 26px);
+      position:absolute;
+      inset:0;
+      z-index:1;
+      pointer-events:none;
+      opacity:.12;
+      background:
+        repeating-linear-gradient(
+          135deg,
+          rgba(255,196,0,.15) 0px,
+          rgba(255,196,0,.15) 1px,
+          transparent 1px,
+          transparent 28px
+        );
       mask-image: radial-gradient(900px 650px at 60% 30%, black 0%, black 52%, transparent 78%);
       -webkit-mask-image: radial-gradient(900px 650px at 60% 30%, black 0%, black 52%, transparent 78%);
       mix-blend-mode: screen;
     }
+
     #contact .aa-contact__dust{
-      position:absolute; inset:0; z-index:1; pointer-events:none; opacity:.10;
+      position:absolute;
+      inset:0;
+      z-index:1;
+      pointer-events:none;
+      opacity:.13;
       background-image:
         radial-gradient(circle at 16% 26%, rgba(255,196,0,.22) 0 1px, transparent 2px),
         radial-gradient(circle at 32% 72%, rgba(245,247,250,.16) 0 1px, transparent 2px),
@@ -168,101 +239,175 @@
       mix-blend-mode: screen;
     }
 
-    /* Head */
-    #contact .aa-contact__head{ max-width: 980px; margin-bottom: 18px; }
+    #contact .aa-contact__head{
+      max-width: 1120px;
+      margin-bottom: 28px;
+    }
+
     #contact .aa-contact__kicker{
-      display:inline-flex; align-items:center; gap:10px;
-      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      font-weight: 900; font-size: 12px; letter-spacing: .26em;
-      text-transform: uppercase; color: rgba(245,247,250,.92);
-      text-shadow: 0 12px 34px rgba(0,0,0,.38);
-    }
-    #contact .aa-contact__kicker::before{
-      content:""; width:28px; height:2px; border-radius:2px;
-      background: rgba(255,196,0,.98);
-      box-shadow: 0 10px 26px rgba(255,196,0,.25);
-    }
-    #contact .aa-contact__title{
-      margin: 14px 0 0;
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       font-weight: 900;
-      letter-spacing: -0.03em;
-      line-height: 1.02;
-      font-size: clamp(28px, 3.4vw, 54px);
-      color: rgba(245,247,250,.94);
+      font-size: 12px;
+      letter-spacing: .26em;
       text-transform: uppercase;
-      text-shadow: 0 18px 54px rgba(0,0,0,.45);
+      color: rgba(245,247,250,.94);
+      text-shadow: 0 12px 34px rgba(0,0,0,.38);
     }
-    #contact .aa-contact__sub{
-      margin: 12px 0 0;
+
+    #contact .aa-contact__kicker::before{
+      content:"";
+      width:28px;
+      height:2px;
+      border-radius:2px;
+      background:#FFC400;
+      box-shadow: 0 10px 26px rgba(255,196,0,.25);
+    }
+
+    #contact .aa-contact__headGrid{
+      margin-top: 14px;
+      display:grid;
+      grid-template-columns: .85fr 1fr;
+      gap: 28px;
+      align-items:end;
+    }
+
+    #contact .aa-contact__title{
+      margin: 0;
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      font-size: 15px; line-height: 1.72;
-      color: rgba(245,247,250,.80);
-      max-width: 74ch;
+      font-weight: 900;
+      letter-spacing: -0.045em;
+      line-height: .95;
+      font-size: clamp(38px, 5vw, 76px);
+      color: #F5F7FA;
+      text-transform: uppercase;
+      text-shadow:
+        0 20px 58px rgba(0,0,0,.54),
+        0 0 34px rgba(6,26,58,.42);
+    }
+
+    #contact .aa-contact__sub{
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+      color: rgba(245,247,250,.84);
+      max-width: 64ch;
+      font-weight: 700;
       text-shadow: 0 14px 40px rgba(0,0,0,.30);
     }
 
-    /* Grid */
     #contact .aa-contact__grid{
       margin-top: 18px;
       display:grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap: 14px;
-      align-items: start;
+      grid-template-columns: minmax(0, 1.16fr) minmax(360px, .84fr);
+      gap: 18px;
+      align-items: stretch;
     }
 
-    /* Form card */
-    #contact .aa-contact__card{
-      border-radius: 26px;
-      border: 1px solid rgba(255,196,0,.14);
-      background: rgba(6,26,58,.30);
-      box-shadow: 0 34px 90px rgba(0,0,0,.40), inset 0 0 0 1px rgba(255,255,255,.04);
-      overflow:hidden;
+    #contact .aa-contact__card,
+    #contact .aa-infoCard,
+    #contact .aa-trustStrip{
       position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(255,196,0,.22);
+      background:
+        linear-gradient(145deg, rgba(245,247,250,.075), rgba(245,247,250,.025)),
+        rgba(6,26,58,.42);
+      box-shadow:
+        0 34px 90px rgba(0,0,0,.36),
+        inset 0 1px 0 rgba(255,255,255,.07);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
     }
-    #contact .aa-contact__card::before{
+
+    #contact .aa-contact__card{
+      border-radius: 30px;
+    }
+
+    #contact .aa-contact__card::before,
+    #contact .aa-infoCard::before,
+    #contact .aa-trustStrip::before{
       content:"";
-      position:absolute; inset:-30% -30% auto -30%;
-      height: 210px;
-      background: radial-gradient(closest-side, rgba(255,255,255,.10), rgba(255,255,255,0));
-      opacity:.16;
+      position:absolute;
+      inset:-34% -30% auto -30%;
+      height: 220px;
+      background: radial-gradient(closest-side, rgba(255,255,255,.12), rgba(255,255,255,0));
+      opacity:.18;
       pointer-events:none;
     }
-    #contact .aa-contact__card::after{
+
+    #contact .aa-contact__card::after,
+    #contact .aa-infoCard::after,
+    #contact .aa-trustStrip::after{
       content:"";
-      position:absolute; inset:auto -40% -50% -40%;
-      height: 260px;
-      background: radial-gradient(closest-side, rgba(255,196,0,.20), rgba(255,196,0,0));
-      opacity:.35;
+      position:absolute;
+      inset:auto -40% -55% -40%;
+      height: 280px;
+      background: radial-gradient(closest-side, rgba(255,196,0,.22), rgba(255,196,0,0));
+      opacity:.42;
       pointer-events:none;
     }
 
     #contact .aa-contact__cardTop{
-      padding: 18px 18px 12px;
-      border-bottom: 1px solid rgba(245,247,250,.10);
+      padding: 22px 22px 16px;
+      border-bottom: 1px solid rgba(255,196,0,.12);
       position: relative;
       z-index: 2;
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap: 16px;
     }
+
     #contact .aa-contact__cardTitle{
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       font-weight: 900;
-      letter-spacing: .12em;
+      letter-spacing: .16em;
       text-transform: uppercase;
-      color: rgba(245,247,250,.92);
-      font-size: 12px;
+      color: rgba(245,247,250,.96);
+      font-size: 13px;
     }
+
     #contact .aa-contact__cardHint{
       margin-top: 8px;
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color: rgba(245,247,250,.74);
+      color: rgba(245,247,250,.72);
       font-size: 14px;
       line-height: 1.55;
       max-width: 70ch;
+      font-weight: 700;
     }
 
-    /* Form */
+    #contact .aa-contact__badge{
+      display:inline-flex;
+      align-items:center;
+      gap: 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,196,0,.26);
+      background: rgba(255,196,0,.10);
+      color: rgba(245,247,250,.92);
+      padding: 8px 10px;
+      font-family: Inter, system-ui, sans-serif;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    #contact .aa-contact__badge span{
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: #FFC400;
+      box-shadow: 0 0 0 4px rgba(255,196,0,.10);
+    }
+
     #contact .aa-form{
-      padding: 16px 18px 18px;
+      padding: 20px 22px 22px;
       position: relative;
       z-index: 2;
     }
@@ -270,73 +415,107 @@
     #contact .aa-form__row{
       display:grid;
       grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      margin-bottom: 12px;
+      gap: 14px;
+      margin-bottom: 14px;
     }
 
-    #contact .aa-field{ display:flex; flex-direction:column; gap:8px; }
+    #contact .aa-field{
+      display:flex;
+      flex-direction:column;
+      gap:9px;
+    }
+
     #contact .aa-field__label{
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       font-size: 11px;
       font-weight: 900;
-      letter-spacing: .18em;
+      letter-spacing: .20em;
       text-transform: uppercase;
-      color: rgba(245,247,250,.72);
+      color: rgba(245,247,250,.78);
     }
 
     #contact .aa-field__input{
       width:100%;
-      border-radius: 16px;
-      border: 1px solid rgba(255,196,0,.18);
-      background: rgba(6,26,58,.36);
-      color: rgba(245,247,250,.92);
+      min-height: 48px;
+      border-radius: 18px;
+      border: 1px solid rgba(255,196,0,.22);
+      background:
+        linear-gradient(180deg, rgba(6,26,58,.50), rgba(6,26,58,.38));
+      color: rgba(245,247,250,.96);
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       font-size: 14px;
-      padding: 12px 12px;
-      transition: border-color .18s ease, box-shadow .18s ease, background .18s ease;
+      font-weight: 700;
+      padding: 13px 14px;
+      transition: border-color .18s ease, box-shadow .18s ease, background .18s ease, transform .18s ease;
       -webkit-tap-highlight-color: rgba(0,0,0,0);
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.045),
+        0 12px 30px rgba(0,0,0,.12);
     }
-    #contact .aa-field__input::placeholder{ color: rgba(245,247,250,.46); }
+
+    #contact .aa-field__input::placeholder{
+      color: rgba(245,247,250,.42);
+      font-weight: 700;
+    }
+
+    #contact .aa-field__input:hover{
+      border-color: rgba(255,196,0,.34);
+      background:
+        linear-gradient(180deg, rgba(6,26,58,.56), rgba(6,26,58,.42));
+    }
+
+    #contact .aa-field__input:focus{
+      border-color: rgba(255,196,0,.70);
+      background:
+        linear-gradient(180deg, rgba(6,26,58,.62), rgba(6,26,58,.48));
+      box-shadow:
+        0 0 0 3px rgba(255,196,0,.24),
+        0 22px 60px rgba(0,0,0,.28),
+        inset 0 1px 0 rgba(255,255,255,.06);
+    }
 
     #contact .aa-field__textarea{
-      min-height: 132px;
+      min-height: 150px;
       resize: vertical;
+      line-height: 1.65;
     }
 
-    /* Focus: kill magenta + use yellow */
-    #contact, #contact *{ outline:none !important; }
-    #contact .aa-field__input:focus{
-      border-color: rgba(255,196,0,.55);
-      box-shadow: 0 0 0 3px rgba(255,196,0,.28), 0 22px 60px rgba(0,0,0,.25);
-      background: rgba(6,26,58,.42);
+    #contact, #contact *{
+      outline:none !important;
     }
-    #contact a:focus, #contact a:focus-visible,
-    #contact button:focus, #contact button:focus-visible{
+
+    #contact a:focus,
+    #contact a:focus-visible,
+    #contact button:focus,
+    #contact button:focus-visible{
       outline:none !important;
       box-shadow:none !important;
     }
+
     #contact .aa-form__submit:focus-visible{
-      box-shadow: 0 0 0 3px rgba(255,196,0,.52), 0 22px 60px rgba(0,0,0,.25) !important;
+      box-shadow:
+        0 0 0 3px rgba(255,196,0,.52),
+        0 22px 60px rgba(0,0,0,.25) !important;
     }
 
-    /* Bottom row */
     #contact .aa-form__bottom{
-      margin-top: 12px;
+      margin-top: 14px;
       display:flex;
       align-items:center;
       justify-content: space-between;
-      gap: 12px;
+      gap: 14px;
       flex-wrap: wrap;
-      padding-top: 14px;
-      border-top: 1px solid rgba(245,247,250,.10);
+      padding-top: 16px;
+      border-top: 1px solid rgba(245,247,250,.12);
     }
 
     #contact .aa-form__submit{
-      border: 1px solid rgba(255,196,0,.45);
-      background: #FFC400;
+      min-height: 48px;
+      border: 1px solid rgba(255,196,0,.62);
+      background: linear-gradient(135deg, #FFC400 0%, #FFD84D 100%);
       color: #061A3A;
-      border-radius: 16px;
-      padding: 12px 16px;
+      border-radius: 18px;
+      padding: 0 18px;
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       font-size: 12px;
       font-weight: 900;
@@ -344,69 +523,121 @@
       text-transform: uppercase;
       cursor:pointer;
       transition: transform .18s ease, opacity .18s ease, box-shadow .18s ease, background .18s ease;
-      box-shadow: 0 18px 45px rgba(0,0,0,.22);
+      box-shadow:
+        0 18px 45px rgba(0,0,0,.28),
+        0 12px 34px rgba(255,196,0,.18);
       white-space: nowrap;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap: 10px;
     }
+
+    #contact .aa-form__submitIcon{
+      width: 28px;
+      height: 28px;
+      border-radius: 10px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      background: rgba(6,26,58,.14);
+      font-size: 14px;
+      line-height: 1;
+    }
+
     #contact .aa-form__submit:hover{
       transform: translateY(-2px);
-      opacity:.98;
-      background:#FFD84D;
-      box-shadow: 0 22px 60px rgba(0,0,0,.28);
+      background: linear-gradient(135deg, #FFD84D 0%, #FFC400 100%);
+      box-shadow:
+        0 24px 62px rgba(0,0,0,.34),
+        0 16px 40px rgba(255,196,0,.22);
+    }
+
+    #contact .aa-form__submit.is-loading{
+      opacity: .78;
+      pointer-events: none;
     }
 
     #contact .aa-form__fineprint{
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       font-size: 12px;
       line-height: 1.55;
-      color: rgba(245,247,250,.64);
+      color: rgba(245,247,250,.66);
       max-width: 52ch;
+      font-weight: 700;
     }
 
     #contact .aa-form__status{
       margin-top: 10px;
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       font-size: 13px;
-      color: rgba(245,247,250,.80);
+      color: rgba(255,196,0,.92);
+      font-weight: 800;
     }
 
-    /* Info card */
-    #contact .aa-contact__info{ display:flex; flex-direction:column; gap: 12px; }
+    #contact .aa-contact__info{
+      display:flex;
+      flex-direction:column;
+      gap: 14px;
+    }
 
     #contact .aa-infoCard{
-      border-radius: 26px;
-      border: 1px solid rgba(255,196,0,.14);
-      background: rgba(6,26,58,.26);
-      box-shadow: 0 30px 78px rgba(0,0,0,.30);
-      padding: 18px;
-      position: relative;
-      overflow:hidden;
+      border-radius: 30px;
+      padding: 22px;
+      flex: 1;
     }
-    #contact .aa-infoCard::after{
-      content:"";
-      position:absolute; inset:auto -40% -60% -40%;
-      height: 280px;
-      background: radial-gradient(closest-side, rgba(255,196,0,.16), rgba(255,196,0,0));
-      opacity:.35;
-      pointer-events:none;
+
+    #contact .aa-infoCard__top{
+      display:grid;
+      grid-template-columns: 54px 1fr;
+      gap: 14px;
+      align-items:center;
+      position: relative;
+      z-index: 2;
+    }
+
+    #contact .aa-infoCard__mark{
+      width: 54px;
+      height: 54px;
+      border-radius: 18px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background: linear-gradient(135deg, #FFC400, #FFD84D);
+      color: #061A3A;
+      font-family: Inter, system-ui, sans-serif;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: -.04em;
+      box-shadow:
+        0 18px 45px rgba(0,0,0,.26),
+        0 12px 34px rgba(255,196,0,.16);
     }
 
     #contact .aa-infoCard__title{
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       font-weight: 900;
-      letter-spacing: -0.02em;
+      letter-spacing: -0.035em;
       text-transform: uppercase;
-      color: rgba(245,247,250,.94);
-      font-size: 18px;
-      line-height: 1.1;
+      color: #F5F7FA;
+      font-size: clamp(19px, 1.55vw, 24px);
+      line-height: 1.05;
       text-shadow: 0 18px 54px rgba(0,0,0,.35);
-      position: relative;
-      z-index: 2;
+    }
+
+    #contact .aa-infoCard__subtitle{
+      margin-top: 6px;
+      color: rgba(245,247,250,.68);
+      font-family: Inter, system-ui, sans-serif;
+      font-size: 13px;
+      line-height: 1.45;
+      font-weight: 700;
     }
 
     #contact .aa-infoCard__block{
-      margin-top: 14px;
-      padding-top: 14px;
-      border-top: 1px solid rgba(245,247,250,.10);
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(245,247,250,.12);
       position: relative;
       z-index: 2;
     }
@@ -415,9 +646,9 @@
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       font-size: 11px;
       font-weight: 900;
-      letter-spacing: .18em;
+      letter-spacing: .20em;
       text-transform: uppercase;
-      color: rgba(245,247,250,.72);
+      color: rgba(255,196,0,.90);
     }
 
     #contact .aa-infoCard__text{
@@ -425,7 +656,8 @@
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       font-size: 14px;
       line-height: 1.7;
-      color: rgba(245,247,250,.80);
+      color: rgba(245,247,250,.84);
+      font-weight: 700;
     }
 
     #contact .aa-infoCard__link{
@@ -433,17 +665,21 @@
       margin-top: 8px;
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       font-size: 14px;
-      font-weight: 800;
+      font-weight: 850;
       letter-spacing: .02em;
-      color: rgba(245,247,250,.92);
+      color: rgba(245,247,250,.94);
       text-decoration: none;
-      transition: opacity .18s ease, transform .18s ease;
+      transition: opacity .18s ease, transform .18s ease, color .18s ease;
       position: relative;
       width: fit-content;
     }
+
     #contact .aa-infoCard__link::after{
       content:"";
-      position:absolute; left:0; right:0; bottom:-4px;
+      position:absolute;
+      left:0;
+      right:0;
+      bottom:-4px;
       height:2px;
       border-radius: 2px;
       background: rgba(255,196,0,.85);
@@ -451,538 +687,281 @@
       transform-origin: left;
       transition: transform .18s ease;
     }
+
     #contact .aa-infoCard__link:hover{
+      color: #FFC400;
       opacity:.98;
       transform: translateY(-1px);
     }
-    #contact .aa-infoCard__link:hover::after{ transform: scaleX(1); }
 
-    /* Trust strip */
+    #contact .aa-infoCard__link:hover::after{
+      transform: scaleX(1);
+    }
+
     #contact .aa-trustStrip{
-      border-radius: 22px;
-      border: 1px solid rgba(255,196,0,.14);
-      background: rgba(6,26,58,.22);
-      box-shadow: 0 24px 60px rgba(0,0,0,.22);
-      padding: 14px 14px;
+      border-radius: 26px;
+      padding: 18px;
       display:flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 11px;
     }
+
     #contact .aa-trustStrip__item{
       display:flex;
       align-items:center;
-      gap: 10px;
-      color: rgba(245,247,250,.78);
+      gap: 11px;
+      color: rgba(245,247,250,.86);
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       font-size: 13px;
-      font-weight: 800;
+      font-weight: 850;
       letter-spacing: .02em;
+      position:relative;
+      z-index:2;
     }
+
     #contact .aa-trustStrip__dot{
-      width: 9px; height: 9px; border-radius: 999px;
-      background: rgba(255,196,0,.92);
-      box-shadow: 0 14px 34px rgba(255,196,0,.20);
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      background: #FFC400;
+      box-shadow:
+        0 0 0 4px rgba(255,196,0,.10),
+        0 14px 34px rgba(255,196,0,.22);
       flex: 0 0 auto;
     }
 
-    /* Bottom */
     #contact .aa-contact__foot{
-      margin-top: 22px;
-      padding-top: 18px;
-      border-top: 1px solid rgba(245,247,250,.10);
+      margin-top: 26px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(245,247,250,.12);
       display:flex;
       align-items:center;
       justify-content: space-between;
       gap: 16px;
       flex-wrap: wrap;
     }
+
     #contact .aa-contact__note{
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color: rgba(245,247,250,.75);
+      color: rgba(245,247,250,.78);
       font-size: 14px;
       line-height: 1.6;
       max-width: 70ch;
+      font-weight: 700;
     }
+
     #contact .aa-contact__cta{
       display:inline-flex;
       align-items:center;
       justify-content:center;
+      gap: 10px;
       text-decoration:none;
-      border-radius: 14px;
+      border-radius: 18px;
       padding: 12px 16px;
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       font-size: 12px;
       font-weight: 900;
       letter-spacing: .14em;
       text-transform: uppercase;
-      color: rgba(245,247,250,.92);
-      background: rgba(6,26,58,.28);
-      border: 1px solid rgba(255,196,0,.18);
+      color: rgba(245,247,250,.94);
+      background:
+        linear-gradient(145deg, rgba(245,247,250,.06), rgba(245,247,250,.02)),
+        rgba(6,26,58,.38);
+      border: 1px solid rgba(255,196,0,.30);
       box-shadow: 0 18px 45px rgba(0,0,0,.22);
       transition: transform .18s ease, opacity .18s ease, border-color .18s ease, background .18s ease;
       white-space: nowrap;
     }
+
+    #contact .aa-contact__cta span{
+      color: #FFC400;
+      font-size: 14px;
+    }
+
     #contact .aa-contact__cta:hover{
       transform: translateY(-2px);
       opacity:.98;
-      background: rgba(255,196,0,.10);
-      border-color: rgba(255,196,0,.34);
+      background: rgba(255,196,0,.12);
+      border-color: rgba(255,196,0,.48);
+      color: #fff;
     }
 
-    /* Responsive */
     @media (max-width: 980px){
-      #contact .aa-contact__grid{ grid-template-columns: 1fr; }
-      #contact .aa-form__row{ grid-template-columns: 1fr; }
+      #contact .aa-contact__headGrid{
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      #contact .aa-contact__grid{
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      #contact .aa-form__row{
+        grid-template-columns: 1fr;
+      }
+
+      #contact .aa-contact__card,
+      #contact .aa-infoCard{
+        border-radius: 26px;
+      }
     }
+
     @media (max-width: 640px){
-      #contact.aa-contact-breakout .aa-contact{ padding: 78px 0 72px; }
+      #contact.aa-contact-breakout .aa-contact{
+        padding: 78px 0 72px;
+      }
+
+      #contact .aa-contact__head{
+        margin-bottom: 22px;
+      }
+
+      #contact .aa-contact__cardTop{
+        padding: 18px 16px;
+        flex-direction: column;
+      }
+
+      #contact .aa-form{
+        padding: 18px 16px 18px;
+      }
+
+      #contact .aa-infoCard{
+        padding: 18px 16px;
+      }
+
+      #contact .aa-infoCard__top{
+        grid-template-columns: 1fr;
+      }
+
+      #contact .aa-form__bottom{
+        align-items: stretch;
+      }
+
+      #contact .aa-form__submit{
+        width: 100%;
+      }
+
+      #contact .aa-form__fineprint{
+        max-width: none;
+      }
+
+      #contact .aa-contact__cta{
+        width: 100%;
+      }
     }
-    /* =========================================================
-   CONTACT VISUAL POLISH ONLY — DO NOT TOUCH PADDING
-   ========================================================= */
-
-/* Keep existing section padding untouched.
-   This only improves layout, contrast, cards, inputs, and buttons. */
-
-/* Header refinement */
-#contact .aa-contact__head{
-  max-width: 980px;
-  margin-bottom: 28px;
-}
-
-#contact .aa-contact__kicker{
-  color: rgba(245,247,250,.94);
-}
-
-#contact .aa-contact__title{
-  max-width: 820px;
-  color: #F5F7FA;
-  text-shadow:
-    0 18px 54px rgba(0,0,0,.52),
-    0 0 34px rgba(6,26,58,.42);
-}
-
-#contact .aa-contact__sub{
-  margin-top: 14px;
-  max-width: 76ch;
-  color: rgba(245,247,250,.84);
-  font-weight: 650;
-}
-
-/* Main grid: cleaner spacing without touching section padding */
-#contact .aa-contact__grid{
-  gap: 18px;
-  align-items: stretch;
-}
-
-/* Form card: stronger premium container */
-#contact .aa-contact__card{
-  border-radius: 30px;
-  border-color: rgba(255,196,0,.22);
-  background:
-    linear-gradient(145deg, rgba(245,247,250,.075), rgba(245,247,250,.025)),
-    rgba(6,26,58,.42);
-  box-shadow:
-    0 34px 90px rgba(0,0,0,.38),
-    inset 0 1px 0 rgba(255,255,255,.07);
-}
-
-/* Soft gold glow at bottom of form */
-#contact .aa-contact__card::after{
-  opacity: .48;
-  background: radial-gradient(closest-side, rgba(255,196,0,.22), rgba(255,196,0,0));
-}
-
-/* Form top area */
-#contact .aa-contact__cardTop{
-  padding: 22px 22px 16px;
-  border-bottom: 1px solid rgba(255,196,0,.12);
-}
-
-#contact .aa-contact__cardTitle{
-  color: rgba(245,247,250,.96);
-  font-size: 13px;
-  letter-spacing: .16em;
-}
-
-#contact .aa-contact__cardHint{
-  margin-top: 8px;
-  color: rgba(245,247,250,.72);
-  font-weight: 700;
-}
-
-/* Form spacing */
-#contact .aa-form{
-  padding: 20px 22px 22px;
-}
-
-#contact .aa-form__row{
-  gap: 14px;
-  margin-bottom: 14px;
-}
-
-#contact .aa-field{
-  gap: 9px;
-}
-
-#contact .aa-field__label{
-  color: rgba(245,247,250,.78);
-  font-size: 11px;
-  letter-spacing: .20em;
-}
-
-/* Inputs: cleaner, more premium */
-#contact .aa-field__input{
-  min-height: 48px;
-  border-radius: 18px;
-  border-color: rgba(255,196,0,.22);
-  background:
-    linear-gradient(180deg, rgba(6,26,58,.50), rgba(6,26,58,.38));
-  color: rgba(245,247,250,.96);
-  padding: 13px 14px;
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.045),
-    0 12px 30px rgba(0,0,0,.12);
-}
-
-#contact .aa-field__input::placeholder{
-  color: rgba(245,247,250,.42);
-  font-weight: 700;
-}
-
-#contact .aa-field__input:hover{
-  border-color: rgba(255,196,0,.34);
-  background:
-    linear-gradient(180deg, rgba(6,26,58,.56), rgba(6,26,58,.42));
-}
-
-#contact .aa-field__input:focus{
-  border-color: rgba(255,196,0,.70);
-  background:
-    linear-gradient(180deg, rgba(6,26,58,.62), rgba(6,26,58,.48));
-  box-shadow:
-    0 0 0 3px rgba(255,196,0,.24),
-    0 22px 60px rgba(0,0,0,.28),
-    inset 0 1px 0 rgba(255,255,255,.06);
-}
-
-#contact .aa-field__textarea{
-  min-height: 150px;
-  line-height: 1.65;
-}
-
-/* Bottom submit row */
-#contact .aa-form__bottom{
-  margin-top: 14px;
-  padding-top: 16px;
-  border-top: 1px solid rgba(245,247,250,.12);
-}
-
-#contact .aa-form__submit{
-  min-height: 48px;
-  border-radius: 18px;
-  padding: 0 18px;
-  background: linear-gradient(135deg, #FFC400 0%, #FFD84D 100%);
-  border-color: rgba(255,196,0,.62);
-  color: #061A3A;
-  box-shadow:
-    0 18px 45px rgba(0,0,0,.28),
-    0 12px 34px rgba(255,196,0,.18);
-}
-
-#contact .aa-form__submit:hover{
-  transform: translateY(-2px);
-  background: linear-gradient(135deg, #FFD84D 0%, #FFC400 100%);
-  box-shadow:
-    0 24px 62px rgba(0,0,0,.34),
-    0 16px 40px rgba(255,196,0,.22);
-}
-
-#contact .aa-form__fineprint{
-  color: rgba(245,247,250,.66);
-  font-weight: 700;
-}
-
-/* Status message */
-#contact .aa-form__status{
-  color: rgba(255,196,0,.92);
-  font-weight: 800;
-}
-
-/* Right info column */
-#contact .aa-contact__info{
-  gap: 14px;
-}
-
-/* Info card: make it feel like a premium contact panel */
-#contact .aa-infoCard{
-  height: 100%;
-  border-radius: 30px;
-  border-color: rgba(255,196,0,.22);
-  background:
-    linear-gradient(145deg, rgba(245,247,250,.07), rgba(245,247,250,.025)),
-    rgba(6,26,58,.38);
-  box-shadow:
-    0 34px 90px rgba(0,0,0,.32),
-    inset 0 1px 0 rgba(255,255,255,.06);
-  padding: 22px;
-}
-
-#contact .aa-infoCard::after{
-  opacity: .48;
-  background: radial-gradient(closest-side, rgba(255,196,0,.20), rgba(255,196,0,0));
-}
-
-#contact .aa-infoCard__title{
-  font-size: clamp(19px, 1.55vw, 24px);
-  line-height: 1.05;
-  color: #F5F7FA;
-  letter-spacing: -0.03em;
-}
-
-#contact .aa-infoCard__block{
-  margin-top: 18px;
-  padding-top: 18px;
-  border-top-color: rgba(245,247,250,.12);
-}
-
-#contact .aa-infoCard__label{
-  color: rgba(255,196,0,.90);
-  letter-spacing: .20em;
-}
-
-#contact .aa-infoCard__text{
-  color: rgba(245,247,250,.84);
-  font-weight: 700;
-}
-
-#contact .aa-infoCard__link{
-  color: rgba(245,247,250,.94);
-  font-weight: 850;
-}
-
-#contact .aa-infoCard__link:hover{
-  color: #FFC400;
-}
-
-/* Trust strip: turn into cleaner mini-card */
-#contact .aa-trustStrip{
-  border-radius: 26px;
-  border-color: rgba(255,196,0,.20);
-  background:
-    linear-gradient(145deg, rgba(245,247,250,.06), rgba(245,247,250,.02)),
-    rgba(6,26,58,.34);
-  box-shadow:
-    0 26px 70px rgba(0,0,0,.26),
-    inset 0 1px 0 rgba(255,255,255,.05);
-  padding: 18px;
-}
-
-#contact .aa-trustStrip__item{
-  color: rgba(245,247,250,.86);
-  font-weight: 850;
-}
-
-#contact .aa-trustStrip__dot{
-  width: 10px;
-  height: 10px;
-  background: #FFC400;
-  box-shadow:
-    0 0 0 4px rgba(255,196,0,.10),
-    0 14px 34px rgba(255,196,0,.22);
-}
-
-/* Footer row */
-#contact .aa-contact__foot{
-  margin-top: 26px;
-  padding-top: 22px;
-  border-top-color: rgba(245,247,250,.12);
-}
-
-#contact .aa-contact__note{
-  color: rgba(245,247,250,.78);
-  font-weight: 700;
-}
-
-#contact .aa-contact__cta{
-  border-radius: 18px;
-  border-color: rgba(255,196,0,.30);
-  background:
-    linear-gradient(145deg, rgba(245,247,250,.06), rgba(245,247,250,.02)),
-    rgba(6,26,58,.38);
-  color: rgba(245,247,250,.94);
-}
-
-#contact .aa-contact__cta:hover{
-  background: rgba(255,196,0,.12);
-  border-color: rgba(255,196,0,.48);
-  color: #fff;
-}
-
-/* Subtle background improvement without changing section padding */
-#contact .aa-contact__lines{
-  opacity: .12;
-}
-
-#contact .aa-contact__dust{
-  opacity: .13;
-}
-
-/* Responsive polish only */
-@media (max-width: 980px){
-  #contact .aa-contact__grid{
-    gap: 16px;
-  }
-
-  #contact .aa-contact__card,
-  #contact .aa-infoCard{
-    border-radius: 26px;
-  }
-}
-
-@media (max-width: 640px){
-  #contact .aa-contact__head{
-    margin-bottom: 22px;
-  }
-
-  #contact .aa-form{
-    padding: 18px 16px 18px;
-  }
-
-  #contact .aa-contact__cardTop,
-  #contact .aa-infoCard{
-    padding: 18px 16px;
-  }
-
-  #contact .aa-form__bottom{
-    align-items: stretch;
-  }
-
-  #contact .aa-form__submit{
-    width: 100%;
-  }
-
-  #contact .aa-form__fineprint{
-    max-width: none;
-  }
-
-  #contact .aa-contact__cta{
-    width: 100%;
-  }
-}
   </style>
 
-<script>
-  (function(){
+  <script>
+    (function(){
 
-    const FORM_ID = 'ahg0pqstbpk';
-    const ENDPOINT = 'https://forminit.com/f/' + FORM_ID;
+      const FORM_ID = 'ahg0pqstbpk';
+      const ENDPOINT = 'https://forminit.com/f/' + FORM_ID;
 
-    const scope = document.getElementById('contact');
-    if(!scope) return;
+      const scope = document.getElementById('contact');
+      if(!scope) return;
 
-    const form = scope.querySelector('#aa-contact-form');
-    const status = scope.querySelector('[data-aa-status]');
-    const button = scope.querySelector('.aa-form__submit');
+      const form = scope.querySelector('#aa-contact-form');
+      const status = scope.querySelector('[data-aa-status]');
+      const button = scope.querySelector('.aa-form__submit');
 
-    if(!form || !status || !button) return;
+      if(!form || !status || !button) return;
 
-    function formatPhoneE164(value){
-      const raw = String(value || '').trim();
+      function formatPhoneE164(value){
+        const raw = String(value || '').trim();
 
-      if(!raw){
-        return '';
+        if(!raw){
+          return '';
+        }
+
+        if(raw.startsWith('+')){
+          return '+' + raw.replace(/[^\d]/g, '');
+        }
+
+        const digits = raw.replace(/[^\d]/g, '');
+
+        if(digits.length === 10){
+          return '+1' + digits;
+        }
+
+        if(digits.length === 11 && digits.startsWith('1')){
+          return '+' + digits;
+        }
+
+        return raw;
       }
 
-      if(raw.startsWith('+')){
-        return '+' + raw.replace(/[^\d]/g, '');
-      }
+      form.addEventListener('submit', async function(e){
 
-      const digits = raw.replace(/[^\d]/g, '');
+        e.preventDefault();
 
-      if(digits.length === 10){
-        return '+1' + digits;
-      }
+        button.classList.add('is-loading');
+        button.innerHTML = '<span>Sending...</span><span class="aa-form__submitIcon" aria-hidden="true">→</span>';
+        status.textContent = '';
 
-      if(digits.length === 11 && digits.startsWith('1')){
-        return '+' + digits;
-      }
+        const formData = new FormData(form);
 
-      return raw;
-    }
+        const firstName = formData.get('first_name') || '';
+        const lastName = formData.get('last_name') || '';
+        const email = formData.get('email') || '';
+        const phone = formatPhoneE164(formData.get('phone'));
+        const message = formData.get('message') || '';
 
-    form.addEventListener('submit', async function(e){
-
-      e.preventDefault();
-
-      button.classList.add('is-loading');
-      button.textContent = 'Sending...';
-      status.textContent = '';
-
-      const formData = new FormData(form);
-
-      const firstName = formData.get('first_name') || '';
-      const lastName = formData.get('last_name') || '';
-      const email = formData.get('email') || '';
-      const phone = formatPhoneE164(formData.get('phone'));
-      const message = formData.get('message') || '';
-
-      const payload = {
-        blocks: [
-          {
-            type: 'sender',
-            properties: {
-              email: email,
-              firstName: firstName,
-              lastName: lastName,
-              fullName: (firstName + ' ' + lastName).trim(),
-              phone: phone
+        const payload = {
+          blocks: [
+            {
+              type: 'sender',
+              properties: {
+                email: email,
+                firstName: firstName,
+                lastName: lastName,
+                fullName: (firstName + ' ' + lastName).trim(),
+                phone: phone
+              }
+            },
+            {
+              type: 'text',
+              name: 'message',
+              value: message
             }
-          },
-          {
-            type: 'text',
-            name: 'message',
-            value: message
+          ]
+        };
+
+        try {
+
+          const response = await fetch(ENDPOINT, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(payload)
+          });
+
+          const result = await response.json();
+
+          if(response.ok && result.success){
+
+            status.textContent = "Thanks — message received. We'll reply shortly.";
+            form.reset();
+
+          } else {
+
+            console.error(result);
+            status.textContent = result.message || 'Something went wrong. Please try again.';
+
           }
-        ]
-      };
 
-      try {
+        } catch(error){
 
-        const response = await fetch(ENDPOINT, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(payload)
-        });
-
-        const result = await response.json();
-
-        if(response.ok && result.success){
-
-          status.textContent = "Thanks — message received. We'll reply shortly.";
-          form.reset();
-
-        } else {
-
-          console.error(result);
-          status.textContent = result.message || 'Something went wrong. Please try again.';
+          console.error(error);
+          status.textContent = 'Network error. Please try again.';
 
         }
 
-      } catch(error){
+        button.classList.remove('is-loading');
+        button.innerHTML = '<span>Submit</span><span class="aa-form__submitIcon" aria-hidden="true">→</span>';
 
-        console.error(error);
-        status.textContent = 'Network error. Please try again.';
+      });
 
-      }
-
-      button.classList.remove('is-loading');
-      button.textContent = 'Submit';
-
-    });
-
-  })();
-</script>
+    })();
+  </script>
 </section>
