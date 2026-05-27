@@ -126,7 +126,7 @@
       object-fit: cover;
       object-position: center;
       transform: scale(1.02);
-      filter: saturate(1.03) contrast(1.00) brightness(1.08);
+      filter: saturate(1.05) contrast(1.04) brightness(1.16);
       z-index: 0;
       pointer-events: none;
       background: transparent !important;
@@ -139,8 +139,8 @@
       z-index: 1;
       pointer-events: none;
       background:
-        radial-gradient(900px 620px at 18% 40%, rgba(6,26,58,.50) 0%, rgba(6,26,58,.58) 55%, rgba(6,26,58,.70) 100%),
-        linear-gradient(90deg, rgba(6,26,58,.62) 0%, rgba(11,36,77,.38) 46%, rgba(6,26,58,.54) 100%);
+        radial-gradient(900px 620px at 18% 40%, rgba(6,26,58,.22) 0%, rgba(6,26,58,.30) 55%, rgba(6,26,58,.42) 100%),
+        linear-gradient(90deg, rgba(6,26,58,.42) 0%, rgba(11,36,77,.24) 46%, rgba(6,26,58,.32) 100%);
     }
 
     #about .aa-about__scrim::after{
@@ -148,8 +148,8 @@
       position:absolute;
       inset:0;
       background:
-        radial-gradient(1100px 800px at 50% 55%, rgba(0,0,0,0) 0%, rgba(6,26,58,.26) 78%, rgba(6,26,58,.38) 100%);
-      opacity: .95;
+        radial-gradient(1100px 800px at 50% 55%, rgba(0,0,0,0) 0%, rgba(6,26,58,.12) 78%, rgba(6,26,58,.18) 100%);
+      opacity: .70;
       pointer-events:none;
     }
 

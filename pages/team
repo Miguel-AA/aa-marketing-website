@@ -483,9 +483,9 @@
       letter-spacing: -0.02em;
       text-transform: uppercase;
       color: rgba(245,247,250,.95);
-      font-size: clamp(20px, 2.2vw, 30px);
-      line-height: 1.06;
-      text-shadow: 0 18px 54px rgba(0,0,0,.40);
+      font-size: clamp(18px, 2vw, 26px);
+      line-height: 1.08;
+      text-shadow: 0 14px 44px rgba(0,0,0,.36);
     }
 
     #team .aa-teamCard__role{
@@ -716,9 +716,9 @@
 #team .aa-team__title{
   letter-spacing:-0.05em;
   line-height:.96;
-  font-size:clamp(38px, 5vw, 72px);
+  font-size:clamp(32px, 4vw, 56px);
   color:#F5F7FA;
-  text-shadow:0 22px 64px rgba(0,0,0,.58), 0 0 40px rgba(6,26,58,.48);
+  text-shadow:0 18px 50px rgba(0,0,0,.54), 0 0 34px rgba(6,26,58,.42);
 }
 
 #team .aa-team__sub{
@@ -769,13 +769,13 @@
 }
 
 #team .aa-teamCard__media{
-  height: 340px;
+  height: 280px;
   border-right: 0;
   border-bottom: 1px solid rgba(245,247,250,.08);
 }
 
 #team .aa-teamCard--featured .aa-teamCard__media{
-  height: 390px;
+  height: 320px;
 }
 
 #team .aa-teamCard__photo{
