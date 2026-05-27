@@ -60,11 +60,56 @@
     }
 
     .aa-footer{
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
       border-top: 1px solid rgba(255,196,0,.18);
-      background: rgba(6,26,58,.45);
+      background:
+        radial-gradient(900px 520px at 12% 18%, rgba(255,196,0,.16), transparent 62%),
+        radial-gradient(720px 460px at 88% 22%, rgba(245,247,250,.09), transparent 64%),
+        radial-gradient(760px 520px at 50% 88%, rgba(255,196,0,.10), transparent 68%),
+        linear-gradient(180deg, rgba(6,26,58,.98) 0%, rgba(4,18,42,.96) 45%, rgba(3,13,31,.98) 100%);
+    }
+
+    .aa-footer::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      z-index:0;
+      pointer-events:none;
+      background:
+        radial-gradient(900px 620px at 50% 42%, rgba(255,255,255,.045), transparent 65%),
+        linear-gradient(90deg, rgba(0,0,0,.20) 0%, transparent 18%, transparent 82%, rgba(0,0,0,.22) 100%),
+        linear-gradient(180deg, rgba(0,0,0,.16) 0%, transparent 32%, rgba(0,0,0,.28) 100%);
+    }
+
+    .aa-footer::after{
+      content:"";
+      position:absolute;
+      z-index:0;
+      pointer-events:none;
+      width: 980px;
+      height: 980px;
+      right: -360px;
+      top: -260px;
+      border-radius: 999px;
+      background:
+        conic-gradient(
+          from 210deg,
+          rgba(255,196,0,0) 0deg,
+          rgba(255,196,0,.16) 48deg,
+          rgba(255,255,255,.06) 92deg,
+          rgba(255,196,0,0) 150deg,
+          rgba(255,196,0,0) 360deg
+        );
+      filter: blur(8px);
+      opacity: .72;
+      transform: rotate(-8deg);
     }
 
     .aa-footer__inner{
+      position: relative;
+      z-index: 2;
       max-width:1320px;
       margin:0 auto;
       padding:64px 22px 48px;
@@ -184,6 +229,8 @@
        =============================== */
 
     .aa-footer__bottom{
+      position: relative;
+      z-index: 2;
       border-top: 1px solid rgba(255,196,0,.12);
       padding:18px 22px;
       display:flex;

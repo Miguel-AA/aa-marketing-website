@@ -30,6 +30,10 @@
       color: inherit;
     }
 
+    main > section {
+      scroll-margin-top: 128px;
+    }
+
     button,
     input,
     textarea {
@@ -59,7 +63,7 @@
       const mount = document.getElementById('aa-page');
 
       async function loadSection(sectionName) {
-        const response = await fetch('./' + sectionName);
+        const response = await fetch('./' + sectionName + '?v=' + Date.now(), { cache: 'no-store' });
 
         if (!response.ok) {
           throw new Error('Could not load section: ' + sectionName);
@@ -109,6 +113,21 @@
           mount.appendChild(errorBlock);
         }
       }
+
+      function scrollToCurrentHash() {
+        if (!window.location.hash) return;
+        const target = document.querySelector(window.location.hash);
+        if (target) {
+          target.scrollIntoView({ block: 'start' });
+        }
+      }
+
+      requestAnimationFrame(scrollToCurrentHash);
+      setTimeout(scrollToCurrentHash, 250);
+      setTimeout(scrollToCurrentHash, 900);
+      window.addEventListener('hashchange', function () {
+        requestAnimationFrame(scrollToCurrentHash);
+      });
     })();
   </script>
 </body>

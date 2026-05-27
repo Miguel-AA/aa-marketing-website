@@ -3,7 +3,7 @@
     <!-- Poster (siempre visible hasta que el video sea estable) -->
     <img
       class="aa-hero__posterImg"
-      src="https://primesportsmarketing.net/wp-content/uploads/2026/02/gq1wC8G.jpg"
+      src="../resources/picturesque-helmet-buffalo-bills.jpg"
       alt=""
       aria-hidden="true"
       loading="eager"
@@ -20,9 +20,9 @@
       playsinline
       webkit-playsinline
       preload="metadata"
-      poster="https://primesportsmarketing.net/wp-content/uploads/2026/01/524480.jpg"
+      poster="../resources/picturesque-helmet-buffalo-bills.jpg"
     >
-      <source src="../logo/heroblackandwhite.mp4" type="video/mp4">
+      <source src="../resources/buffalobillsedit.mp4" type="video/mp4">
     </video>
 
     <!-- Soft blue fade overlay -->

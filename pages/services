@@ -863,7 +863,7 @@
     inset 0 1px 0 rgba(255,255,255,.08);
 }
 
-#services .aa-acc.aa-open{
+#services .aa-acc.is-open{
   border-color: rgba(255,196,0,.66) !important;
   box-shadow:
     0 42px 110px rgba(0,0,0,.48),
@@ -952,11 +952,6 @@
           }
         });
       });
-
-      const featured = scope.querySelector('.aa-acc--featured');
-      if(featured){
-        openAcc(featured);
-      }
 
       window.addEventListener('resize', function(){
         accs.forEach((acc) => {
