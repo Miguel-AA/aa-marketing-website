@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>A&A Marketing</title>
-<style>html{box-sizing:border-box;}*,*::before,*::after{box-sizing:inherit;}body{margin:0;min-height:100vh;background:#061A3A;color:#fff;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;overflow-x:hidden;}a{color:inherit;}button,input,textarea{font:inherit;}</style>
+<style>html{box-sizing:border-box;}*,*::before,*::after{box-sizing:inherit;}body{margin:0;min-height:100vh;background:#061A3A;color:#fff;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;overflow-x:hidden;cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cellipse cx='16' cy='16' rx='13' ry='9' fill='%238B4513'/%3E%3Cellipse cx='16' cy='16' rx='11' ry='6' fill='%23A0522D'/%3E%3Cpath d='M5 16h22' stroke='%23fff' stroke-width='2'/%3E%3Cpath d='M12 12v8' stroke='%23fff' stroke-width='2'/%3E%3Cpath d='M15 12v8' stroke='%23fff' stroke-width='2'/%3E%3Cpath d='M18 12v8' stroke='%23fff' stroke-width='2'/%3E%3Cpath d='M21 12v8' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E") auto;}a{color:inherit;}button,input,textarea{font:inherit;}</style>
 </head>
 <body><section class="aa-header-breakout">
   <header class="aa-header" role="banner">
@@ -19,7 +19,7 @@
         />
         <span class="aa-brand__wordmark" aria-hidden="true">
           <span class="aa-brand__name">A&amp;A Marketing</span>
-          <span class="aa-brand__sub">Agency</span>
+          <span class="aa-brand__sub">Firm</span>
         </span>
       </a>
 
@@ -313,7 +313,7 @@
         <h1 class="aa-hero__title">
           <span class="aa-hero__titleYellow">A&A</span><br>
           <span class="aa-hero__titleYellow">Marketing</span><br>
-          <span class="aa-hero__titleWhite">Agency</span>
+          <span class="aa-hero__titleWhite">Firm</span>
         </h1>
 
         <p class="aa-hero__tagline">Building your social brand</p>
@@ -1542,7 +1542,7 @@
       <!-- Right -->
       <div class="aa-about__right">
         <p class="aa-about__p">
-          A&A Marketing is a full-service marketing agency representing players, celebrities, and executive
+          A&A Marketing is a full-service marketing firm representing players, celebrities, and executive
           leaders in endorsement deals.
         </p>
 
@@ -4644,8 +4644,8 @@ const PARTNERS = [
 
             <div class="aa-infoCard__block">
               <div class="aa-infoCard__label">Email</div>
-              <a class="aa-infoCard__link" href="mailto:Andrew@PrimeSportsMarketing.net">Andrew@PrimeSportsMarketing.net</a>
-              <a class="aa-infoCard__link" href="mailto:Gina@PrimeSportsMarketing.net">Gina@PrimeSportsMarketing.net</a>
+              <a class="aa-infoCard__link" href="mailto:andrew@aamarketingfirm.com">andrew@aamarketingfirm.com</a>
+              <a class="aa-infoCard__link" href="mailto:megan@aamarketingfirm.com">megan@aamarketingfirm.com</a>
             </div>
 
             <div class="aa-infoCard__block">
@@ -5244,8 +5244,8 @@ const PARTNERS = [
       <!-- CONTACT -->
       <div class="aa-footer__contact">
         <div class="aa-footer__label">Contact</div>
-        <a href="mailto:Andrew@PrimeSportsMarketing.net">Andrew@PrimeSportsMarketing.net</a>
-        <a href="mailto:Gina@PrimeSportsMarketing.net">Gina@PrimeSportsMarketing.net</a>
+        <a href="mailto:andrew@aamarketingfirm.com">andrew@aamarketingfirm.com</a>
+        <a href="mailto:megan@aamarketingfirm.com">megan@aamarketingfirm.com</a>
       </div>
 
     </div>

@@ -15,7 +15,7 @@
     <div class="aa-facts__inner">
       <!-- Head -->
       <header class="aa-facts__head">
-        <div class="aa-facts__kicker">Fun Facts</div>
+        <div class="aa-facts__kicker">Key Metrics</div>
         <h2 class="aa-facts__title">Numbers That Back The Work</h2>
         <p class="aa-facts__sub">
           High-trust execution, premium partnerships, and measurable outcomes—summarized in a few key metrics.

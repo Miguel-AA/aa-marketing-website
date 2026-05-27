@@ -69,25 +69,25 @@
           </div>
         </article>
 
-        <!-- 3) GINA -->
+        <!-- 3) PLACEHOLDER -->
         <article class="aa-teamCard aa-teamCard--noRole">
           <div class="aa-teamCard__media">
             <div class="aa-teamCard__badge">03</div>
             <img
               class="aa-teamCard__photo"
-              src="https://primesportsmarketing.net/wp-content/uploads/2026/02/ChatGPT-Image-Feb-9-2026-04_05_01-PM.png"
-              alt="Gina Ford"
+              src="https://via.placeholder.com/400x500/2d3e50/999999?text=Team+Member"
+              alt="Jane Doe"
             />
           </div>
 
           <div class="aa-teamCard__body">
             <div class="aa-teamCard__top">
-              <h3 class="aa-teamCard__name">Gina Ford</h3>
+              <h3 class="aa-teamCard__name">Jane Doe</h3>
               <div class="aa-teamCard__role">Global Commercial Agent</div>
             </div>
 
             <div class="aa-teamCard__actions">
-              <a class="aa-teamCard__btn" href="#contact" aria-label="Contact Gina Ford">
+              <a class="aa-teamCard__btn" href="#contact" aria-label="Contact Jane Doe">
                 Connect
               </a>
               <span class="aa-teamCard__pill">Premium</span>
@@ -95,25 +95,25 @@
           </div>
         </article>
 
-        <!-- 4) WAYNE -->
+        <!-- 4) PLACEHOLDER -->
         <article class="aa-teamCard">
           <div class="aa-teamCard__media">
             <div class="aa-teamCard__badge">04</div>
             <img
               class="aa-teamCard__photo"
-              src="https://primesportsmarketing.net/wp-content/uploads/2026/02/ChatGPT-Image-Feb-6-2026-02_21_45-PM.png"
-              alt="Wayne Richards"
+              src="https://via.placeholder.com/400x500/2d3e50/999999?text=Team+Member"
+              alt="John Doe"
             />
           </div>
 
           <div class="aa-teamCard__body">
             <div class="aa-teamCard__top">
-              <h3 class="aa-teamCard__name">Wayne Richards</h3>
+              <h3 class="aa-teamCard__name">John Doe</h3>
               <div class="aa-teamCard__role">Chief Legal Counsel</div>
             </div>
 
             <div class="aa-teamCard__actions">
-              <a class="aa-teamCard__btn" href="#contact" aria-label="Contact Wayne Richards">
+              <a class="aa-teamCard__btn" href="#contact" aria-label="Contact John Doe">
                 Connect
               </a>
               <span class="aa-teamCard__pill">Legal</span>
@@ -121,25 +121,25 @@
           </div>
         </article>
 
-        <!-- 5) CORTNEY -->
+        <!-- 5) PLACEHOLDER -->
         <article class="aa-teamCard">
           <div class="aa-teamCard__media">
             <div class="aa-teamCard__badge">05</div>
             <img
               class="aa-teamCard__photo"
-              src="https://primesportsmarketing.net/wp-content/uploads/2026/02/ChatGPT-Image-Feb-9-2026-04_12_47-PM.png"
-              alt="Cortney Sasso"
+              src="https://via.placeholder.com/400x500/2d3e50/999999?text=Team+Member"
+              alt="Jane Doe"
             />
           </div>
 
           <div class="aa-teamCard__body">
             <div class="aa-teamCard__top">
-              <h3 class="aa-teamCard__name">Cortney Sasso</h3>
+              <h3 class="aa-teamCard__name">Jane Doe</h3>
               <div class="aa-teamCard__role">Marketing Agent</div>
             </div>
 
             <div class="aa-teamCard__actions">
-              <a class="aa-teamCard__btn" href="#contact" aria-label="Contact Cortney Sasso">
+              <a class="aa-teamCard__btn" href="#contact" aria-label="Contact Jane Doe">
                 Connect
               </a>
               <span class="aa-teamCard__pill">Marketing</span>
@@ -147,25 +147,25 @@
           </div>
         </article>
 
-        <!-- 6) TJ -->
+        <!-- 6) PLACEHOLDER -->
         <article class="aa-teamCard">
           <div class="aa-teamCard__media">
             <div class="aa-teamCard__badge">06</div>
             <img
               class="aa-teamCard__photo"
-              src="https://primesportsmarketing.net/wp-content/uploads/2026/02/TJ-Ford-No-Bow-Tie.png"
-              alt="TJ Ford"
+              src="https://via.placeholder.com/400x500/2d3e50/999999?text=Team+Member"
+              alt="John Doe"
             />
           </div>
 
           <div class="aa-teamCard__body">
             <div class="aa-teamCard__top">
-              <h3 class="aa-teamCard__name">TJ Ford</h3>
+              <h3 class="aa-teamCard__name">John Doe</h3>
               <div class="aa-teamCard__role">Creative Designer</div>
             </div>
 
             <div class="aa-teamCard__actions">
-              <a class="aa-teamCard__btn" href="#contact" aria-label="Contact TJ Ford">
+              <a class="aa-teamCard__btn" href="#contact" aria-label="Contact John Doe">
                 Connect
               </a>
               <span class="aa-teamCard__pill">Creative</span>
