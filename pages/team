@@ -14,23 +14,19 @@
         </p>
       </header>
 
-      <!-- Team Grid (Redesigned, no bios) -->
+      <!-- Team Grid -->
       <div class="aa-team__grid" data-aa-team>
 
         <!-- 1) ANDREW -->
-        <article class="aa-teamCard aa-teamCard--featured aa-teamCard--noRole">
-
-         
-<div class="aa-teamCard__media">
-  <div class="aa-teamCard__badge">01</div>
-
-  <img
-    class="aa-teamCard__photo"
-    src="https://primesportsmarketing.net/wp-content/uploads/2026/02/ChatGPT-Image-Feb-6-2026-02_05_36-PM.png"
-    alt="Andrew Luchey"
-  />
-</div>
-
+        <article class="aa-teamCard aa-teamCard--noRole">
+          <div class="aa-teamCard__media">
+            <div class="aa-teamCard__badge">01</div>
+            <img
+              class="aa-teamCard__photo"
+              src="https://primesportsmarketing.net/wp-content/uploads/2026/02/ChatGPT-Image-Feb-6-2026-02_05_36-PM.png"
+              alt="Andrew Luchey"
+            />
+          </div>
 
           <div class="aa-teamCard__body">
             <div class="aa-teamCard__top">
@@ -48,18 +44,15 @@
         </article>
 
         <!-- 2) MEGAN -->
-        <article class="aa-teamCard aa-teamCard--featured">
-          
-<div class="aa-teamCard__media">
-  <div class="aa-teamCard__badge">02</div>
-
-  <img
-    class="aa-teamCard__photo"
-    src="https://primesportsmarketing.net/wp-content/uploads/2026/02/ChatGPT-Image-Feb-6-2026-02_19_07-PM.png"
-    alt="Megan Luchey"
-  />
-</div>
-
+        <article class="aa-teamCard">
+          <div class="aa-teamCard__media">
+            <div class="aa-teamCard__badge">02</div>
+            <img
+              class="aa-teamCard__photo"
+              src="https://primesportsmarketing.net/wp-content/uploads/2026/02/ChatGPT-Image-Feb-6-2026-02_19_07-PM.png"
+              alt="Megan Luchey"
+            />
+          </div>
 
           <div class="aa-teamCard__body">
             <div class="aa-teamCard__top">
@@ -78,18 +71,14 @@
 
         <!-- 3) GINA -->
         <article class="aa-teamCard aa-teamCard--noRole">
-
-         
-<div class="aa-teamCard__media">
-  <div class="aa-teamCard__badge">03</div>
-
-  <img
-    class="aa-teamCard__photo"
-    src="https://primesportsmarketing.net/wp-content/uploads/2026/02/ChatGPT-Image-Feb-9-2026-04_05_01-PM.png"
-    alt="Gina Ford"
-  />
-</div>
-
+          <div class="aa-teamCard__media">
+            <div class="aa-teamCard__badge">03</div>
+            <img
+              class="aa-teamCard__photo"
+              src="https://primesportsmarketing.net/wp-content/uploads/2026/02/ChatGPT-Image-Feb-9-2026-04_05_01-PM.png"
+              alt="Gina Ford"
+            />
+          </div>
 
           <div class="aa-teamCard__body">
             <div class="aa-teamCard__top">
@@ -108,17 +97,14 @@
 
         <!-- 4) WAYNE -->
         <article class="aa-teamCard">
-        
-<div class="aa-teamCard__media">
-  <div class="aa-teamCard__badge">04</div>
-
-  <img
-    class="aa-teamCard__photo"
-    src="https://primesportsmarketing.net/wp-content/uploads/2026/02/ChatGPT-Image-Feb-6-2026-02_21_45-PM.png"
-    alt="Wayne Richards"
-  />
-</div>
-
+          <div class="aa-teamCard__media">
+            <div class="aa-teamCard__badge">04</div>
+            <img
+              class="aa-teamCard__photo"
+              src="https://primesportsmarketing.net/wp-content/uploads/2026/02/ChatGPT-Image-Feb-6-2026-02_21_45-PM.png"
+              alt="Wayne Richards"
+            />
+          </div>
 
           <div class="aa-teamCard__body">
             <div class="aa-teamCard__top">
@@ -137,17 +123,14 @@
 
         <!-- 5) CORTNEY -->
         <article class="aa-teamCard">
-          
-<div class="aa-teamCard__media">
-  <div class="aa-teamCard__badge">05</div>
-
-  <img
-    class="aa-teamCard__photo"
-    src="https://primesportsmarketing.net/wp-content/uploads/2026/02/ChatGPT-Image-Feb-9-2026-04_12_47-PM.png"
-    alt="Courtney Sasso"
-  />
-</div>
-
+          <div class="aa-teamCard__media">
+            <div class="aa-teamCard__badge">05</div>
+            <img
+              class="aa-teamCard__photo"
+              src="https://primesportsmarketing.net/wp-content/uploads/2026/02/ChatGPT-Image-Feb-9-2026-04_12_47-PM.png"
+              alt="Cortney Sasso"
+            />
+          </div>
 
           <div class="aa-teamCard__body">
             <div class="aa-teamCard__top">
@@ -166,17 +149,14 @@
 
         <!-- 6) TJ -->
         <article class="aa-teamCard">
-          
-<div class="aa-teamCard__media">
-  <div class="aa-teamCard__badge">06</div>
-
-  <img
-    class="aa-teamCard__photo"
-    src="https://primesportsmarketing.net/wp-content/uploads/2026/02/TJ-Ford-No-Bow-Tie.png"
-    alt="TJ Ford"
-  />
-</div>
-
+          <div class="aa-teamCard__media">
+            <div class="aa-teamCard__badge">06</div>
+            <img
+              class="aa-teamCard__photo"
+              src="https://primesportsmarketing.net/wp-content/uploads/2026/02/TJ-Ford-No-Bow-Tie.png"
+              alt="TJ Ford"
+            />
+          </div>
 
           <div class="aa-teamCard__body">
             <div class="aa-teamCard__top">
@@ -206,7 +186,6 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap');
 
-    /* Full-width breakout */
     .aa-team-breakout{
       position: relative;
       left: 50%;
@@ -218,11 +197,11 @@
 
     #team.aa-team-breakout .aa-team{
       position: relative;
-      padding: 110px 0 104px;
+      padding: 78px 0 78px;
       background:
-        radial-gradient(900px 520px at 12% 18%, rgba(255,196,0,.16), transparent 62%),
-        radial-gradient(720px 460px at 88% 22%, rgba(245,247,250,.09), transparent 64%),
-        radial-gradient(760px 520px at 50% 88%, rgba(255,196,0,.10), transparent 68%),
+        radial-gradient(760px 420px at 12% 18%, rgba(255,196,0,.13), transparent 62%),
+        radial-gradient(640px 390px at 88% 22%, rgba(245,247,250,.07), transparent 64%),
+        radial-gradient(680px 440px at 50% 88%, rgba(255,196,0,.08), transparent 68%),
         linear-gradient(180deg, rgba(6,26,58,.98) 0%, rgba(4,18,42,.96) 45%, rgba(3,13,31,.98) 100%) !important;
       overflow: hidden;
       isolation: isolate;
@@ -235,9 +214,9 @@
       z-index:0;
       pointer-events:none;
       background:
-        radial-gradient(900px 620px at 50% 42%, rgba(255,255,255,.045), transparent 65%),
-        linear-gradient(90deg, rgba(0,0,0,.20) 0%, transparent 18%, transparent 82%, rgba(0,0,0,.22) 100%),
-        linear-gradient(180deg, rgba(0,0,0,.16) 0%, transparent 32%, rgba(0,0,0,.28) 100%);
+        radial-gradient(800px 520px at 50% 42%, rgba(255,255,255,.035), transparent 65%),
+        linear-gradient(90deg, rgba(0,0,0,.18) 0%, transparent 18%, transparent 82%, rgba(0,0,0,.20) 100%),
+        linear-gradient(180deg, rgba(0,0,0,.12) 0%, transparent 32%, rgba(0,0,0,.24) 100%);
     }
 
     #team.aa-team-breakout .aa-team::after{
@@ -245,227 +224,249 @@
       position:absolute;
       z-index:0;
       pointer-events:none;
-      width: 980px;
-      height: 980px;
-      right: -360px;
+      width: 820px;
+      height: 820px;
+      right: -320px;
       top: -260px;
       border-radius: 999px;
       background:
         conic-gradient(
           from 210deg,
           rgba(255,196,0,0) 0deg,
-          rgba(255,196,0,.16) 48deg,
-          rgba(255,255,255,.06) 92deg,
+          rgba(255,196,0,.12) 48deg,
+          rgba(255,255,255,.045) 92deg,
           rgba(255,196,0,0) 150deg,
           rgba(255,196,0,0) 360deg
         );
       filter: blur(8px);
-      opacity: .72;
+      opacity: .62;
       transform: rotate(-8deg);
     }
 
     #team .aa-team__inner{
       position: relative;
       z-index: 4;
-      max-width: 1320px;
+      max-width: 1120px;
       margin: 0 auto;
       padding: 0 22px;
     }
 
-    /* Ambient BG */
     #team .aa-team__bg{
-      position:absolute; inset:0; z-index:0; pointer-events:none;
+      position:absolute;
+      inset:0;
+      z-index:0;
+      pointer-events:none;
       background:
-        radial-gradient(900px 520px at 18% 20%, rgba(255,196,0,.18), transparent 62%),
-        radial-gradient(860px 520px at 82% 56%, rgba(245,247,250,.08), transparent 60%);
-      opacity: .45;
+        radial-gradient(740px 420px at 18% 20%, rgba(255,196,0,.14), transparent 62%),
+        radial-gradient(760px 420px at 82% 56%, rgba(245,247,250,.06), transparent 60%);
+      opacity: .42;
       mix-blend-mode: screen;
     }
 
-    /* subtle texture */
     #team .aa-team__lines{
-      position:absolute; inset:0; z-index:1; pointer-events:none; opacity:.18;
+      position:absolute;
+      inset:0;
+      z-index:1;
+      pointer-events:none;
+      opacity:.14;
       background:
-        repeating-linear-gradient(135deg, rgba(255,196,0,.18) 0px, rgba(255,196,0,.18) 1px, transparent 1px, transparent 24px),
-        repeating-linear-gradient(45deg, rgba(245,247,250,.045) 0px, rgba(245,247,250,.045) 1px, transparent 1px, transparent 42px);
-      mask-image: radial-gradient(900px 650px at 55% 30%, black 0%, black 52%, transparent 78%);
-      -webkit-mask-image: radial-gradient(900px 650px at 55% 30%, black 0%, black 52%, transparent 78%);
+        repeating-linear-gradient(135deg, rgba(255,196,0,.15) 0px, rgba(255,196,0,.15) 1px, transparent 1px, transparent 24px),
+        repeating-linear-gradient(45deg, rgba(245,247,250,.04) 0px, rgba(245,247,250,.04) 1px, transparent 1px, transparent 42px);
+      mask-image: radial-gradient(800px 560px at 55% 30%, black 0%, black 52%, transparent 78%);
+      -webkit-mask-image: radial-gradient(800px 560px at 55% 30%, black 0%, black 52%, transparent 78%);
       mix-blend-mode: screen;
     }
+
     #team .aa-team__dust{
-      position:absolute; inset:0; z-index:1; pointer-events:none; opacity:.18;
+      position:absolute;
+      inset:0;
+      z-index:1;
+      pointer-events:none;
+      opacity:.14;
       background-image:
-        radial-gradient(circle at 12% 24%, rgba(255,196,0,.24) 0 1px, transparent 2px),
-        radial-gradient(circle at 28% 68%, rgba(245,247,250,.18) 0 1px, transparent 2px),
-        radial-gradient(circle at 48% 34%, rgba(255,196,0,.14) 0 1px, transparent 2px),
-        radial-gradient(circle at 68% 72%, rgba(245,247,250,.16) 0 1px, transparent 2px),
-        radial-gradient(circle at 86% 28%, rgba(255,196,0,.16) 0 1px, transparent 2px);
+        radial-gradient(circle at 12% 24%, rgba(255,196,0,.22) 0 1px, transparent 2px),
+        radial-gradient(circle at 28% 68%, rgba(245,247,250,.16) 0 1px, transparent 2px),
+        radial-gradient(circle at 48% 34%, rgba(255,196,0,.12) 0 1px, transparent 2px),
+        radial-gradient(circle at 68% 72%, rgba(245,247,250,.14) 0 1px, transparent 2px),
+        radial-gradient(circle at 86% 28%, rgba(255,196,0,.14) 0 1px, transparent 2px);
       background-size: 520px 520px;
       mix-blend-mode: screen;
     }
 
-    /* Header */
-    #team .aa-team__head{ max-width: 920px; margin-bottom: 34px; }
+    #team .aa-team__head{
+      position: relative;
+      max-width: 780px;
+      margin: 0 auto 36px;
+      text-align: center;
+    }
+
+    #team .aa-team__head::after{
+      content:"";
+      position:absolute;
+      left:50%;
+      bottom:-18px;
+      width:min(460px, 80vw);
+      height:1px;
+      transform:translateX(-50%);
+      background:linear-gradient(90deg, transparent, rgba(255,196,0,.62), transparent);
+      box-shadow:0 0 26px rgba(255,196,0,.18);
+    }
+
     #team .aa-team__kicker{
-      display:inline-flex; align-items:center; gap:10px;
-      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      font-weight: 900; font-size: 12px; letter-spacing: .26em;
-      text-transform: uppercase; color: rgba(245,247,250,.90);
-      text-shadow: 0 12px 34px rgba(0,0,0,.38);
-    }
-    #team .aa-team__kicker::before{
-      content:""; width:28px; height:2px; border-radius:2px;
-      background: rgba(255,196,0,.98);
-      box-shadow: 0 10px 26px rgba(255,196,0,.25);
-    }
-    #team .aa-team__title{
-      margin: 16px 0 0;
-      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      font-weight: 950;
-      letter-spacing: -0.03em;
-      line-height: 1.02;
-      font-size: clamp(30px, 3.8vw, 58px);
-      color: rgba(245,247,250,.94);
-      text-transform: uppercase;
-      text-shadow: 0 18px 54px rgba(0,0,0,.45);
-    }
-    #team .aa-team__sub{
-      margin: 16px 0 0;
-      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      font-size: 15px; line-height: 1.85;
-      color: rgba(245,247,250,.80);
-      max-width: 78ch;
-      text-shadow: 0 14px 40px rgba(0,0,0,.30);
-    }
-
-    /* Redesigned Grid:
-       - Top row: 2 featured cards
-       - Next rows: clean compact cards
-    */
-    #team .aa-team__grid{
-      margin-top: 26px;
-      display:grid;
-      grid-template-columns: repeat(12, minmax(0, 1fr));
-      gap: 18px;
-      align-items: stretch;
-    }
-
-    /* Card base */
-    #team .aa-teamCard{
-      grid-column: span 6;
-      border-radius: 26px;
-      border: 1px solid rgba(245,247,250,.10);
-      background: linear-gradient(180deg, rgba(6,26,58,.34), rgba(6,26,58,.20));
-      box-shadow: 0 26px 70px rgba(0,0,0,.22);
-      overflow:hidden;
-      position: relative;
-      display:grid;
-      grid-template-columns: 260px 1fr;
-      min-height: 240px;
-      transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
-    }
-
-    /* subtle corner glow */
-    #team .aa-teamCard::before{
-      content:"";
-      position:absolute; inset:-40% -30% auto -30%;
-      height: 210px;
-      background: radial-gradient(closest-side, rgba(255,255,255,.10), rgba(255,255,255,0));
-      opacity: .14;
-      pointer-events:none;
-    }
-
-    /* Featured cards: stronger edge + deeper glow */
-    #team .aa-teamCard--featured{
-      border-color: rgba(255,196,0,.28);
-      box-shadow: 0 34px 90px rgba(0,0,0,.26);
-    }
-    #team .aa-teamCard--featured::after{
-      content:"";
-      position:absolute; inset:auto -20% -35% -20%;
-      height: 220px;
-      background: radial-gradient(closest-side, rgba(255,196,0,.22), transparent 70%);
-      opacity:.75;
-      pointer-events:none;
-      filter: blur(2px);
-    }
-
-    /* Hover */
-    #team .aa-teamCard:hover{
-      transform: translateY(-2px);
-      border-color: rgba(255,196,0,.24);
-      box-shadow: 0 34px 92px rgba(0,0,0,.26);
-    }
-    #team .aa-teamCard--featured:hover{
-      border-color: rgba(255,196,0,.36);
-      box-shadow: 0 42px 110px rgba(0,0,0,.30);
-    }
-
-    /* Media */
-    #team .aa-teamCard__media{
-      position: relative;
-      border-right: 1px solid rgba(245,247,250,.08);
-      overflow:hidden;
-      display:flex;
+      display:inline-flex;
       align-items:center;
       justify-content:center;
-      background:
-        radial-gradient(170px 170px at 50% 42%, rgba(245,247,250,.10), transparent 72%),
-        rgba(255,196,0,.04);
-    }
-
-    /* rank badge */
-    #team .aa-teamCard__badge{
-      position:absolute;
-      top: 14px;
-      left: 14px;
-      padding: 8px 10px;
-      border-radius: 14px;
+      gap:10px;
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      font-weight: 950;
+      font-weight: 900;
       font-size: 11px;
       letter-spacing: .22em;
       text-transform: uppercase;
       color: rgba(245,247,250,.92);
-      border: 1px solid rgba(255,196,0,.34);
-      background: rgba(255,196,0,.14);
-      box-shadow: 0 18px 44px rgba(0,0,0,.24);
-      user-select:none;
-    }
-    #team .aa-teamCard__badge--muted{
-      border-color: rgba(245,247,250,.14);
-      background: rgba(6,26,58,.28);
-      color: rgba(245,247,250,.84);
+      text-shadow: 0 10px 28px rgba(0,0,0,.34);
     }
 
-    /* Initials */
-    #team .aa-teamCard__initials{
-      width: 118px;
-      height: 118px;
-      border-radius: 999px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
+    #team .aa-team__kicker::before{
+      content:"";
+      width:24px;
+      height:2px;
+      border-radius:2px;
+      background: rgba(255,196,0,.98);
+      box-shadow: 0 10px 22px rgba(255,196,0,.22);
+    }
+
+    #team .aa-team__title{
+      margin: 13px 0 0;
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       font-weight: 950;
-      font-size: 38px;
-      letter-spacing: .08em;
-      color: rgba(6,26,58,.95);
-      background: linear-gradient(135deg, rgba(255,196,0,.96), rgba(255,216,77,.96));
-      box-shadow:
-        0 22px 60px rgba(0,0,0,.34),
-        inset 0 0 0 1px rgba(255,255,255,.18);
+      letter-spacing: -0.045em;
+      line-height: .98;
+      font-size: clamp(30px, 3.4vw, 48px);
+      color:#F5F7FA;
       text-transform: uppercase;
-      user-select: none;
+      text-shadow:0 16px 42px rgba(0,0,0,.46);
     }
 
-    /* Body */
+    #team .aa-team__sub{
+      margin: 14px auto 0;
+      max-width: 660px;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.7;
+      font-weight: 650;
+      color: rgba(245,247,250,.78);
+      text-shadow: 0 12px 34px rgba(0,0,0,.26);
+    }
+
+    #team .aa-team__grid{
+      margin-top: 24px;
+      display:grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    #team .aa-teamCard,
+    #team .aa-teamCard--featured{
+      grid-column: auto;
+      display:flex;
+      flex-direction:column;
+      min-height: 0;
+      border-radius: 20px;
+      border:1px solid rgba(255,196,0,.18);
+      background:
+        linear-gradient(145deg, rgba(245,247,250,.075), rgba(245,247,250,.025) 46%),
+        rgba(6,26,58,.60);
+      box-shadow:
+        0 22px 56px rgba(0,0,0,.28),
+        inset 0 1px 0 rgba(255,255,255,.06);
+      overflow:hidden;
+      position: relative;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease;
+    }
+
+    #team .aa-teamCard::before{
+      content:"";
+      position:absolute;
+      inset:-35% -28% auto -28%;
+      height: 170px;
+      background: radial-gradient(closest-side, rgba(255,255,255,.08), rgba(255,255,255,0));
+      opacity: .12;
+      pointer-events:none;
+    }
+
+    #team .aa-teamCard:hover{
+      transform: translateY(-3px);
+      border-color: rgba(255,196,0,.34);
+      box-shadow:
+        0 30px 72px rgba(0,0,0,.36),
+        0 0 52px rgba(255,196,0,.09),
+        inset 0 1px 0 rgba(255,255,255,.07);
+    }
+
+    #team .aa-teamCard__media{
+      position: relative;
+      height: 220px;
+      overflow: hidden;
+      border-right: 0;
+      border-bottom: 1px solid rgba(245,247,250,.08);
+      background: #061A3A;
+    }
+
+    #team .aa-teamCard__photo{
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      filter: saturate(1.03) contrast(1.03);
+      transform: scale(1.01);
+      transition: transform .28s ease;
+    }
+
+    #team .aa-teamCard:hover .aa-teamCard__photo{
+      transform: scale(1.04);
+    }
+
+    #team .aa-teamCard__media::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(180deg, rgba(6,26,58,.05), rgba(6,26,58,.56)),
+        radial-gradient(420px 180px at 50% 88%, rgba(255,196,0,.14), transparent 72%);
+      pointer-events:none;
+    }
+
+    #team .aa-teamCard__badge{
+      position:absolute;
+      top: 12px;
+      left: 12px;
+      z-index: 2;
+      padding: 7px 9px;
+      border-radius: 12px;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-weight: 950;
+      font-size: 10px;
+      letter-spacing: .20em;
+      text-transform: uppercase;
+      color: #FFC400;
+      border: 1px solid rgba(255,196,0,.30);
+      background: rgba(6,26,58,.58);
+      box-shadow: 0 14px 34px rgba(0,0,0,.22);
+      user-select:none;
+    }
+
     #team .aa-teamCard__body{
-      padding: 22px 22px 18px;
+      padding: 16px;
+      min-height: 148px;
       display:flex;
       flex-direction: column;
       justify-content: space-between;
-      gap: 14px;
+      gap: 12px;
       position: relative;
       z-index: 2;
     }
@@ -473,52 +474,60 @@
     #team .aa-teamCard__top{
       display:flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 7px;
     }
 
     #team .aa-teamCard__name{
       margin: 0;
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       font-weight: 950;
-      letter-spacing: -0.02em;
+      letter-spacing: -0.035em;
       text-transform: uppercase;
       color: rgba(245,247,250,.95);
-      font-size: clamp(18px, 2vw, 26px);
-      line-height: 1.08;
-      text-shadow: 0 14px 44px rgba(0,0,0,.36);
+      font-size: clamp(19px, 1.55vw, 25px);
+      line-height: 1.05;
+      text-shadow: 0 12px 34px rgba(0,0,0,.32);
     }
 
     #team .aa-teamCard__role{
       margin: 0;
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      font-size: 12.5px;
-      font-weight: 950;
-      letter-spacing: .18em;
+      font-size: 10.5px;
+      font-weight: 900;
+      letter-spacing: .14em;
       text-transform: uppercase;
-      color: rgba(245,247,250,.76);
+      color: rgba(245,247,250,.72);
       display:flex;
       align-items:center;
-      gap:10px;
+      gap:8px;
+      line-height: 1.35;
     }
+
     #team .aa-teamCard__role::before{
       content:"";
-      width: 8px; height: 8px; border-radius:999px;
+      width: 6px;
+      height: 6px;
+      border-radius:999px;
       background: rgba(255,196,0,.95);
-      box-shadow: 0 12px 28px rgba(255,196,0,.20);
+      box-shadow: 0 10px 24px rgba(255,196,0,.18);
       flex: 0 0 auto;
     }
 
-    /* Actions */
+    #team .aa-teamCard--noRole .aa-teamCard__role{
+      visibility: hidden;
+    }
+
     #team .aa-teamCard__actions{
       display:flex;
       align-items:center;
       justify-content: space-between;
-      gap: 14px;
-      padding-top: 14px;
-      border-top: 1px solid rgba(245,247,250,.08);
+      gap: 10px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(245,247,250,.09);
     }
 
     #team .aa-teamCard__btn{
+      min-height: 38px;
       display:inline-flex;
       align-items:center;
       justify-content:center;
@@ -526,357 +535,195 @@
       border: 1px solid rgba(255,196,0,.20);
       background: rgba(6,26,58,.28);
       color: rgba(245,247,250,.92);
-      border-radius: 14px;
-      padding: 10px 14px;
+      border-radius: 12px;
+      padding: 0 13px;
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      font-size: 12px;
+      font-size: 10.5px;
       font-weight: 950;
-      letter-spacing: .16em;
+      letter-spacing: .14em;
       text-transform: uppercase;
-      transition: transform .18s ease, background .18s ease, border-color .18s ease, box-shadow .18s ease, opacity .18s ease;
+      transition: transform .18s ease, background .18s ease, border-color .18s ease, box-shadow .18s ease;
       -webkit-tap-highlight-color: rgba(0,0,0,0);
       white-space: nowrap;
     }
+
     #team .aa-teamCard__btn:hover{
       transform: translateY(-2px);
       background: rgba(255,196,0,.10);
       border-color: rgba(255,196,0,.34);
-      box-shadow: 0 18px 45px rgba(0,0,0,.20);
+      box-shadow: 0 16px 36px rgba(0,0,0,.18);
     }
 
     #team .aa-teamCard__pill{
+      min-height: 30px;
       display:inline-flex;
       align-items:center;
-      gap: 8px;
-      padding: 8px 10px;
-      border-radius: 12px;
-      border: 1px solid rgba(255,196,0,.28);
-      background: rgba(255,196,0,.10);
-      color: rgba(245,247,250,.90);
+      gap: 7px;
+      padding: 0 9px;
+      border-radius: 11px;
+      border: 1px solid rgba(255,196,0,.24);
+      background: rgba(255,196,0,.09);
+      color: rgba(245,247,250,.88);
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      font-size: 11px;
+      font-size: 9.8px;
       font-weight: 950;
-      letter-spacing: .18em;
+      letter-spacing: .14em;
       text-transform: uppercase;
       user-select:none;
       white-space: nowrap;
     }
 
-    /* Footer */
     #team .aa-team__foot{
-      margin-top: 34px;
-      padding-top: 22px;
+      margin-top: 26px;
+      padding-top: 18px;
       border-top: 1px solid rgba(245,247,250,.10);
       display:flex;
       align-items:center;
       justify-content: space-between;
       gap: 16px;
       flex-wrap: wrap;
+      position:relative;
     }
+
+    #team .aa-team__foot::before{
+      content:"";
+      position:absolute;
+      left:0;
+      top:-1px;
+      width:160px;
+      height:1px;
+      background:linear-gradient(90deg, rgba(255,196,0,.82), rgba(255,196,0,0));
+    }
+
     #team .aa-team__note{
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color: rgba(245,247,250,.75);
-      font-size: 14px;
-      line-height: 1.75;
+      color: rgba(245,247,250,.72);
+      font-size: 13px;
+      line-height: 1.65;
       max-width: 70ch;
     }
+
     #team .aa-team__cta{
+      min-height: 42px;
       display:inline-flex;
       align-items:center;
       justify-content:center;
       text-decoration:none;
       border-radius: 14px;
-      padding: 12px 16px;
+      padding: 0 18px;
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      font-size: 12px;
+      font-size: 10.8px;
       font-weight: 950;
-      letter-spacing: .14em;
+      letter-spacing: .13em;
       text-transform: uppercase;
       color: #061A3A;
-      background: #FFC400;
-      border: 1px solid rgba(255,196,0,.45);
-      box-shadow: 0 18px 45px rgba(0,0,0,.26);
+      background:linear-gradient(135deg, #FFC400 0%, #FFD84D 100%);
+      border:1px solid rgba(255,196,0,.52);
+      box-shadow: 0 16px 38px rgba(0,0,0,.24);
       transition: transform .18s ease, opacity .18s ease;
       white-space: nowrap;
     }
-    #team .aa-team__cta:hover{ transform: translateY(-2px); opacity:.98; }
 
-    /* Kill magenta focus */
-    #team, #team *{ outline: none !important; }
-    #team a:focus, #team a:focus-visible,
-    #team button:focus, #team button:focus-visible{ outline: none !important; box-shadow:none !important; }
+    #team .aa-team__cta:hover{
+      transform: translateY(-2px);
+      opacity:.98;
+    }
+
+    #team,
+    #team *{
+      outline: none !important;
+    }
+
+    #team a:focus,
+    #team a:focus-visible,
+    #team button:focus,
+    #team button:focus-visible{
+      outline: none !important;
+      box-shadow:none !important;
+    }
+
     #team .aa-teamCard__btn:focus-visible{
-      box-shadow: 0 0 0 3px rgba(255,196,0,.52), 0 22px 60px rgba(0,0,0,.25) !important;
+      box-shadow: 0 0 0 3px rgba(255,196,0,.48), 0 20px 50px rgba(0,0,0,.22) !important;
     }
 
-    /* Responsive */
     @media (max-width: 1100px){
-      #team .aa-teamCard{ grid-column: span 12; }
-      #team .aa-teamCard{ grid-template-columns: 240px 1fr; }
-    }
-    @media (max-width: 980px){
-      #team .aa-team__grid{ gap: 16px; }
-      #team .aa-teamCard{ grid-template-columns: 220px 1fr; min-height: 230px; }
-      #team .aa-teamCard__body{ padding: 20px 18px 16px; }
-    }
-    @media (max-width: 640px){
-      #team.aa-team-breakout .aa-team{ padding: 86px 0 82px; }
-      #team .aa-teamCard{ grid-template-columns: 1fr; }
-      #team .aa-teamCard__media{
-        height: 260px;
-        border-right: 0;
-        border-bottom: 1px solid rgba(245,247,250,.08);
+      #team .aa-team__inner{
+        max-width: 900px;
       }
-      #team .aa-teamCard__initials{ width: 122px; height: 122px; font-size: 40px; }
-      #team .aa-teamCard__body{ padding: 18px 16px 16px; gap: 12px; }
-      #team .aa-teamCard__actions{ padding-top: 12px; }
+
+      #team .aa-team__grid{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      #team .aa-teamCard__media{
+        height: 215px;
+      }
     }
-    
-    /* Hide role (text + bullet) ONLY on selected cards, preserve spacing */
-#team .aa-teamCard--noRole .aa-teamCard__role{
-  visibility: hidden;
-}
 
-/* FULL-CARD TEAM PHOTOS */
-#team .aa-teamCard__media{
-  position: relative;
-  overflow: hidden;
-  border-right: 1px solid rgba(245,247,250,.08);
-  background: #061A3A;
-}
+    @media (max-width: 760px){
+      #team.aa-team-breakout .aa-team{
+        padding: 68px 0 68px;
+      }
 
-/* Image fills entire media column */
-#team .aa-teamCard__photo{
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;      /* ensures uniform cropping */
-  object-position: center top; /* keeps faces higher in frame */
-  filter: saturate(1.02) contrast(1.02);
-  transform: scale(1.01);
-}
+      #team .aa-team__inner{
+        max-width: 520px;
+      }
 
-/* Subtle overlay for text contrast */
-#team .aa-teamCard__media::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:
-    linear-gradient(
-      to bottom,
-      rgba(6,26,58,.10),
-      rgba(6,26,58,.35)
-    );
-  pointer-events:none;
-}
+      #team .aa-team__grid{
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
 
-/* Keep badge above photo */
-#team .aa-teamCard__badge{
-  z-index: 2;
-}
+      #team .aa-teamCard__media{
+        height: 255px;
+      }
 
-#team .aa-teamCard__initials{
-  display: none !important;
-}
+      #team .aa-teamCard__body{
+        min-height: 138px;
+      }
+    }
 
-@media (max-width: 640px){
-  #team .aa-teamCard__media{
-    height: 300px;
-    border-right: 0;
-    border-bottom: 1px solid rgba(245,247,250,.08);
-  }
-}
+    @media (max-width: 480px){
+      #team.aa-team-breakout .aa-team{
+        padding: 58px 0 62px;
+      }
 
-/* ===== Premium refresh: editorial team cards ===== */
-#team .aa-team__head{
-  position: relative;
-  max-width: 900px;
-  margin: 0 auto 42px;
-  text-align: center;
-}
+      #team .aa-team__inner{
+        padding: 0 16px;
+      }
 
-#team .aa-team__head::after{
-  content:"";
-  position:absolute;
-  left:50%;
-  bottom:-22px;
-  width:min(560px, 80vw);
-  height:1px;
-  transform:translateX(-50%);
-  background:linear-gradient(90deg, transparent, rgba(255,196,0,.72), transparent);
-  box-shadow:0 0 34px rgba(255,196,0,.22);
-}
+      #team .aa-team__head{
+        margin-bottom: 32px;
+      }
 
-#team .aa-team__kicker{
-  justify-content:center;
-  color:rgba(245,247,250,.94);
-}
+      #team .aa-team__title{
+        font-size: clamp(28px, 10vw, 38px);
+      }
 
-#team .aa-team__title{
-  letter-spacing:-0.05em;
-  line-height:.96;
-  font-size:clamp(32px, 4vw, 56px);
-  color:#F5F7FA;
-  text-shadow:0 18px 50px rgba(0,0,0,.54), 0 0 34px rgba(6,26,58,.42);
-}
+      #team .aa-team__sub{
+        font-size: 13px;
+      }
 
-#team .aa-team__sub{
-  margin:18px auto 0;
-  max-width:720px;
-  font-weight:750;
-  color:rgba(245,247,250,.84);
-}
+      #team .aa-teamCard__media{
+        height: 245px;
+      }
 
-#team .aa-team__grid{
-  gap: 22px;
-}
+      #team .aa-teamCard__body{
+        padding: 15px;
+      }
 
-#team .aa-teamCard{
-  grid-column: span 4;
-  display:flex;
-  flex-direction:column;
-  min-height: 0;
-  border-radius:22px;
-  border:1px solid rgba(255,196,0,.20);
-  background:
-    linear-gradient(145deg, rgba(245,247,250,.09), rgba(245,247,250,.025) 44%),
-    rgba(6,26,58,.64);
-  box-shadow:
-    0 30px 80px rgba(0,0,0,.34),
-    inset 0 1px 0 rgba(255,255,255,.07);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease, background .22s ease;
-}
+      #team .aa-teamCard__actions{
+        gap: 8px;
+      }
 
-#team .aa-teamCard--featured{
-  grid-column: span 6;
-  border-color: rgba(255,196,0,.34);
-  background:
-    linear-gradient(145deg, rgba(255,196,0,.14), rgba(245,247,250,.035) 48%),
-    rgba(6,26,58,.68);
-}
+      #team .aa-teamCard__pill{
+        font-size: 9px;
+        letter-spacing: .12em;
+      }
 
-#team .aa-teamCard:hover,
-#team .aa-teamCard--featured:hover{
-  transform: translateY(-4px);
-  border-color: rgba(255,196,0,.46);
-  box-shadow:
-    0 38px 94px rgba(0,0,0,.42),
-    0 0 70px rgba(255,196,0,.12),
-    inset 0 1px 0 rgba(255,255,255,.08);
-}
-
-#team .aa-teamCard__media{
-  height: 280px;
-  border-right: 0;
-  border-bottom: 1px solid rgba(245,247,250,.08);
-}
-
-#team .aa-teamCard--featured .aa-teamCard__media{
-  height: 320px;
-}
-
-#team .aa-teamCard__photo{
-  filter: saturate(1.04) contrast(1.04);
-  transform: scale(1.02);
-  transition: transform .28s ease;
-}
-
-#team .aa-teamCard:hover .aa-teamCard__photo{
-  transform: scale(1.055);
-}
-
-#team .aa-teamCard__media::after{
-  background:
-    linear-gradient(180deg, rgba(6,26,58,.06), rgba(6,26,58,.64)),
-    radial-gradient(500px 220px at 50% 88%, rgba(255,196,0,.18), transparent 72%);
-}
-
-#team .aa-teamCard__badge{
-  border-radius:14px;
-  background:rgba(6,26,58,.58);
-  color:#FFC400;
-}
-
-#team .aa-teamCard__body{
-  padding:20px;
-  min-height: 190px;
-}
-
-#team .aa-teamCard__name{
-  font-size:clamp(22px, 2vw, 34px);
-  letter-spacing:-0.04em;
-}
-
-#team .aa-teamCard__role{
-  line-height:1.35;
-}
-
-#team .aa-teamCard__actions{
-  border-top-color:rgba(245,247,250,.10);
-}
-
-#team .aa-teamCard__btn{
-  min-height:44px;
-  border-radius:14px;
-  padding:0 16px;
-}
-
-#team .aa-teamCard__pill{
-  min-height:34px;
-  border-radius:14px;
-  display:inline-flex;
-  align-items:center;
-}
-
-#team .aa-team__foot{
-  margin-top:26px;
-  padding-top:20px;
-  position:relative;
-}
-
-#team .aa-team__foot::before{
-  content:"";
-  position:absolute;
-  left:0;
-  top:-1px;
-  width:180px;
-  height:1px;
-  background:linear-gradient(90deg, rgba(255,196,0,.88), rgba(255,196,0,0));
-}
-
-#team .aa-team__cta{
-  min-height:48px;
-  border-radius:16px;
-  padding:0 22px;
-  background:linear-gradient(135deg, #FFC400 0%, #FFD84D 100%);
-  border:1px solid rgba(255,196,0,.56);
-}
-
-@media (max-width: 1100px){
-  #team .aa-teamCard,
-  #team .aa-teamCard--featured{
-    grid-column: span 6;
-  }
-}
-
-@media (max-width: 760px){
-  #team .aa-teamCard,
-  #team .aa-teamCard--featured{
-    grid-column: span 12;
-  }
-}
-
-@media (max-width: 640px){
-  #team .aa-team__head{ margin-bottom:34px; }
-  #team .aa-teamCard__media,
-  #team .aa-teamCard--featured .aa-teamCard__media{
-    height: 320px;
-  }
-  #team .aa-team__cta{ width:100%; }
-}
-
+      #team .aa-team__cta{
+        width:100%;
+      }
+    }
   </style>
 </section>
