@@ -199,10 +199,9 @@
       position: relative;
       padding: 78px 0 78px;
       background:
-        radial-gradient(760px 420px at 12% 18%, rgba(255,196,0,.13), transparent 62%),
-        radial-gradient(640px 390px at 88% 22%, rgba(245,247,250,.07), transparent 64%),
-        radial-gradient(680px 440px at 50% 88%, rgba(255,196,0,.08), transparent 68%),
-        linear-gradient(180deg, rgba(6,26,58,.98) 0%, rgba(4,18,42,.96) 45%, rgba(3,13,31,.98) 100%) !important;
+        linear-gradient(180deg, rgba(6,26,58,.96) 0%, rgba(6,26,58,.72) 22%, rgba(6,26,58,.86) 100%),
+        linear-gradient(140deg, rgba(255,196,0,.08), rgba(255,196,0,0) 48%),
+        url("../resources/thecouch.jpg") center/cover no-repeat;
       overflow: hidden;
       isolation: isolate;
     }
@@ -214,9 +213,9 @@
       z-index:0;
       pointer-events:none;
       background:
-        radial-gradient(800px 520px at 50% 42%, rgba(255,255,255,.035), transparent 65%),
-        linear-gradient(90deg, rgba(0,0,0,.18) 0%, transparent 18%, transparent 82%, rgba(0,0,0,.20) 100%),
-        linear-gradient(180deg, rgba(0,0,0,.12) 0%, transparent 32%, rgba(0,0,0,.24) 100%);
+        radial-gradient(circle at 16% 20%, rgba(255,196,0,.12), transparent 24%),
+        radial-gradient(circle at 82% 24%, rgba(255,255,255,.08), transparent 18%),
+        radial-gradient(circle at 50% 88%, rgba(0,0,0,.32), transparent 42%);
     }
 
     #team.aa-team-breakout .aa-team::after{
@@ -224,28 +223,13 @@
       position:absolute;
       z-index:0;
       pointer-events:none;
-      width: 820px;
-      height: 820px;
-      right: -320px;
-      top: -260px;
-      border-radius: 999px;
-      background:
-        conic-gradient(
-          from 210deg,
-          rgba(255,196,0,0) 0deg,
-          rgba(255,196,0,.12) 48deg,
-          rgba(255,255,255,.045) 92deg,
-          rgba(255,196,0,0) 150deg,
-          rgba(255,196,0,0) 360deg
-        );
-      filter: blur(8px);
-      opacity: .62;
-      transform: rotate(-8deg);
+      inset: 0;
+      display: none;
     }
 
     #team .aa-team__inner{
       position: relative;
-      z-index: 4;
+      z-index: 2;
       max-width: 1120px;
       margin: 0 auto;
       padding: 0 22px;
